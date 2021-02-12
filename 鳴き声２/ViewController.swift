@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         
         
-        default:print("Any")
+        default:print("Ohdango")
             
     
             
