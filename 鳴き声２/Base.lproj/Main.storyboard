@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="鳴き声_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鳴き声" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cj-au-BpY">
+                                <rect key="frame" x="161.5" y="144" width="91" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMY-Md-yxF">
+                                <rect key="frame" x="180" y="590" width="54" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="🐱"/>
+                                <connections>
+                                    <action selector="catbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6C4-KK-fOI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG0-8e-EYz">
+                                <rect key="frame" x="310" y="590" width="54" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="🐸"/>
+                                <connections>
+                                    <action selector="frogbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Aw-Xd-uty"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLU-TK-vat">
+                                <rect key="frame" x="50" y="590" width="54" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="🐶"/>
+                                <connections>
+                                    <action selector="dogbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKh-LO-RSt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9cj-au-BpY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0vj-z6-r41"/>
+                            <constraint firstItem="sMY-Md-yxF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6YX-4X-uF9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SG0-8e-EYz" secondAttribute="bottom" constant="2200" id="8GM-aZ-zAB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sMY-Md-yxF" secondAttribute="bottom" constant="200" id="Hjj-45-XZP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SG0-8e-EYz" secondAttribute="trailing" constant="50" id="Xgr-Mm-wXD"/>
+                            <constraint firstItem="sLU-TK-vat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="a92-9w-JTh"/>
+                            <constraint firstItem="sLU-TK-vat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="bB0-ID-TOa"/>
+                            <constraint firstItem="9cj-au-BpY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="bBY-DP-eDX"/>
+                            <constraint firstItem="sLU-TK-vat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="d6K-mW-sHz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SG0-8e-EYz" secondAttribute="bottom" constant="200" id="iI9-pM-JRD"/>
+                            <constraint firstItem="sLU-TK-vat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="k2N-1O-NiE"/>
+                            <constraint firstItem="sLU-TK-vat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="mwW-rx-ybY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sLU-TK-vat" secondAttribute="bottom" constant="200" id="zNF-Na-9t9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dogbutton" destination="9cj-au-BpY" id="gal-zX-YMk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
