@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F75D66525E2918400D4872B /* 買い物かごViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F75D66425E2918400D4872B /* 買い物かごViewController.swift */; };
+		2F3C886725EA5228008D08DA /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C886625EA5228008D08DA /* AddViewController.swift */; };
+		2F3C886B25EA5E6E008D08DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C886A25EA5E6E008D08DA /* ViewController.swift */; };
+		2F3C887D25EBB441008D08DA /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C887C25EBB441008D08DA /* CalendarCell.swift */; };
+		2F3C888025EBBC4C008D08DA /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C887F25EBBC4C008D08DA /* DateManager.swift */; };
+		2F3C888425EBF01D008D08DA /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C888325EBF01D008D08DA /* CalendarView.swift */; };
 		2F75D66825E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F75D66725E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */; };
 		2F75D66B25E29AA900D4872B /* 1566136304_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F75D66A25E29AA900D4872B /* 1566136304_1.jpeg */; };
 		2F75D66E25E29C2B00D4872B /* e6f4b23c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F75D66D25E29C2B00D4872B /* e6f4b23c.jpg */; };
@@ -17,16 +21,18 @@
 		2FAC1C5E25E0CE56008EFB1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5C25E0CE56008EFB1E /* Main.storyboard */; };
 		2FAC1C6025E0CE59008EFB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */; };
 		2FAC1C6325E0CE59008EFB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C6125E0CE59008EFB1E /* LaunchScreen.storyboard */; };
-		2FDA171D25E1F58F002FD80C /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA171C25E1F58F002FD80C /* NextViewController.swift */; };
+		2FD93F8925E8F74F009AF521 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD93F8825E8F74F009AF521 /* PhotoViewController.swift */; };
 		2FE7414525E3976300045149 /* QP10004840_1L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FE7414425E3976300045149 /* QP10004840_1L.jpg */; };
 		2FE7414825E3CF5E00045149 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7414725E3CF5E00045149 /* DetailViewController.swift */; };
-		2FE7415B25E402B600045149 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7415A25E402B600045149 /* ViewController.swift */; };
 		2FE7415E25E402C500045149 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7415D25E402C500045149 /* VideoViewController.swift */; };
-		2FE7416125E403D300045149 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7416025E403D300045149 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F75D66425E2918400D4872B /* 買い物かごViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "買い物かごViewController.swift"; sourceTree = "<group>"; };
+		2F3C886625EA5228008D08DA /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		2F3C886A25EA5E6E008D08DA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F3C887C25EBB441008D08DA /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		2F3C887F25EBBC4C008D08DA /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		2F3C888325EBF01D008D08DA /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		2F75D66725E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg; sourceTree = "<group>"; };
 		2F75D66A25E29AA900D4872B /* 1566136304_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1566136304_1.jpeg; sourceTree = "<group>"; };
 		2F75D66D25E29C2B00D4872B /* e6f4b23c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e6f4b23c.jpg; sourceTree = "<group>"; };
@@ -38,12 +44,10 @@
 		2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FAC1C6225E0CE59008EFB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FAC1C6425E0CE59008EFB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FDA171C25E1F58F002FD80C /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		2FD93F8825E8F74F009AF521 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoViewController.swift; path = ../../../.Trash/PhotoViewController.swift; sourceTree = "<group>"; };
 		2FE7414425E3976300045149 /* QP10004840_1L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QP10004840_1L.jpg; sourceTree = "<group>"; };
 		2FE7414725E3CF5E00045149 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		2FE7415A25E402B600045149 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../.Trash/ViewController.swift; sourceTree = "<group>"; };
 		2FE7415D25E402C500045149 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = ../../../.Trash/VideoViewController.swift; sourceTree = "<group>"; };
-		2FE7416025E403D300045149 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoViewController.swift; path = ../../../.Trash/PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,16 +87,18 @@
 				2F75D66725E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */,
 				2FAC1C5625E0CE56008EFB1E /* AppDelegate.swift */,
 				2FAC1C5825E0CE56008EFB1E /* SceneDelegate.swift */,
-				2FE7415A25E402B600045149 /* ViewController.swift */,
 				2FAC1C5C25E0CE56008EFB1E /* Main.storyboard */,
+				2F3C886A25EA5E6E008D08DA /* ViewController.swift */,
 				2F75D67025E29CB700D4872B /* sp_detail_main_COP08_AA_461.jpg */,
 				2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */,
 				2FAC1C6125E0CE59008EFB1E /* LaunchScreen.storyboard */,
 				2FAC1C6425E0CE59008EFB1E /* Info.plist */,
-				2FDA171C25E1F58F002FD80C /* NextViewController.swift */,
-				2F75D66425E2918400D4872B /* 買い物かごViewController.swift */,
 				2FE7415D25E402C500045149 /* VideoViewController.swift */,
-				2FE7416025E403D300045149 /* PhotoViewController.swift */,
+				2FD93F8825E8F74F009AF521 /* PhotoViewController.swift */,
+				2F3C886625EA5228008D08DA /* AddViewController.swift */,
+				2F3C887C25EBB441008D08DA /* CalendarCell.swift */,
+				2F3C887F25EBBC4C008D08DA /* DateManager.swift */,
+				2F3C888325EBF01D008D08DA /* CalendarView.swift */,
 			);
 			path = odango;
 			sourceTree = "<group>";
@@ -172,12 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FDA171D25E1F58F002FD80C /* NextViewController.swift in Sources */,
-				2F75D66525E2918400D4872B /* 買い物かごViewController.swift in Sources */,
+				2F3C888425EBF01D008D08DA /* CalendarView.swift in Sources */,
+				2F3C888025EBBC4C008D08DA /* DateManager.swift in Sources */,
+				2F3C886725EA5228008D08DA /* AddViewController.swift in Sources */,
+				2F3C886B25EA5E6E008D08DA /* ViewController.swift in Sources */,
 				2FE7415E25E402C500045149 /* VideoViewController.swift in Sources */,
+				2F3C887D25EBB441008D08DA /* CalendarCell.swift in Sources */,
 				2FE7414825E3CF5E00045149 /* DetailViewController.swift in Sources */,
-				2FE7415B25E402B600045149 /* ViewController.swift in Sources */,
-				2FE7416125E403D300045149 /* PhotoViewController.swift in Sources */,
+				2FD93F8925E8F74F009AF521 /* PhotoViewController.swift in Sources */,
 				2FAC1C5725E0CE56008EFB1E /* AppDelegate.swift in Sources */,
 				2FAC1C5925E0CE56008EFB1E /* SceneDelegate.swift in Sources */,
 			);
