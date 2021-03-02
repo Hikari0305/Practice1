@@ -10,33 +10,66 @@
 		2F3C886725EA5228008D08DA /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C886625EA5228008D08DA /* AddViewController.swift */; };
 		2F3C886B25EA5E6E008D08DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C886A25EA5E6E008D08DA /* ViewController.swift */; };
 		2F3C887D25EBB441008D08DA /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C887C25EBB441008D08DA /* CalendarCell.swift */; };
-		2F3C888025EBBC4C008D08DA /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C887F25EBBC4C008D08DA /* DateManager.swift */; };
-		2F3C888425EBF01D008D08DA /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C888325EBF01D008D08DA /* CalendarView.swift */; };
+		2F3C888C25EC6F03008D08DA /* Table in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C888B25EC6F03008D08DA /* Table */; };
+		2F3C889925EC73EA008D08DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C889725EC73EA008D08DA /* MainViewController.swift */; };
+		2F3C889A25EC73EA008D08DA /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C889825EC73EA008D08DA /* MainViewController.xib */; };
+		2F3C88B225ECD0A3008D08DA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88B025ECD0A3008D08DA /* TableViewController.swift */; };
+		2F3C88B325ECD0A3008D08DA /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C88B125ECD0A3008D08DA /* TableViewController.xib */; };
+		2F3C88B825ECD672008D08DA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88B625ECD672008D08DA /* CollectionViewController.swift */; };
+		2F3C88B925ECD672008D08DA /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C88B725ECD672008D08DA /* CollectionViewController.xib */; };
+		2F3C88E625ED92D5008D08DA /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88E525ED92D5008D08DA /* BEMAnimationManager.m */; };
+		2F3C88EA25ED92E0008D08DA /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88E925ED92E0008D08DA /* BEMCheckBox.m */; };
+		2F3C88EE25ED92F4008D08DA /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88ED25ED92F4008D08DA /* BEMCheckBoxGroup.m */; };
+		2F3C88F225ED92FD008D08DA /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88F125ED92FD008D08DA /* BEMPathManager.m */; };
+		2F3C88FA25ED99BC008D08DA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88F925ED99BC008D08DA /* CheckBox.swift */; };
+		2F3C890425EDA139008D08DA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C890325EDA139008D08DA /* TableViewCell.swift */; };
+		2F3C890725EDBDCC008D08DA /* AssetsCheckmark in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C890625EDBDCC008D08DA /* AssetsCheckmark */; };
 		2F75D66825E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F75D66725E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */; };
 		2F75D66B25E29AA900D4872B /* 1566136304_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F75D66A25E29AA900D4872B /* 1566136304_1.jpeg */; };
 		2F75D66E25E29C2B00D4872B /* e6f4b23c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F75D66D25E29C2B00D4872B /* e6f4b23c.jpg */; };
 		2F75D67125E29CB700D4872B /* sp_detail_main_COP08_AA_461.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F75D67025E29CB700D4872B /* sp_detail_main_COP08_AA_461.jpg */; };
+		2F97B8D225EDE50A002567A2 /* chatViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97B8D125EDE50A002567A2 /* chatViewController1.swift */; };
+		2F97B8DC25EE43C9002567A2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97B8DB25EE43C9002567A2 /* PhotoViewController.swift */; };
+		2F97B8DF25EE43D9002567A2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97B8DE25EE43D9002567A2 /* VideoViewController.swift */; };
 		2FAC1C5725E0CE56008EFB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5625E0CE56008EFB1E /* AppDelegate.swift */; };
 		2FAC1C5925E0CE56008EFB1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5825E0CE56008EFB1E /* SceneDelegate.swift */; };
 		2FAC1C5E25E0CE56008EFB1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5C25E0CE56008EFB1E /* Main.storyboard */; };
 		2FAC1C6025E0CE59008EFB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */; };
 		2FAC1C6325E0CE59008EFB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C6125E0CE59008EFB1E /* LaunchScreen.storyboard */; };
-		2FD93F8925E8F74F009AF521 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD93F8825E8F74F009AF521 /* PhotoViewController.swift */; };
 		2FE7414525E3976300045149 /* QP10004840_1L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FE7414425E3976300045149 /* QP10004840_1L.jpg */; };
 		2FE7414825E3CF5E00045149 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7414725E3CF5E00045149 /* DetailViewController.swift */; };
-		2FE7415E25E402C500045149 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7415D25E402C500045149 /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F3C886625EA5228008D08DA /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		2F3C886A25EA5E6E008D08DA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F3C887C25EBB441008D08DA /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
-		2F3C887F25EBBC4C008D08DA /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
-		2F3C888325EBF01D008D08DA /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		2F3C888B25EC6F03008D08DA /* Table */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Table; sourceTree = "<group>"; };
+		2F3C889725EC73EA008D08DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2F3C889825EC73EA008D08DA /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2F3C88B025ECD0A3008D08DA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2F3C88B125ECD0A3008D08DA /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		2F3C88B625ECD672008D08DA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2F3C88B725ECD672008D08DA /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		2F3C88DE25ED9291008D08DA /* BEMAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		2F3C88E525ED92D5008D08DA /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		2F3C88E825ED92DC008D08DA /* BEMCheckBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		2F3C88E925ED92E0008D08DA /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		2F3C88EC25ED92ED008D08DA /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		2F3C88ED25ED92F4008D08DA /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		2F3C88F025ED92F9008D08DA /* BEMPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		2F3C88F125ED92FD008D08DA /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		2F3C88F425ED9302008D08DA /* demo614checkbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo614checkbox-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F3C88F925ED99BC008D08DA /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		2F3C890325EDA139008D08DA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2F3C890625EDBDCC008D08DA /* AssetsCheckmark */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AssetsCheckmark; sourceTree = "<group>"; };
 		2F75D66725E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg; sourceTree = "<group>"; };
 		2F75D66A25E29AA900D4872B /* 1566136304_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1566136304_1.jpeg; sourceTree = "<group>"; };
 		2F75D66D25E29C2B00D4872B /* e6f4b23c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e6f4b23c.jpg; sourceTree = "<group>"; };
 		2F75D67025E29CB700D4872B /* sp_detail_main_COP08_AA_461.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sp_detail_main_COP08_AA_461.jpg; sourceTree = "<group>"; };
+		2F97B8D125EDE50A002567A2 /* chatViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatViewController1.swift; sourceTree = "<group>"; };
+		2F97B8DB25EE43C9002567A2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		2F97B8DE25EE43D9002567A2 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		2FAC1C5325E0CE56008EFB1E /* odango UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "odango UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAC1C5625E0CE56008EFB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FAC1C5825E0CE56008EFB1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,10 +77,8 @@
 		2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FAC1C6225E0CE59008EFB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FAC1C6425E0CE59008EFB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FD93F8825E8F74F009AF521 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoViewController.swift; path = ../../../.Trash/PhotoViewController.swift; sourceTree = "<group>"; };
 		2FE7414425E3976300045149 /* QP10004840_1L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QP10004840_1L.jpg; sourceTree = "<group>"; };
 		2FE7414725E3CF5E00045149 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		2FE7415D25E402C500045149 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = ../../../.Trash/VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +92,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F3C88F525ED93C6008D08DA /* BEMCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				2F3C88DE25ED9291008D08DA /* BEMAnimationManager.h */,
+				2F3C88E525ED92D5008D08DA /* BEMAnimationManager.m */,
+				2F3C88E825ED92DC008D08DA /* BEMCheckBox.h */,
+				2F3C88E925ED92E0008D08DA /* BEMCheckBox.m */,
+				2F3C88EC25ED92ED008D08DA /* BEMCheckBoxGroup.h */,
+				2F3C88ED25ED92F4008D08DA /* BEMCheckBoxGroup.m */,
+				2F3C88F025ED92F9008D08DA /* BEMPathManager.h */,
+				2F3C88F125ED92FD008D08DA /* BEMPathManager.m */,
+				2F3C88F425ED9302008D08DA /* demo614checkbox-Bridging-Header.h */,
+			);
+			path = BEMCheckBox;
+			sourceTree = "<group>";
+		};
+		2F3C88F825ED98BC008D08DA /* マイレシピ */ = {
+			isa = PBXGroup;
+			children = (
+				2F3C889725EC73EA008D08DA /* MainViewController.swift */,
+				2F3C889825EC73EA008D08DA /* MainViewController.xib */,
+				2F3C88B025ECD0A3008D08DA /* TableViewController.swift */,
+				2F3C88B125ECD0A3008D08DA /* TableViewController.xib */,
+				2F3C88B625ECD672008D08DA /* CollectionViewController.swift */,
+				2F3C88B725ECD672008D08DA /* CollectionViewController.xib */,
+			);
+			name = "マイレシピ";
+			path = "マイレシピ";
+			sourceTree = "<group>";
+		};
+		2F3C88FD25ED9C53008D08DA /* CheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				2F3C890625EDBDCC008D08DA /* AssetsCheckmark */,
+				2F3C88F925ED99BC008D08DA /* CheckBox.swift */,
+			);
+			path = CheckBox;
+			sourceTree = "<group>";
+		};
 		2FAC1C4A25E0CE56008EFB1E = {
 			isa = PBXGroup;
 			children = (
+				2F3C88FD25ED9C53008D08DA /* CheckBox */,
+				2F3C88F825ED98BC008D08DA /* マイレシピ */,
+				2F3C88F525ED93C6008D08DA /* BEMCheckBox */,
 				2FE7414725E3CF5E00045149 /* DetailViewController.swift */,
 				2FAC1C5525E0CE56008EFB1E /* odango */,
 				2FAC1C5425E0CE56008EFB1E /* Products */,
@@ -81,24 +154,25 @@
 		2FAC1C5525E0CE56008EFB1E /* odango */ = {
 			isa = PBXGroup;
 			children = (
+				2F3C888B25EC6F03008D08DA /* Table */,
 				2FE7414425E3976300045149 /* QP10004840_1L.jpg */,
 				2F75D66D25E29C2B00D4872B /* e6f4b23c.jpg */,
 				2F75D66A25E29AA900D4872B /* 1566136304_1.jpeg */,
 				2F75D66725E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */,
 				2FAC1C5625E0CE56008EFB1E /* AppDelegate.swift */,
 				2FAC1C5825E0CE56008EFB1E /* SceneDelegate.swift */,
-				2FAC1C5C25E0CE56008EFB1E /* Main.storyboard */,
 				2F3C886A25EA5E6E008D08DA /* ViewController.swift */,
+				2FAC1C5C25E0CE56008EFB1E /* Main.storyboard */,
 				2F75D67025E29CB700D4872B /* sp_detail_main_COP08_AA_461.jpg */,
 				2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */,
 				2FAC1C6125E0CE59008EFB1E /* LaunchScreen.storyboard */,
 				2FAC1C6425E0CE59008EFB1E /* Info.plist */,
-				2FE7415D25E402C500045149 /* VideoViewController.swift */,
-				2FD93F8825E8F74F009AF521 /* PhotoViewController.swift */,
 				2F3C886625EA5228008D08DA /* AddViewController.swift */,
 				2F3C887C25EBB441008D08DA /* CalendarCell.swift */,
-				2F3C887F25EBBC4C008D08DA /* DateManager.swift */,
-				2F3C888325EBF01D008D08DA /* CalendarView.swift */,
+				2F3C890325EDA139008D08DA /* TableViewCell.swift */,
+				2F97B8D125EDE50A002567A2 /* chatViewController1.swift */,
+				2F97B8DB25EE43C9002567A2 /* PhotoViewController.swift */,
+				2F97B8DE25EE43D9002567A2 /* VideoViewController.swift */,
 			);
 			path = odango;
 			sourceTree = "<group>";
@@ -160,12 +234,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3C88B925ECD672008D08DA /* CollectionViewController.xib in Resources */,
 				2F75D66E25E29C2B00D4872B /* e6f4b23c.jpg in Resources */,
 				2FAC1C6325E0CE59008EFB1E /* LaunchScreen.storyboard in Resources */,
 				2F75D66825E2973300D4872B /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg in Resources */,
+				2F3C88B325ECD0A3008D08DA /* TableViewController.xib in Resources */,
 				2F75D66B25E29AA900D4872B /* 1566136304_1.jpeg in Resources */,
 				2FAC1C6025E0CE59008EFB1E /* Assets.xcassets in Resources */,
 				2FAC1C5E25E0CE56008EFB1E /* Main.storyboard in Resources */,
+				2F3C890725EDBDCC008D08DA /* AssetsCheckmark in Resources */,
+				2F3C888C25EC6F03008D08DA /* Table in Resources */,
+				2F3C889A25EC73EA008D08DA /* MainViewController.xib in Resources */,
 				2FE7414525E3976300045149 /* QP10004840_1L.jpg in Resources */,
 				2F75D67125E29CB700D4872B /* sp_detail_main_COP08_AA_461.jpg in Resources */,
 			);
@@ -178,16 +257,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F3C888425EBF01D008D08DA /* CalendarView.swift in Sources */,
-				2F3C888025EBBC4C008D08DA /* DateManager.swift in Sources */,
+				2F3C88FA25ED99BC008D08DA /* CheckBox.swift in Sources */,
+				2F3C88B825ECD672008D08DA /* CollectionViewController.swift in Sources */,
+				2F97B8DF25EE43D9002567A2 /* VideoViewController.swift in Sources */,
+				2F3C88B225ECD0A3008D08DA /* TableViewController.swift in Sources */,
+				2F3C889925EC73EA008D08DA /* MainViewController.swift in Sources */,
 				2F3C886725EA5228008D08DA /* AddViewController.swift in Sources */,
 				2F3C886B25EA5E6E008D08DA /* ViewController.swift in Sources */,
-				2FE7415E25E402C500045149 /* VideoViewController.swift in Sources */,
 				2F3C887D25EBB441008D08DA /* CalendarCell.swift in Sources */,
 				2FE7414825E3CF5E00045149 /* DetailViewController.swift in Sources */,
-				2FD93F8925E8F74F009AF521 /* PhotoViewController.swift in Sources */,
+				2F3C88EA25ED92E0008D08DA /* BEMCheckBox.m in Sources */,
+				2F3C88EE25ED92F4008D08DA /* BEMCheckBoxGroup.m in Sources */,
+				2F97B8DC25EE43C9002567A2 /* PhotoViewController.swift in Sources */,
+				2F3C88F225ED92FD008D08DA /* BEMPathManager.m in Sources */,
 				2FAC1C5725E0CE56008EFB1E /* AppDelegate.swift in Sources */,
+				2F97B8D225EDE50A002567A2 /* chatViewController1.swift in Sources */,
+				2F3C890425EDA139008D08DA /* TableViewCell.swift in Sources */,
 				2FAC1C5925E0CE56008EFB1E /* SceneDelegate.swift in Sources */,
+				2F3C88E625ED92D5008D08DA /* BEMAnimationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

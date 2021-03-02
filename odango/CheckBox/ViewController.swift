@@ -1,5 +1,5 @@
 //
-//  PhotoViewController.swift
+//  ViewController.swift
 //  odango UIKit
 //
 //  Created by 吉田光 on 2021/03/02.
@@ -7,7 +7,9 @@
 
 import UIKit
 
-class PhotoViewController: UIViewController {
+class ViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,15 +17,7 @@ class PhotoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-       super.viewWillAppear(animated)
-       print("PhotoViewController Will Appear")
-    }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("PhotoViewController Will Disappear")
-    }
     /*
     // MARK: - Navigation
 

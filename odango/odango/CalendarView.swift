@@ -101,12 +101,11 @@ extension CalendarView: UICollectionViewDataSource {
     }
     //セルの設定
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell:Calendar = collectionView.dequeueReusableCell(withReuseIdentifier:"collectCell",for:indexPath as IndexPath) as! CalendarCell
+        let cell:Calendar = collectionView.dequeueReusableCell(withReuseIdentifier:"collectCell",for:indexPath as IndexPath) as! Calendar
         //土曜日は赤　日曜日は青　にテキストカラーを変更する
         if(indexPath.row % 7 == 0){
             cell.textLabel.textColor = UIColor.red
         }else if(indexPath.row % 7 == 6){
-            else if(indexPath.row % 7 == 6
         }else{
             cell.textLabel.textColor = UIColor.gray
         }
@@ -124,7 +123,7 @@ extension CalendarView: UICollectionViewDataSource {
                    cell.textLabel.border(positions:[.Top],borderWidth:0,borderColor:UIColor.white)
                }
                return cell
-           }
+             }
        }
 
        extension CalendarView: UICollectionViewDelegateFlowLayout {
@@ -143,4 +142,6 @@ extension CalendarView: UICollectionViewDataSource {
                let width:CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
                let height:CGFloat = width * 2.0
                return CGSize(width:width,height:height)
+
+       }
 }

@@ -1,5 +1,5 @@
 //
-//  PhotoViewController.swift
+//  chatViewController1.swift
 //  odango UIKit
 //
 //  Created by 吉田光 on 2021/03/02.
@@ -7,23 +7,18 @@
 
 import UIKit
 
-class PhotoViewController: UIViewController {
-
+//ホーム、メッセージ、個人それぞれのページ
+class chatViewController1: UIViewController {
+    var text = ""
+    @IBOutlet weak var label1: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        label1.text = text
 
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-       super.viewWillAppear(animated)
-       print("PhotoViewController Will Appear")
-    }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("PhotoViewController Will Disappear")
-    }
     /*
     // MARK: - Navigation
 
