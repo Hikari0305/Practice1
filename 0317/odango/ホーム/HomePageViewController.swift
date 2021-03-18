@@ -9,7 +9,23 @@ import UIKit
 
 class HomePageViewController: UIViewController {
     
-    //ここにSeasonal Imageの画像を”SeasonalRecipe1Image”と紐付け
+    @IBOutlet weak var homeScrollView = UIScrollView!
+    @IBOutlet weak var homeView = UIView!
+    
+    @IBOutlet weak var seasonalRecipeScrollView = UIScrollView!
+    @IBOutlet weak var seasonalRecipeView = UIView!
+
+    override func viewDidLayoutSubviews() {
+        //スクロールする
+        homeScrollView.contentSize = homeView.frame.size
+        homeScrollView.flashScrollIndicators()
+        //スクロールする
+        seasonalRecipeScrollView.contentSize = seasonalRecipeView.frame.size
+        seasonalRecipeScrollView.flashScrollIndicators()
+        
+    }
+    
+    @IBOutlet weak var SeasonalRecipe1Image = UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
