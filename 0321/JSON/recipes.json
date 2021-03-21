@@ -1,0 +1,318 @@
+{
+    "recipes":[
+    {"id": "1",
+    "name": "ハンバーグ",
+    "time": "15分",
+    "ingredients": [
+    {
+    "name": "あいびき肉",
+    "quantity": "400g"
+    },
+    {
+    "name": "みじん切りにした玉ねぎ",
+    "quantity": "１個分"
+    }
+
+    ]
+    "recipe": [
+    {
+    "order": 1
+    "detail": "フライパンに油大さじ１を熱し、玉ねぎを薄く色づくまで..."
+    }]
+},
+
+    
+    {"id": "2",
+     "image": "https://video.kurashiru.com/production/videos/8d71ced3-6efa-46a8-828c-14252b064394/compressed_thumbnail_square_large.jpg?1584946796",
+     "sort": "Pasta and rice",
+     "name": "Curry rice(hidden with oyster sauce)",
+     "time": "30minutes",
+     "calorie": "746kcal"
+     "ingredients": [
+        {
+            "name": "Pork and lump",
+            "quantity": "300g"
+            
+        },
+        {
+            "name": "Carrot",
+            "quantity": "1 bottle"
+            
+        },
+        {
+            "name": "Potato",
+            "quantity": "2pieces"
+            
+        },
+        {
+            "name": "chopped Onion",
+            "quantity": "2 pieces"
+        },
+        {
+            "name": "hopped Garlic",
+            "quantity": "1piece"
+        },
+        {
+            "name": "water",
+            "quantity": "3・1/2cup"
+        },
+        {
+            "name": "curry roux"
+            "quantity": "100g"
+        },
+        {
+            "name": "Oyster sauce"
+            "quantity": "2 teaspoons"
+        },
+        {
+            "name": "rice"
+            "quantity": "800g"
+        },
+        {
+            "name": "salad oil"
+            "quantity": "2tablespoons"
+        }
+            
+    ]
+    "recipe": [
+        {
+            "order": 1
+            "detail": "Cut pork, carrotsand potatoes into bite-sized pieces."
+        },
+        {
+            "order": 2
+            "detail": "Heat the oil in a pan, at Chopped Onion and hopped garlic and fry over low heat until tender. Add the amount of water and the pork, carrots and potatos from 1 to medium heat. After boiling, reduce the heat to low and simmer until the vegetables are cooked."
+        },
+        {
+            "order": 3
+            "detail": "Tern off the heat, at the curry roux and when the roux melts, put it on low heat again, add oyster sause and simmer for another four to five minutes."
+        },
+        {
+            "order": 4
+            "detail": "Place rice on a plate and sprinkle 3"
+        }
+        
+            
+        }]
+},
+    {"id": "3",
+    "image": "https://video.kurashiru.com/production/videos/8d71ced3-6efa-46a8-828c-14252b064394/compressed_thumbnail_square_large.jpg?1584946796",
+     "sort": "Main dish",
+     "name": "Gyoza",
+     "time": "40minutes",
+     "calorie": "239kcal"
+     "ingredients": [
+        {
+            "name": "Dumpling skins",
+            "quantity": "25 sheets"
+            
+        },
+        {
+            "name": "Minced pork",
+            "quantity": "125g"
+            
+        },
+        {
+            "name": "Cabbage",
+            "quantity": "4 sheets(175g)"
+            
+        },
+        {
+            "name": "Chopped green onions",
+            "quantity": "12cm(25g)"
+        },
+        {
+            "name": "Grated ginger",
+            "quantity": "1 teaspoon"
+        },
+        {
+            "name": "grated garlic",
+            "quantity": "1 teaspoon"
+        },
+        {
+            "name": "oyster sauce"
+            "quantity": "1 tablespoon"
+        },
+        {
+            "name": "Maru Chiken soup"
+            "quantity": "2 teaspoons"
+        },
+        {
+            "name": "Salad oil"
+            "quantity": "Appropriate amount"
+        },
+    ]
+    "recipe": [
+        {
+            "order": 1
+            "detail": "Finely chop the cabbage, sprinkle with salt and squeeze the water when it became soft."
+        },
+        {
+            "order": 2
+            "detail": "Put minced meat, cabbage 1, green onions, Grated ginger, grated garlic, oyster sauce and Maru Chiken soup in a bowl and knead well until stickey to make ingredients."
+        },
+        {
+            "order": 3
+            "detail": "Put the ingredients of 2 on the gyoza skin and wrap it in equzl parts."
+        },
+        {
+            "order": 4
+            "detail": "Heat the oil in a frying pan, line up the dumping from 3 and bake them and add a brown color to the bottom. Add water(outside the amount) to half the height of the dumplings, cover and steam over medium to high heat for to 5minutes."
+        },
+        {
+            "order": 5
+            "detail": "When the water is alomost gone, remove the water and take it out to a place when it is crispy"
+        }
+            
+        }]
+},
+    {"id": "4",
+    "image": "https://video.kurashiru.com/production/videos/8d71ced3-6efa-46a8-828c-14252b064394/compressed_thumbnail_square_large.jpg?1584946796",
+     "sort": "Side dish",
+     "name": "Meat and Potatoes",
+     "time": "30minutes",
+     "calorie": "371kcal"
+     "ingredients": [
+        {
+            "name": "Beef chopped meat",
+            "quantity": "150g"
+            
+        },
+        {
+            "name": "onion",
+            "quantity": "1(200g)"
+            
+        },
+        {
+            "name": "Carrot",
+            "quantity": "1(150g)"
+            
+        },
+        {
+            "name": "potatoes",
+            "quantity": "3(150g)"
+        },
+        {
+            "name": "water",
+            "quantity": "2 cups"
+        },
+        {
+            "name": "Sake",
+            "quantity": "2 tablesppons"
+        },
+        {
+            "name": "Hon-Dashi"
+            "quantity": "1 teaspoon"
+        },
+        {
+            "name": "Sugar"
+            "quantity": "1 teaspoon"
+        },
+        {
+            "name": "Mirin"
+            "quantity": "1 tablespoons"
+        },
+        {
+            "name": "Soy sauce"
+            "quantity": "2 tablespoons"
+        },
+        {
+            "name": "Green beans(boiled)"
+            "quantity": "Appropriate amount"
+        },
+        {
+            "name": "Salad oil"
+            "quantity": "1 tablespoon"
+        },
+    ]
+    "recipe": [
+        {
+            "order": 1
+            "detail": "Cut the onions into 8 equal pieces and cut the carrots into 1.5cm wide gingo biloda. Cut the potatoes into 4 equal parts. Cut the potatoes into 3 cm lengths."
+        },
+        {
+            "order": 2
+            "detail": "Heat the oil in a frying pan over medium heat, add the beef and fry. When the color of the meat changes, add the onions, carrots and potatoes in 1 in that order the and fly."
+        },
+        {
+            "order": 3
+            "detail": "Add water and sake, remove the lye when boiling, cover and simmer on low heat for 10 minutes, add Hon-Dashi and Sugar and simmer for another 5 minutes. Add soy sauce and simmer for 5minutes. Add soy sauce and simmer for 5minutes without the lid. Boil the borth so that it returns from the bottom of the frying pan."
+        },
+        {
+            "order": 4
+            "detail": "Serve in a bowl and sprinkle with the green beans from 1."
+        },
+            
+        }]
+},
+    
+    {"id": "5",
+    "image": "https://video.kurashiru.com/production/videos/8d71ced3-6efa-46a8-828c-14252b064394/compressed_thumbnail_square_large.jpg?1584946796",
+     "sort": "Side dish",
+     "name": "Fried Chicken",
+     "time": "20minutes",
+     "calorie": "336kcal"
+     "ingredients": [
+        {
+            "name": "Chicken thigh or fried chicken",
+            "quantity": "2(500g)"
+            
+        },
+        {
+            "name": "Maru Chcken soup",
+            "quantity": "2 teaspoon"
+            
+        },
+        {
+            "name": "liquor",
+            "quantity": "4 teaspoons"
+            
+        },
+        {
+            "name": "Grated ginger",
+            "quantity": "2 teaspoons"
+        },
+        {
+            "name": "Soy sauce",
+            "quantity": "2 teaspoons"
+        },
+        {
+            "name": "Pepper",
+            "quantity": "A little"
+        },
+        {
+            "name": "Cake flour"
+            "quantity": "6 tablespoons"
+        },
+        {
+            "name": "potato starch"
+            "quantity": "2 tablespoons"
+        },
+        {
+            "name": "Salad oil"
+            "quantity": "Appropriate amount"
+        }
+        
+    ]
+    "recipe": [
+        {
+            "order": 1
+            "detail": "Cut chicken into bite-sized pieces. Put the chicken, Maru chicken broth, liquor, Grated ginger, Soy sauce and Pepper in a bowl and rub in ntil the juice is gone."
+        },
+        {
+            "order": 2
+            "detail": "Put oil in a frying pan to a height of 3cm and heat to a low temperature(160℃).Immeiately before frying, soak Cake flour and potato starch in the chicken of 1 well and quickly put it in hot oil."
+        },
+        {
+            "order": 3
+            "detail": "Turn upside down on the medium heat and fry for 3-4mintes, turn to high heat until the outside is crispy. Fry for about 1 mnute. Drain the oil the surface of the oil and remove it."
+        }
+       
+        }]
+},
+    
+
+
+
+
+
