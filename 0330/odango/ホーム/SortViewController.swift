@@ -23,7 +23,7 @@ class sortViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         sortTable?.reloadData()
-        sortTable.reloadSections(NSIndexSet(index: 2) as IndexSet, with: .none)
+//        sortTable.reloadSections(NSIndexSet(index: 1) as IndexSet, with: .none)
         
 /*        for i in 0..<10 {
             recipe1.setTitle(name, for: .normal)
@@ -62,7 +62,6 @@ class sortViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     //セルの中身を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
 //        cell.textLabel!.text = test[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "sortCell") as? SortTableViewCell {
             let recipeInfo = recipeTableInfo[indexPath.row]

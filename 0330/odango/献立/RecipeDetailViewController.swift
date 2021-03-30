@@ -87,7 +87,8 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         checkTableView(tableView)
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath as IndexPath) as? DetailTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath as IndexPath) as? IngTableViewCell
+        let cell2 = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath as IndexPath)
         var textData = ""
         if (tag == 0) {
             //材料取得
@@ -112,35 +113,54 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
         }
         //cellの内容をupdate
         cell?.recipeDetailLabel!.text = textData
-        //折り返しアリに設定
-        cell?.recipeDetailLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
-        //cell内で改行
-        cell?.recipeDetailLabel?.numberOfLines=0
+//        //折り返しアリに設定
+//        cell?.recipeDetailLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
+//        //cell内で改行
+//        cell?.recipeDetailLabel?.numberOfLines=0
         //イメージをアップデートする
         if (self.val![textData] != nil) {
-            cell?.checkBoxImage.image = UIImage(named: "checked-checkbox--v1.png")
+            cell?.checkBoxImage.image = checked
 //            cell.backgroundColor = .lightGray
         } else {
-            cell?.checkBoxImage?.image = UIImage(named: "unchecked-checkbox.png")
+            cell?.checkBoxImage.image = unchecked
 //            cell.backgroundColor = .white
         }
         if cell != nil {
             return cell!
         }
-        return DetailTableViewCell()
+        
+        if (self.val![textData] != nil) {
+            cell?.checkBoxImage2.image = checked
+        } else {
+            cell?.checkBoxImage2.image = unchecked
+        }
+        if cell2 != nil {
+            return cell2
+        }
+        
+        return HowtoTableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? IngTableViewCell {
 //            let cellText = cell.textLabel?.text
-            if cell.imageView?.image == UIImage(named: "checked-checkbox--v1.png") {
+            
+            if cell.checkBoxImage.image == checked {
 //                self.val?.updateValue(false, forKey: cellText!)
-                cell.imageView?.image = UIImage(named: "unchecked-checkbox.png")
+                cell.checkBoxImage.image = unchecked
                 cell.backgroundColor = .white
             } else {
 //                self.val?.updateValue(true, forKey: cellText!)
-                cell.imageView?.image = UIImage(named: "checked-checkbox--v1.png")
+                cell.checkBoxImage.image = checked
                 cell.backgroundColor = .lightGray
+            }
+            cell.isSelected = false
+        }
+        if let cell = tableView.cellForRow(at: indexPath) as? HowtoTableViewCell {
+            if cell.checkBoxImage2.image == checked {
+                cell.checkBoxImage2.image = unchecked
+            } else {
+                cell.checkBoxImage2.image = checked
             }
             cell.isSelected = false
         }

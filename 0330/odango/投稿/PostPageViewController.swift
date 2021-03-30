@@ -7,7 +7,7 @@
 
 import UIKit
     
-class PostPageViewController: UIViewController ,UIScrollViewDelegate{
+class PostPageViewController: UIViewController ,UIScrollViewDelegate {
     
     @IBOutlet var PostView: UIView!
     @IBOutlet weak var postScrollView: UIScrollView!
@@ -21,7 +21,7 @@ class PostPageViewController: UIViewController ,UIScrollViewDelegate{
         postScrollView.contentSize = CGSize(width:postScrollView.frame.size.width * 3,height: postScrollView.frame.size.height)
         
         let postView_width = PostView.frame.width
-        myRecipesLabel.frame = CGRect(x: 14, y: 160, width: postView_width - 28, height: 40)
+        myRecipesLabel.frame = CGRect(x: 14, y: 110, width: postView_width - 28, height: 40)
         myRecipesLabel.text = "My Recipes"
         myRecipesLabel.font = myRecipesLabel.font.withSize(25)
         
@@ -49,7 +49,6 @@ class PostPageViewController: UIViewController ,UIScrollViewDelegate{
     }
     
     func configureSV() {
-
             // scrollViewにcontentsViewを配置させる
             let subView = createContentsView()
             postScrollView.addSubview(subView)
