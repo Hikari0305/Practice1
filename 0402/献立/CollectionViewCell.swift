@@ -23,7 +23,6 @@ class CollectionViewCell: UICollectionViewCell {
         return image
     }()
     
-    
     private var ciFilter: CIFilter!
     var imagePath: String = "hoge"
     

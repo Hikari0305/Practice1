@@ -57,9 +57,9 @@ class MainChooseViewController: UIViewController {
             //do nothing
         }
     }
-    var recipeList = ["pasta", "omelette rice", "Yellowtail teriyaki", "scallop cooked rice"]
-    var imageList = ["3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg", "26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp", "i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg", "recipe.jpg"]
-    //48ce791cb0730c93f32136a00f9baccec902737a.jpg
+    var recipeList = ["pasta", "omelette rice", "Yellowtail teriyaki", "scallop cooked rice", "subuta", "curry rice"]
+    var imageList = ["3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg", "26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp", "i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg", "recipe.jpg", "48ce791cb0730c93f32136a00f9baccec902737a.jpg", "IMG_21642D891D85-1.jpeg"]
+    
     private let collectionView: UICollectionView = {
 
         //セルのレイアウト設計
