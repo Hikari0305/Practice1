@@ -20,7 +20,7 @@ class MenuPageViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         self.calendar.dataSource = self
         self.calendar.delegate = self
     
-        shopListButton.setImage(UIImage(named: "IMG_2224.PNG"), for: .normal)
+        shopListButton.setImage(UIImage(named: "IMG_2224.jpg"), for: .normal)
 //        shopListButton.frame = CGRect(x: 334, y: 0, width: 58, height: 60)
         shopListButton.widthAnchor.constraint(equalToConstant: 40.0).isActive = true
         shopListButton.heightAnchor.constraint(equalToConstant: 30.0).isActive = true

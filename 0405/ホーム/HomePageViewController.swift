@@ -9,10 +9,11 @@ import UIKit
 
 private let reuseIdentifier = "collectionCell"
 
-class HomePageViewController: UIViewController {
+class HomePageViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var homeScrollView: UIScrollView!
-   
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLayoutSubviews() {
         /*スクロールする
         let pageSize = homeScrollView.frame.size
@@ -35,27 +36,39 @@ class HomePageViewController: UIViewController {
         let storyborad = UIStoryboard(name: "SignUp", bundle: nil)
         let nextView = storyborad.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
         self.present(nextView, animated: true, completion: nil)
-    
-        /*let seasonalRecipe1Image = UIImage(named: "3622-300x300.jpg")
-        struct seasonal: Decodable {
-            let date = String.self
-            let name = String.self
-      }
-        do {
-            let testString = seasonal
-            let testData = testString.data(using: .utf8)!
-            let recipe = try JSONDecoder().decode(seasonal.self, from: testData)
-        } catch {
-            print(error)
-            print(error.localizedDescription)*/
-        }
-    
-    /*func update (_ :String) {
-    
-    seasonalRecipe1Label.text =
-    
+        
+        let myTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HomePageViewController.close(_ :)))
+        
+        self.view.addGestureRecognizer(myTap)
+        searchBar.delegate = self
     }
-}*/
+    
+    // 検索バー編集開始時にキャンセルボタン有効化
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar){
+        syusyokuButton.isEnabled = false
+        syusaiButton.isEnabled = false
+        fukusaiButton.isEnabled = false
+        sirumonoButton.isEnabled = false
+    }
+    
+    // エンターキーで検索
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
+        searchBar.resignFirstResponder()
+        searchBar.setShowsCancelButton(false, animated: true)
+    }
+    
+    @objc func close (_ sender: UITapGestureRecognizer) {
+        searchBar.resignFirstResponder()
+        syusyokuButton.isEnabled = true
+        syusaiButton.isEnabled = true
+        fukusaiButton.isEnabled = true
+        sirumonoButton.isEnabled = true
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     weak var syusyokuButton: UIButton!
     weak var syusaiButton: UIButton!
     weak var fukusaiButton: UIButton!
@@ -78,85 +91,79 @@ class HomePageViewController: UIViewController {
         }
     }
     
+    func setUp(_ button: UIButton,_ image: UIImage) {
+        button.layer.cornerRadius = 15
+        button.layer.masksToBounds = true
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
+        button.setBackgroundImage(image, for: .normal)
+    }
+    
+    func labelSetUp(_ label: UILabel) {
+        label.font = label.font.withSize(25)
+        label.backgroundColor = .systemGray5
+    }
+    
     func createContentsView() -> UIView {
         let homeview = UIView()
         let homeview_width = homeScrollView.frame.width
         homeview.frame = CGRect(x: 0, y: 0, width: homeview_width, height: 1000)
-        
         
         let margin = 28
         let space = 12
         let syusyoku = UIButton()
         syusyoku.setTitle("pasta and rice", for: UIControl.State.normal)
         let pi = UIImage(named: "3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg")
-        syusyoku.layer.cornerRadius = 15
-        syusyoku.layer.masksToBounds = true
-        syusyoku.setBackgroundImage(pi, for: .normal)
-        syusyoku.setTitleColor(UIColor.white, for: .normal) // タイトルの色
         let child_width = (Int(homeview_width) - margin - space)/2
         syusyoku.frame = CGRect(x: margin, y: margin, width: child_width, height: child_width)
         homeview.addSubview(syusyoku)
-        syusyoku.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
         syusyokuButton = syusyoku
-        
+        setUp(syusyoku, pi!)
         
         let syusai = UIButton()
         syusai.setTitle("main", for: UIControl.State.normal)
         let pi2 = UIImage(named: "1566136304_1.jpeg")
-        syusai.setBackgroundImage(pi2, for: .normal)
-        syusai.layer.cornerRadius = 15
-        syusai.layer.masksToBounds = true
         let syusaix = (margin*2 + child_width)
         syusai.frame = CGRect(x: syusaix, y: margin, width: child_width, height: child_width)
         homeview.addSubview(syusai)
-        syusai.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
         syusaiButton = syusai
+        setUp(syusai, pi2!)
         
         let fukusai = UIButton()
         fukusai.setTitle("side", for: UIControl.State.normal)
-        fukusai.setTitleColor(UIColor.white, for: .normal)
         let pi3 = UIImage(named: "e6f4b23c.jpg")
-        fukusai.setBackgroundImage(pi3, for: .normal)
-        fukusai.layer.cornerRadius = 15
-        fukusai.layer.masksToBounds = true
         let fukusaiy = (margin*2 + child_width)
         fukusai.frame = CGRect(x: margin, y: fukusaiy, width: child_width, height: child_width)
         homeview.addSubview(fukusai)
-        fukusai.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
         fukusaiButton = fukusai
+        setUp(fukusai, pi3!)
         
         let sirumono = UIButton()
         sirumono.setTitle("soup", for: UIControl.State.normal)
         let pi4 = UIImage(named: "e6f4b23c.jpg")
-        sirumono.layer.cornerRadius = 15
-        sirumono.layer.masksToBounds = true
-        sirumono.setBackgroundImage(pi4, for: .normal)
         sirumono.frame = CGRect(x: syusaix, y: fukusaiy, width: child_width, height: child_width)
         homeview.addSubview(sirumono)
-        sirumono.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
         sirumonoButton = sirumono
+        setUp(sirumono, pi4!)
         
         let seasonalRecipe = UILabel()
         seasonalRecipe.text = "Seasonal Recipes"
         let seasonalRecipey = margin*3 + child_width*2
         let seasonalRecipe_width = Int(homeview_width) + margin/2
         seasonalRecipe.frame = CGRect(x: 14, y: seasonalRecipey, width: seasonalRecipe_width, height: 40)
-        seasonalRecipe.font = seasonalRecipe.font.withSize(25)
-        seasonalRecipe.backgroundColor = .systemGray5
+        labelSetUp(seasonalRecipe)
         homeview.addSubview(seasonalRecipe)
         
         let seasonalScrollView = UIScrollView()
         let seasonalScrollViewy = seasonalRecipey + margin + 40
         seasonalScrollView.frame = CGRect(x: 14, y: seasonalScrollViewy, width: Int(seasonalRecipe_width
         ), height: child_width)
-        //seasonalScrollView.backgroundColor = .red
         homeview.addSubview(seasonalScrollView)
         
         let seasonalView = UIView()
         let seasonalView_height = 250
         seasonalView.frame = CGRect(x: 0, y: seasonalScrollViewy, width: 1500, height: seasonalView_height)
         seasonalView.backgroundColor = .blue
-        
         
         let label = UILabel()
         let label_x = seasonalView.center.x
@@ -173,8 +180,7 @@ class HomePageViewController: UIViewController {
         preferences.text = "Preferences"
         let preferencesy = seasonalRecipey + seasonalView_height + margin
         preferences.frame = CGRect(x: 14, y: preferencesy, width: seasonalRecipe_width, height: 40)
-        preferences.font = seasonalRecipe.font.withSize(25)
-        preferences.backgroundColor = .systemGray5
+        labelSetUp(preferences)
         homeview.addSubview(preferences)
         
         return homeview

@@ -34,7 +34,8 @@ class ChatListViewController: UIViewController {
     private func fetchChatroomsInfoFromFirestore() {
         Firestore.firestore().collection("ChatRooms")
             .addSnapshotListener { (snapshots, err) in
-
+                
+                //            .getDocuments { (snapshots, err) in
                 if err != nil {
                     print("ChatRoom情報の取得に失敗しました")
                     return
@@ -55,14 +56,14 @@ class ChatListViewController: UIViewController {
     
     private func handleAddedDocumentChange(documentChange: DocumentChange) {
         let dic = documentChange.document.data()
-        let chatroom = ChatRoom(dic: dic)
+            let chatroom = ChatRoom(dic: dic)
         chatroom.documentId = documentChange.document.documentID
             
             guard let uid = Auth.auth().currentUser?.uid else { return }
             chatroom.members?.forEach { (memberUid) in
                 if memberUid != uid {
                     Firestore.firestore().collection("users").document(memberUid).getDocument {
-                        (snapshot, err)in
+                        (snapshot,err)in
                         if err != nil {
                             print("ユーザー情報の取得に失敗しました")
                             return
@@ -73,7 +74,7 @@ class ChatListViewController: UIViewController {
                         
                         chatroom.partnerUser = user
                         self.chatrooms.append(chatroom)
-                        print("self.chatrooms.count: ", self.chatrooms.count)
+                        print(": ", self.chatrooms.count)
                         self.chatListTableView.reloadData()
                         
                     }
@@ -89,6 +90,8 @@ class ChatListViewController: UIViewController {
         
         let rightBarButton = UIBarButtonItem(title: "New Chat", style: .plain, target: self, action: #selector(tappedNavRightBarButton))
         navigationItem.rightBarButtonItem = rightBarButton
+        let font = UIFont.boldSystemFont(ofSize: 18)
+        rightBarButton.setTitleTextAttributes([NSAttributedString.Key.font: font], for: UIControl.State.normal)
     }
     
     private func confirmLoggedInUser() {
@@ -104,6 +107,7 @@ class ChatListViewController: UIViewController {
         let storyboard = UIStoryboard.init(name: "UserList", bundle: nil)
         let userListViewController = storyboard.instantiateViewController(identifier: "UserListViewController")
         let nav = UINavigationController(rootViewController: userListViewController)
+        
         self.present(nav, animated: true, completion: nil)
     }
     private func fetchLoginUserInfo() {

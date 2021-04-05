@@ -20,7 +20,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var alreadyHaveAccountButton: UIButton!
     @IBOutlet weak var statusLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +30,21 @@ class SignUpViewController: UIViewController {
         usernameTextField.delegate = self
         registerButton.isEnabled = false
         registerButton.backgroundColor = .rgb(red: 100, green: 100, blue: 100)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // キーボードを閉じる
+        emailTextField.resignFirstResponder()
+        emailTextField.text = textField.text
+        passwordTextField.resignFirstResponder()
+        passwordTextField.text = textField.text
+        usernameTextField.resignFirstResponder()
+        usernameTextField.text = textField.text
+        return true
     }
     
     @objc private func tappedProfileImageButton() {
