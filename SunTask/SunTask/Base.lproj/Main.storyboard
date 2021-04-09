@@ -36,6 +36,14 @@
                                     <segue destination="GqK-0G-wZ6" kind="show" id="Fcu-Ko-hPc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoE-Sa-kOk">
+                                <rect key="frame" x="181" y="565" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play button"/>
+                                <connections>
+                                    <action selector="onPlayBtnTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UiY-UH-pNe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -6,7 +6,9 @@
 //
 
 import UIKit
-
+import AVFoundation
+import MediaPlayer
+import AVKit
 
 //
 // Data struct
@@ -66,20 +68,61 @@ class ViewController: UIViewController {
     private var ciFilter: CIFilter!
     private var ciImage: CIImage!
     private var isSelected: Bool = false
+    var playerController = AVPlayerViewController()
+    var player = AVPlayer()
     
-    
+    private var fileName = "test"
+    private var fileEx = "mp4"
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("[debug] viewDidLoad is called.")
         
+        // setup imageview
         guard let uiImage = UIImage(named: "regular_img001_1.jpg"), let ciImg = uiImage.ciImage ?? CIImage(image: uiImage) else { return }
-        ciImage = ciImg
         
-        imageView.image = uiImage
+        self.ciImage = ciImg
+        self.imageView.image = uiImage
         
+        // setup filter
+        self.ciFilter = CIFilter(name: "CIPhotoEffectProcess")
         
-        //getModel()
+        // setup Audio session
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playback, mode: .moviePlayback)
+            
+        } catch {
+            print("Setting category to AVAudioSessionCategoryPlayback failed.")
+        }
+        
+        do {
+            try audioSession.setActive(true)
+            print("Audio session set active !!")
+        } catch {
+            
+        }
+    }
+    
+    private func playMovie(fileName: String, fileExtension: String) {
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: fileExtension) else {
+            print("Url is nil")
+            return
+        }
+        
+        print("play movie!!")
+        
+        // AVPlayerにアイテムをセット
+        let item = AVPlayerItem(url: url)
+        player.replaceCurrentItem(with: item)
+            
+        // 動画プレイヤーにplayerをセット
+        playerController.player = player
+        
+        // 動画プレイヤーを表示して再生
+        self.present(playerController, animated: true) {
+            self.player.play()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -88,25 +131,28 @@ class ViewController: UIViewController {
     
     
     @IBAction func onTouchedInside(_ sender: Any) {
-        ciFilter = CIFilter(name: "CIPhotoEffectProcess")
-        if (isSelected) {
-            imageView.image = UIImage(named: "regular_img001_1.jpg")
+        if (self.isSelected) {
+            self.imageView.image = UIImage(named: "regular_img001_1.jpg")
         }
         else
         {
-            if (ciFilter != nil) {
-                ciFilter.setValue(ciImage, forKey: kCIInputImageKey)
-            }
-            
-            if let filteredImage=ciFilter.outputImage {
-                imageView.image = UIImage(ciImage: filteredImage)
+            if (self.ciFilter != nil) {
+                self.ciFilter.setValue(self.ciImage, forKey: kCIInputImageKey)
+                // self.ciFilter.setValue(0.1, forKey: kCIInputContrastKey)
+                if let filteredImage=self.ciFilter.outputImage {
+                    self.imageView.image = UIImage(ciImage: filteredImage)
+                }
             }
         }
         
-        isSelected = !isSelected
+        self.isSelected = !self.isSelected
         
     }
-    
+  
+    @IBAction func onPlayBtnTouched(_ sender: Any) {
+        print("touched play btn!")
+        playMovie(fileName: self.fileName, fileExtension: self.fileEx)
+    }
     
     // get Model from JSON
     func getModel() {
