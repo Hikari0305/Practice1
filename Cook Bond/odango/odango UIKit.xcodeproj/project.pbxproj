@@ -1,0 +1,1600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F00A4AB260EFE08005298AA /* _i_icon_12314_icon_123140_256.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4A8260EFE08005298AA /* _i_icon_12314_icon_123140_256.PNG */; };
+		2F00A4AE260F06A1005298AA /* IMG_2224.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4AD260F06A0005298AA /* IMG_2224.PNG */; };
+		2F00A4B2260F54FF005298AA /* フロー図.pptx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4B1260F54FE005298AA /* フロー図.pptx.jpg */; };
+		2F00A4BA260F5519005298AA /* フロー図.pptx-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4B4260F5518005298AA /* フロー図.pptx-6.jpg */; };
+		2F00A4BB260F5519005298AA /* フロー図.pptx-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4B5260F5518005298AA /* フロー図.pptx-4.jpg */; };
+		2F00A4BC260F5519005298AA /* フロー図.pptx-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4B6260F5518005298AA /* フロー図.pptx-7.jpg */; };
+		2F00A4BD260F5519005298AA /* フロー図.pptx-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4B7260F5519005298AA /* フロー図.pptx-2.jpg */; };
+		2F00A4BE260F5519005298AA /* フロー図.pptx-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4B8260F5519005298AA /* フロー図.pptx-3.jpg */; };
+		2F00A4BF260F5519005298AA /* フロー図.pptx-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F00A4B9260F5519005298AA /* フロー図.pptx-5.jpg */; };
+		2F02C284260FEA5600CC1729 /* フロー図.pptx-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F02C281260FEA5500CC1729 /* フロー図.pptx-8.jpg */; };
+		2F02C287260FFD5900CC1729 /* SortTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02C286260FFD5900CC1729 /* SortTableViewCell.swift */; };
+		2F0670A025FD621700E3CD2E /* AccessToPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F06709F25FD621700E3CD2E /* AccessToPhotoViewController.swift */; };
+		2F0670C325FDDB9C00E3CD2E /* 3622-300x300.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F0670C225FDDB9C00E3CD2E /* 3622-300x300.jpg */; };
+		2F0670D225FDDBB000E3CD2E /* watch.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0670D125FDDBB000E3CD2E /* watch.png */; };
+		2F06712C25FF41E400E3CD2E /* PostPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F06712A25FF41E400E3CD2E /* PostPageViewController.swift */; };
+		2F067146260097A500E3CD2E /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067145260097A500E3CD2E /* MenuTableViewController.swift */; };
+		2F06717B26017F7900E3CD2E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F06717A26017F7900E3CD2E /* HomePageViewController.swift */; };
+		2F0671822601BF1900E3CD2E /* EachDayRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0671812601BF1900E3CD2E /* EachDayRecipeViewController.swift */; };
+		2F06D27326071E0A00F3BCDC /* GridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F06D27226071E0A00F3BCDC /* GridLayoutView.swift */; };
+		2F1888DC260AAC2C0048A74E /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1888DB260AAC2C0048A74E /* RecipeDetailViewController.swift */; };
+		2F1888E5260AFC980048A74E /* 764.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F1888E4260AFC980048A74E /* 764.png */; };
+		2F1888EC260AFF5E0048A74E /* A05873F7-2336-47A7-9C9B-7B4DD97FBA10_1_105_c.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F1888EB260AFF5E0048A74E /* A05873F7-2336-47A7-9C9B-7B4DD97FBA10_1_105_c.jpeg */; };
+		2F1888EF260B01530048A74E /* _i_icon_00484_icon_004840_256.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F1888EE260B01530048A74E /* _i_icon_00484_icon_004840_256.jpg */; };
+		2F1888F2260B01E40048A74E /* _i_icon_00484_icon_004840_256 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F1888F1260B01E40048A74E /* _i_icon_00484_icon_004840_256 2.jpg */; };
+		2F188904260B14070048A74E /* DroidSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F188901260B14070048A74E /* DroidSans.ttf */; };
+		2F188905260B14070048A74E /* DroidSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F188902260B14070048A74E /* DroidSans-Bold.ttf */; };
+		2F188906260B14070048A74E /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2F188903260B14070048A74E /* Apache License.txt */; };
+		2F1E9A8F261928B000678E26 /* PreparingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E9A8E261928B000678E26 /* PreparingViewController.swift */; };
+		2F1E9AC42619E5F800678E26 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E9AC32619E5F800678E26 /* ChatRoom.swift */; };
+		2F206EB22612939400AB7466 /* IngTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F206EB12612939400AB7466 /* IngTableViewCell.swift */; };
+		2F206EB52612DE1E00AB7466 /* PostEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F206EB42612DE1E00AB7466 /* PostEnterViewController.swift */; };
+		2F206EB9261354D800AB7466 /* HowtoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F206EB8261354D800AB7466 /* HowtoTableViewCell.swift */; };
+		2F206EC0261372FD00AB7466 /* 2021-03-29 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 2F206EBB261372FC00AB7466 /* 2021-03-29 (1).png */; };
+		2F206EC1261372FD00AB7466 /* 2021-03-29 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 2F206EBC261372FC00AB7466 /* 2021-03-29 (2).png */; };
+		2F206EC2261372FD00AB7466 /* 2021-03-28 (6).png in Resources */ = {isa = PBXBuildFile; fileRef = 2F206EBD261372FD00AB7466 /* 2021-03-28 (6).png */; };
+		2F206EC3261372FD00AB7466 /* 2021-03-30 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 2F206EBE261372FD00AB7466 /* 2021-03-30 (1).png */; };
+		2F206EC4261372FD00AB7466 /* 2021-03-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F206EBF261372FD00AB7466 /* 2021-03-30.png */; };
+		2F206ECA2613E21700AB7466 /* 16303ea280c958d0ef4d6c3420809cc0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F206EC72613E21700AB7466 /* 16303ea280c958d0ef4d6c3420809cc0.jpg */; };
+		2F206F112614A2D100AB7466 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F022614A2D100AB7466 /* ChatInputAccessoryView.xib */; };
+		2F206F122614A2D100AB7466 /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F032614A2D100AB7466 /* ChatRoomTableViewCell.xib */; };
+		2F206F132614A2D100AB7466 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F052614A2D100AB7466 /* ChatRoom.storyboard */; };
+		2F206F162614A2D100AB7466 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F206F0A2614A2D100AB7466 /* ChatListViewController.swift */; };
+		2F206F172614A2D100AB7466 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F206F0B2614A2D100AB7466 /* ChatRoomViewController.swift */; };
+		2F206F182614A2D100AB7466 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F206F0D2614A2D100AB7466 /* ChatRoomTableViewCell.swift */; };
+		2F206F192614A2D100AB7466 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F206F0E2614A2D100AB7466 /* ChatInputAccessoryView.swift */; };
+		2F206F2D2614AA5F00AB7466 /* ChatList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F2C2614AA5F00AB7466 /* ChatList.storyboard */; };
+		2F206F5726153D9F00AB7466 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F206F5626153D9F00AB7466 /* CollectionViewCell.swift */; };
+		2F206F5A26157DAA00AB7466 /* 4172025_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F5926157DA900AB7466 /* 4172025_m.jpg */; };
+		2F206F5D26157DD200AB7466 /* 4384100_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F5C26157DD200AB7466 /* 4384100_s.jpg */; };
+		2F206F6026157DED00AB7466 /* sp_detail_main_PS_K10_1965M.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F5F26157DED00AB7466 /* sp_detail_main_PS_K10_1965M.jpg */; };
+		2F206F6326157EC300AB7466 /* 48ce791cb0730c93f32136a00f9baccec902737a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F6226157EC300AB7466 /* 48ce791cb0730c93f32136a00f9baccec902737a.jpg */; };
+		2F206F662615802600AB7466 /* i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F652615802600AB7466 /* i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg */; };
+		2F206F692615813B00AB7466 /* recipe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F682615813A00AB7466 /* recipe.jpg */; };
+		2F206F7326158AD100AB7466 /* 26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F7226158AD100AB7466 /* 26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp */; };
+		2F206F762615A22500AB7466 /* IMG_21642D891D85-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F752615A22500AB7466 /* IMG_21642D891D85-1.jpeg */; };
+		2F206F792615D7D000AB7466 /* send-icon in Resources */ = {isa = PBXBuildFile; fileRef = 2F206F782615D7CF00AB7466 /* send-icon */; };
+		2F336F7525F2412400680064 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F336F7425F2412400680064 /* UIColor-Extension.swift */; };
+		2F336F7F25F25B8500680064 /* FriendAddPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F336F7E25F25B8500680064 /* FriendAddPopupViewController.swift */; };
+		2F336F9825F3177F00680064 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F336F9725F3177F00680064 /* recipes.json */; };
+		2F336F9C25F319AA00680064 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F336F9B25F319AA00680064 /* Recipe.swift */; };
+		2F336FA125F3619E00680064 /* messageSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F336FA025F3619E00680064 /* messageSetting.swift */; };
+		2F3C886B25EA5E6E008D08DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C886A25EA5E6E008D08DA /* ViewController.swift */; };
+		2F3C889925EC73EA008D08DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C889725EC73EA008D08DA /* MainViewController.swift */; };
+		2F3C889A25EC73EA008D08DA /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C889825EC73EA008D08DA /* MainViewController.xib */; };
+		2F3C88B225ECD0A3008D08DA /* MyRecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88B025ECD0A3008D08DA /* MyRecipeTableViewController.swift */; };
+		2F3C88B325ECD0A3008D08DA /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C88B125ECD0A3008D08DA /* TableViewController.xib */; };
+		2F3C88B825ECD672008D08DA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88B625ECD672008D08DA /* CollectionViewController.swift */; };
+		2F3C88B925ECD672008D08DA /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C88B725ECD672008D08DA /* CollectionViewController.xib */; };
+		2F3C88FA25ED99BC008D08DA /* CJCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C88F925ED99BC008D08DA /* CJCheckBox.swift */; };
+		2F3C890425EDA139008D08DA /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C890325EDA139008D08DA /* ShoppingTableViewController.swift */; };
+		2F3C890725EDBDCC008D08DA /* AssetsCheckmark in Resources */ = {isa = PBXBuildFile; fileRef = 2F3C890625EDBDCC008D08DA /* AssetsCheckmark */; };
+		2F3FE694261AEE5E00046FBE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3FE693261AEE5E00046FBE /* Message.swift */; };
+		2F3FE6B4261B40ED00046FBE /* IMG_2224.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F3FE6B3261B40ED00046FBE /* IMG_2224.jpg */; };
+		2F3FE6BE261DD1AE00046FBE /* 20191004115411.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F3FE6BD261DD1AE00046FBE /* 20191004115411.jpg */; };
+		2F3FE6C1261DD63500046FBE /* IMG_0830.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F3FE6C0261DD63500046FBE /* IMG_0830.jpg */; };
+		2F3FE6C4261E5DA500046FBE /* EachDayCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3FE6C3261E5DA400046FBE /* EachDayCollectionCell.swift */; };
+		2F67FB77260380F5008DEEFA /* MainChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F67FB76260380F5008DEEFA /* MainChooseViewController.swift */; };
+		2F86A834261EEB3800643213 /* R6YPnAG4NeWjkh21617800491_1617800628.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A81C261EEB3800643213 /* R6YPnAG4NeWjkh21617800491_1617800628.png */; };
+		2F86A837261EEF7B00643213 /* IMG_AA0FA68BD3B7-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A836261EEF7B00643213 /* IMG_AA0FA68BD3B7-1.jpeg */; };
+		2F86A83A261EF23D00643213 /* IMG_2256.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A839261EF23D00643213 /* IMG_2256.JPG */; };
+		2F86A83D261EF80400643213 /* Jh6zrTBm1vDmEVI1617869322_1617869982.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A83C261EF80400643213 /* Jh6zrTBm1vDmEVI1617869322_1617869982.png */; };
+		2F86A840261EFA4900643213 /* eO9Cbr8auNC0lAj1617830837_1617830947.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A83F261EFA4900643213 /* eO9Cbr8auNC0lAj1617830837_1617830947.png */; };
+		2F86A843261EFC2C00643213 /* Qlr572rGmtXTc2j1617831052_1617831087.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A842261EFC2C00643213 /* Qlr572rGmtXTc2j1617831052_1617831087.png */; };
+		2F86A848261EFCBB00643213 /* 2dEyqo40YD1VhiQ1617831281_1617831364.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A846261EFCBA00643213 /* 2dEyqo40YD1VhiQ1617831281_1617831364.png */; };
+		2F86A84C261F008D00643213 /* スクリーンショット 2021-04-08 18.10.39.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A84B261F008D00643213 /* スクリーンショット 2021-04-08 18.10.39.png */; };
+		2F86A852261F0DA400643213 /* 2021-04-08 (3).png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A84E261F0DA200643213 /* 2021-04-08 (3).png */; };
+		2F86A853261F0DA400643213 /* 2021-04-08 (5).png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A84F261F0DA300643213 /* 2021-04-08 (5).png */; };
+		2F86A854261F0DA400643213 /* 2021-04-08 (4).png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A850261F0DA300643213 /* 2021-04-08 (4).png */; };
+		2F86A855261F0DA400643213 /* 2021-04-08 (6).png in Resources */ = {isa = PBXBuildFile; fileRef = 2F86A851261F0DA300643213 /* 2021-04-08 (6).png */; };
+		2F86A85B262069F800643213 /* SideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F86A85A262069F800643213 /* SideCollectionViewCell.swift */; };
+		2F938267260D9D7000C73267 /* unchecked-checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F938264260D9D7000C73267 /* unchecked-checkbox.png */; };
+		2F93826A260D9DAF00C73267 /* checked-checkbox--v1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F938269260D9DAF00C73267 /* checked-checkbox--v1.png */; };
+		2F97B90A25F180B0002567A2 /* MenuPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97B90925F180B0002567A2 /* MenuPageViewController.swift */; };
+		2FAC1C5725E0CE56008EFB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5625E0CE56008EFB1E /* AppDelegate.swift */; };
+		2FAC1C5925E0CE56008EFB1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5825E0CE56008EFB1E /* SceneDelegate.swift */; };
+		2FAC1C5E25E0CE56008EFB1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5C25E0CE56008EFB1E /* Main.storyboard */; };
+		2FAC1C6025E0CE59008EFB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */; };
+		2FAC1C6325E0CE59008EFB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC1C6125E0CE59008EFB1E /* LaunchScreen.storyboard */; };
+		2FCD8D58261142E70025C1CD /* IngTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD8D57261142E70025C1CD /* IngTableView.swift */; };
+		2FD1040025F3CDF700E1C738 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103E325F3CDF600E1C738 /* FSCalendarAppearance.m */; };
+		2FD1040125F3CDF700E1C738 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103E425F3CDF600E1C738 /* FSCalendarCalculator.m */; };
+		2FD1040225F3CDF700E1C738 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103E525F3CDF600E1C738 /* FSCalendarWeekdayView.m */; };
+		2FD1040325F3CDF700E1C738 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103E725F3CDF600E1C738 /* FSCalendarDelegationProxy.m */; };
+		2FD1040425F3CDF700E1C738 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103E925F3CDF600E1C738 /* FSCalendarCell.m */; };
+		2FD1040525F3CDF700E1C738 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103EC25F3CDF600E1C738 /* FSCalendarHeaderView.m */; };
+		2FD1040625F3CDF700E1C738 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103ED25F3CDF600E1C738 /* FSCalendarDelegationFactory.m */; };
+		2FD1040725F3CDF700E1C738 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103EE25F3CDF600E1C738 /* FSCalendarStickyHeader.m */; };
+		2FD1040825F3CDF700E1C738 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103F325F3CDF600E1C738 /* FSCalendarConstants.m */; };
+		2FD1040925F3CDF700E1C738 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103F425F3CDF600E1C738 /* FSCalendarExtensions.m */; };
+		2FD1040A25F3CDF700E1C738 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103F625F3CDF700E1C738 /* FSCalendar.m */; };
+		2FD1040B25F3CDF700E1C738 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103F825F3CDF700E1C738 /* FSCalendarCollectionView.m */; };
+		2FD1040C25F3CDF700E1C738 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103FD25F3CDF700E1C738 /* FSCalendarTransitionCoordinator.m */; };
+		2FD1040D25F3CDF700E1C738 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103FE25F3CDF700E1C738 /* FSCalendarSeparatorDecorationView.m */; };
+		2FD1040E25F3CDF700E1C738 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD103FF25F3CDF700E1C738 /* FSCalendarCollectionViewLayout.m */; };
+		2FD1041325F3CE5E00E1C738 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1041125F3CE5E00E1C738 /* README.md */; };
+		2FD1041425F3CE5E00E1C738 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1041225F3CE5E00E1C738 /* LICENSE */; };
+		2FD1041825F3CEF000E1C738 /* FSCalendar.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1041725F3CEF000E1C738 /* FSCalendar.podspec.json */; };
+		2FD1041B25F3CF1000E1C738 /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1041A25F3CF0F00E1C738 /* Manifest.lock */; };
+		2FD1041E25F3CF1A00E1C738 /* odango UIKit.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1041D25F3CF1A00E1C738 /* odango UIKit.xcworkspace */; };
+		2FD1042225F3CF4300E1C738 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1042125F3CF4300E1C738 /* FSCalendar-dummy.m */; };
+		2FD1042525F3CF4A00E1C738 /* FSCalendar-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1042425F3CF4A00E1C738 /* FSCalendar-Info.plist */; };
+		2FD1043425F3CFE600E1C738 /* Pods-odango UIKit-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1043325F3CFE600E1C738 /* Pods-odango UIKit-acknowledgements.markdown */; };
+		2FD1043725F3CFEB00E1C738 /* Pods-odango UIKit-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1043625F3CFEB00E1C738 /* Pods-odango UIKit-acknowledgements.plist */; };
+		2FD1043A25F3CFEF00E1C738 /* Pods-odango UIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1043925F3CFEF00E1C738 /* Pods-odango UIKit-dummy.m */; };
+		2FD1043D25F3CFF300E1C738 /* Pods-odango UIKit-frameworks-Debug-input-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1043C25F3CFF300E1C738 /* Pods-odango UIKit-frameworks-Debug-input-files.xcfilelist */; };
+		2FD1044025F3CFF700E1C738 /* Pods-odango UIKit-frameworks-Debug-output-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1043F25F3CFF700E1C738 /* Pods-odango UIKit-frameworks-Debug-output-files.xcfilelist */; };
+		2FD1044325F3CFFB00E1C738 /* Pods-odango UIKit-frameworks-Release-input-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1044225F3CFFB00E1C738 /* Pods-odango UIKit-frameworks-Release-input-files.xcfilelist */; };
+		2FD1044625F3CFFF00E1C738 /* Pods-odango UIKit-frameworks-Release-output-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1044525F3CFFF00E1C738 /* Pods-odango UIKit-frameworks-Release-output-files.xcfilelist */; };
+		2FD1044925F3D00200E1C738 /* Pods-odango UIKit-frameworks.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1044825F3D00200E1C738 /* Pods-odango UIKit-frameworks.sh */; };
+		2FD1045025F3D00E00E1C738 /* Pods-odango UIKit.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1044F25F3D00E00E1C738 /* Pods-odango UIKit.debug.xcconfig */; };
+		2FD1045425F3D01600E1C738 /* Pods-odango UIKit.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1045325F3D01600E1C738 /* Pods-odango UIKit.release.xcconfig */; };
+		2FD1047325F485F200E1C738 /* FSCalendar.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1047225F485F200E1C738 /* FSCalendar.debug.xcconfig */; };
+		2FD1047725F4860500E1C738 /* FSCalendar.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1047625F4860500E1C738 /* FSCalendar.release.xcconfig */; };
+		2FD1048A25F4885B00E1C738 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1048925F4885B00E1C738 /* SortViewController.swift */; };
+		2FEA5CCF26216CF000547704 /* IMG_0761.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2FEA5CB726216CF000547704 /* IMG_0761.mov */; };
+		2FEA5D1B2621BAB000547704 /* mypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA5D1A2621BAB000547704 /* mypageViewController.swift */; };
+		2FEA5D1E2621BB1C00547704 /* 2OsIqUVw2LhISAd1617714975_1617715018.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FEA5D1D2621BB1C00547704 /* 2OsIqUVw2LhISAd1617714975_1617715018.png */; };
+		2FEA5D222621BB3A00547704 /* unnamed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FEA5D212621BB3A00547704 /* unnamed.jpg */; };
+		2FEA5D262621BB5200547704 /* 4462576_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FEA5D252621BB5200547704 /* 4462576_s.jpg */; };
+		2FFB37F22615E86E00FEB3CC /* IMG_2237.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB37E42615E86E00FEB3CC /* IMG_2237.JPG */; };
+		2FFB37F32615E86E00FEB3CC /* IMG_2238.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB37F12615E86E00FEB3CC /* IMG_2238.PNG */; };
+		2FFB37F62615ED9E00FEB3CC /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB37F52615ED9E00FEB3CC /* SignUp.storyboard */; };
+		2FFB37F92615F13600FEB3CC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB37F82615F13600FEB3CC /* SignUpViewController.swift */; };
+		2FFB38E32616AB6500FEB3CC /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB38CC2616AB6500FEB3CC /* RecipeModel.swift */; };
+		2FFB38EB2616AC3A00FEB3CC /* 1566136304_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB38E62616AC3A00FEB3CC /* 1566136304_1.jpeg */; };
+		2FFB38EC2616AC3A00FEB3CC /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB38E72616AC3A00FEB3CC /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */; };
+		2FFB38ED2616AC3A00FEB3CC /* sp_detail_main_COP08_AA_461.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB38E82616AC3A00FEB3CC /* sp_detail_main_COP08_AA_461.jpg */; };
+		2FFB38EE2616AC3A00FEB3CC /* e6f4b23c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB38E92616AC3A00FEB3CC /* e6f4b23c.jpg */; };
+		2FFB38EF2616AC3A00FEB3CC /* QP10004840_1L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB38EA2616AC3A00FEB3CC /* QP10004840_1L.jpg */; };
+		2FFB38FF2616FAF200FEB3CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB38FE2616FAF200FEB3CC /* GoogleService-Info.plist */; };
+		2FFB390E261730E200FEB3CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB390D261730E200FEB3CC /* User.swift */; };
+		2FFB39162617591C00FEB3CC /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB39152617591B00FEB3CC /* UserList.storyboard */; };
+		2FFB391926175A7E00FEB3CC /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB391826175A7E00FEB3CC /* UserListViewController.swift */; };
+		B8E96D8AD38E967AD33848E5 /* Pods_odango_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C831CFED890362EDFDB9A82 /* Pods_odango_UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F1E9AA7261928B400678E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DAD7D76FC007F48AE48F2FD15BF01BB;
+			remoteInfo = Nuke;
+		};
+		2F206F3A2614AA6000AB7466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2B63D462DB7F827C4B11FD51E4F8E2D;
+			remoteInfo = FirebaseCore;
+		};
+		2F206F3C2614AA6000AB7466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8CC9178C366942FD6FF6A115604EAD58;
+			remoteInfo = FirebaseCoreDiagnostics;
+		};
+		2F206F3E2614AA6000AB7466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13C8C8B254851998F9289F71229B28A2;
+			remoteInfo = FirebaseInstallations;
+		};
+		2F206F402614AA6000AB7466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 856B5CD56F194FAD26EA91620B66D614;
+			remoteInfo = GoogleDataTransport;
+		};
+		2F206F422614AA6000AB7466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B43874C6CBB50E7134FBEC24BABFE14F;
+			remoteInfo = GoogleUtilities;
+		};
+		2F206F442614AA6000AB7466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06FC5C9CF96D60C50FCD47D339C91951;
+			remoteInfo = nanopb;
+		};
+		2F206F462614AA6000AB7466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3347A1AB6546F0A3977529B8F199DC41;
+			remoteInfo = PromisesObjC;
+		};
+		2FD1046725F4847100E1C738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95209B8BB966524BC76543F99C75F5FE;
+			remoteInfo = FSCalendar;
+		};
+		2FD1046925F4847100E1C738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F558EB162DE27612E0A16C1389871593;
+			remoteInfo = "Pods-odango UIKit";
+		};
+		2FFB389F2616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF96B57ADE05E8909F823BDF6868B3E3;
+			remoteInfo = abseil;
+		};
+		2FFB38A12616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 514D7742C6CBB0BDBD9984AEE97DDFDE;
+			remoteInfo = "BoringSSL-GRPC";
+		};
+		2FFB38A32616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43B1E4CD7B30B9FD278100133C2AC788;
+			remoteInfo = FirebaseAuth;
+		};
+		2FFB38A52616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92000153CD73F7FC2DBAB4AB708269F3;
+			remoteInfo = FirebaseFirestore;
+		};
+		2FFB38A72616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CF8FA5F01F446F01AAC7331075452AD;
+			remoteInfo = FirebaseStorage;
+		};
+		2FFB38A92616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1911113E0FBF13CFF9132E5FF7685228;
+			remoteInfo = "gRPC-C++";
+		};
+		2FFB38AB2616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7C87B5D0A6752AFA2642F1BCA967A3;
+			remoteInfo = "gRPC-C++-gRPCCertificates-Cpp";
+		};
+		2FFB38AD2616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B471867C535B02FA55D87E260F6480F8;
+			remoteInfo = "gRPC-Core";
+		};
+		2FFB38AF2616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C1998E0D8085221AD87F89B614C10E52;
+			remoteInfo = GTMSessionFetcher;
+		};
+		2FFB38B12616AA2700FEB3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A9F46A999C47653013D3AD854352507;
+			remoteInfo = "leveldb-library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		084EBFD846FB76727BD68E66 /* Pods-odango UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-odango UIKit.release.xcconfig"; path = "Target Support Files/Pods-odango UIKit/Pods-odango UIKit.release.xcconfig"; sourceTree = "<group>"; };
+		2F00A4A8260EFE08005298AA /* _i_icon_12314_icon_123140_256.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _i_icon_12314_icon_123140_256.PNG; sourceTree = "<group>"; };
+		2F00A4AD260F06A0005298AA /* IMG_2224.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2224.PNG; sourceTree = "<group>"; };
+		2F00A4B1260F54FE005298AA /* フロー図.pptx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "フロー図.pptx.jpg"; sourceTree = "<group>"; };
+		2F00A4B4260F5518005298AA /* フロー図.pptx-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "フロー図.pptx-6.jpg"; sourceTree = "<group>"; };
+		2F00A4B5260F5518005298AA /* フロー図.pptx-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "フロー図.pptx-4.jpg"; sourceTree = "<group>"; };
+		2F00A4B6260F5518005298AA /* フロー図.pptx-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "フロー図.pptx-7.jpg"; sourceTree = "<group>"; };
+		2F00A4B7260F5519005298AA /* フロー図.pptx-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "フロー図.pptx-2.jpg"; sourceTree = "<group>"; };
+		2F00A4B8260F5519005298AA /* フロー図.pptx-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "フロー図.pptx-3.jpg"; sourceTree = "<group>"; };
+		2F00A4B9260F5519005298AA /* フロー図.pptx-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "フロー図.pptx-5.jpg"; sourceTree = "<group>"; };
+		2F02C281260FEA5500CC1729 /* フロー図.pptx-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "フロー図.pptx-8.jpg"; sourceTree = "<group>"; };
+		2F02C286260FFD5900CC1729 /* SortTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTableViewCell.swift; sourceTree = "<group>"; };
+		2F06709F25FD621700E3CD2E /* AccessToPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToPhotoViewController.swift; sourceTree = "<group>"; };
+		2F0670C225FDDB9C00E3CD2E /* 3622-300x300.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "3622-300x300.jpg"; path = "odango/Photos/Icons/3622-300x300.jpg"; sourceTree = SOURCE_ROOT; };
+		2F0670D125FDDBB000E3CD2E /* watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = watch.png; path = odango/Photos/Icons/watch.png; sourceTree = SOURCE_ROOT; };
+		2F06712A25FF41E400E3CD2E /* PostPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageViewController.swift; sourceTree = "<group>"; };
+		2F067145260097A500E3CD2E /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		2F06717A26017F7900E3CD2E /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		2F0671812601BF1900E3CD2E /* EachDayRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachDayRecipeViewController.swift; sourceTree = "<group>"; };
+		2F06D27226071E0A00F3BCDC /* GridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutView.swift; sourceTree = "<group>"; };
+		2F1888DB260AAC2C0048A74E /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		2F1888E4260AFC980048A74E /* 764.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 764.png; sourceTree = "<group>"; };
+		2F1888EB260AFF5E0048A74E /* A05873F7-2336-47A7-9C9B-7B4DD97FBA10_1_105_c.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "A05873F7-2336-47A7-9C9B-7B4DD97FBA10_1_105_c.jpeg"; sourceTree = "<group>"; };
+		2F1888EE260B01530048A74E /* _i_icon_00484_icon_004840_256.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = _i_icon_00484_icon_004840_256.jpg; sourceTree = "<group>"; };
+		2F1888F1260B01E40048A74E /* _i_icon_00484_icon_004840_256 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "_i_icon_00484_icon_004840_256 2.jpg"; sourceTree = "<group>"; };
+		2F188901260B14070048A74E /* DroidSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroidSans.ttf; sourceTree = "<group>"; };
+		2F188902260B14070048A74E /* DroidSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidSans-Bold.ttf"; sourceTree = "<group>"; };
+		2F188903260B14070048A74E /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		2F1E9A8E261928B000678E26 /* PreparingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingViewController.swift; sourceTree = "<group>"; };
+		2F1E9AC32619E5F800678E26 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		2F206EB12612939400AB7466 /* IngTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngTableViewCell.swift; sourceTree = "<group>"; };
+		2F206EB42612DE1E00AB7466 /* PostEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEnterViewController.swift; sourceTree = "<group>"; };
+		2F206EB8261354D800AB7466 /* HowtoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowtoTableViewCell.swift; sourceTree = "<group>"; };
+		2F206EBB261372FC00AB7466 /* 2021-03-29 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-03-29 (1).png"; sourceTree = "<group>"; };
+		2F206EBC261372FC00AB7466 /* 2021-03-29 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-03-29 (2).png"; sourceTree = "<group>"; };
+		2F206EBD261372FD00AB7466 /* 2021-03-28 (6).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-03-28 (6).png"; sourceTree = "<group>"; };
+		2F206EBE261372FD00AB7466 /* 2021-03-30 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-03-30 (1).png"; sourceTree = "<group>"; };
+		2F206EBF261372FD00AB7466 /* 2021-03-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-03-30.png"; sourceTree = "<group>"; };
+		2F206EC72613E21700AB7466 /* 16303ea280c958d0ef4d6c3420809cc0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 16303ea280c958d0ef4d6c3420809cc0.jpg; sourceTree = "<group>"; };
+		2F206F022614A2D100AB7466 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
+		2F206F032614A2D100AB7466 /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
+		2F206F052614A2D100AB7466 /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		2F206F0A2614A2D100AB7466 /* ChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		2F206F0B2614A2D100AB7466 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		2F206F0D2614A2D100AB7466 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
+		2F206F0E2614A2D100AB7466 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
+		2F206F2C2614AA5F00AB7466 /* ChatList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatList.storyboard; sourceTree = "<group>"; };
+		2F206F5626153D9F00AB7466 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2F206F5926157DA900AB7466 /* 4172025_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4172025_m.jpg; sourceTree = "<group>"; };
+		2F206F5C26157DD200AB7466 /* 4384100_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4384100_s.jpg; sourceTree = "<group>"; };
+		2F206F5F26157DED00AB7466 /* sp_detail_main_PS_K10_1965M.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sp_detail_main_PS_K10_1965M.jpg; sourceTree = "<group>"; };
+		2F206F6226157EC300AB7466 /* 48ce791cb0730c93f32136a00f9baccec902737a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 48ce791cb0730c93f32136a00f9baccec902737a.jpg; sourceTree = "<group>"; };
+		2F206F652615802600AB7466 /* i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg"; sourceTree = "<group>"; };
+		2F206F682615813A00AB7466 /* recipe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe.jpg; sourceTree = "<group>"; };
+		2F206F7226158AD100AB7466 /* 26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp; sourceTree = "<group>"; };
+		2F206F752615A22500AB7466 /* IMG_21642D891D85-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_21642D891D85-1.jpeg"; sourceTree = "<group>"; };
+		2F206F782615D7CF00AB7466 /* send-icon */ = {isa = PBXFileReference; lastKnownFileType = file; path = "send-icon"; sourceTree = "<group>"; };
+		2F336F7425F2412400680064 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		2F336F7E25F25B8500680064 /* FriendAddPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAddPopupViewController.swift; sourceTree = "<group>"; };
+		2F336F9725F3177F00680064 /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		2F336F9B25F319AA00680064 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		2F336FA025F3619E00680064 /* messageSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageSetting.swift; sourceTree = "<group>"; };
+		2F3C886A25EA5E6E008D08DA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F3C889725EC73EA008D08DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2F3C889825EC73EA008D08DA /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2F3C88B025ECD0A3008D08DA /* MyRecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipeTableViewController.swift; sourceTree = "<group>"; };
+		2F3C88B125ECD0A3008D08DA /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		2F3C88B625ECD672008D08DA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2F3C88B725ECD672008D08DA /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		2F3C88F925ED99BC008D08DA /* CJCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJCheckBox.swift; sourceTree = "<group>"; };
+		2F3C890325EDA139008D08DA /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
+		2F3C890625EDBDCC008D08DA /* AssetsCheckmark */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AssetsCheckmark; sourceTree = "<group>"; };
+		2F3FE693261AEE5E00046FBE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2F3FE6B3261B40ED00046FBE /* IMG_2224.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2224.jpg; sourceTree = "<group>"; };
+		2F3FE6BD261DD1AE00046FBE /* 20191004115411.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20191004115411.jpg; sourceTree = "<group>"; };
+		2F3FE6C0261DD63500046FBE /* IMG_0830.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0830.jpg; sourceTree = "<group>"; };
+		2F3FE6C3261E5DA400046FBE /* EachDayCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachDayCollectionCell.swift; sourceTree = "<group>"; };
+		2F67FB76260380F5008DEEFA /* MainChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChooseViewController.swift; sourceTree = "<group>"; };
+		2F86A81C261EEB3800643213 /* R6YPnAG4NeWjkh21617800491_1617800628.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = R6YPnAG4NeWjkh21617800491_1617800628.png; sourceTree = "<group>"; };
+		2F86A836261EEF7B00643213 /* IMG_AA0FA68BD3B7-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_AA0FA68BD3B7-1.jpeg"; sourceTree = "<group>"; };
+		2F86A839261EF23D00643213 /* IMG_2256.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2256.JPG; sourceTree = "<group>"; };
+		2F86A83C261EF80400643213 /* Jh6zrTBm1vDmEVI1617869322_1617869982.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jh6zrTBm1vDmEVI1617869322_1617869982.png; sourceTree = "<group>"; };
+		2F86A83F261EFA4900643213 /* eO9Cbr8auNC0lAj1617830837_1617830947.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eO9Cbr8auNC0lAj1617830837_1617830947.png; sourceTree = "<group>"; };
+		2F86A842261EFC2C00643213 /* Qlr572rGmtXTc2j1617831052_1617831087.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Qlr572rGmtXTc2j1617831052_1617831087.png; sourceTree = "<group>"; };
+		2F86A846261EFCBA00643213 /* 2dEyqo40YD1VhiQ1617831281_1617831364.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2dEyqo40YD1VhiQ1617831281_1617831364.png; sourceTree = "<group>"; };
+		2F86A84B261F008D00643213 /* スクリーンショット 2021-04-08 18.10.39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2021-04-08 18.10.39.png"; sourceTree = "<group>"; };
+		2F86A84E261F0DA200643213 /* 2021-04-08 (3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-04-08 (3).png"; sourceTree = "<group>"; };
+		2F86A84F261F0DA300643213 /* 2021-04-08 (5).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-04-08 (5).png"; sourceTree = "<group>"; };
+		2F86A850261F0DA300643213 /* 2021-04-08 (4).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-04-08 (4).png"; sourceTree = "<group>"; };
+		2F86A851261F0DA300643213 /* 2021-04-08 (6).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-04-08 (6).png"; sourceTree = "<group>"; };
+		2F86A85A262069F800643213 /* SideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F938264260D9D7000C73267 /* unchecked-checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unchecked-checkbox.png"; sourceTree = "<group>"; };
+		2F938269260D9DAF00C73267 /* checked-checkbox--v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked-checkbox--v1.png"; sourceTree = "<group>"; };
+		2F97B90925F180B0002567A2 /* MenuPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPageViewController.swift; sourceTree = "<group>"; };
+		2FAC1C5325E0CE56008EFB1E /* odango UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "odango UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAC1C5625E0CE56008EFB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FAC1C5825E0CE56008EFB1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2FAC1C5D25E0CE56008EFB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FAC1C6225E0CE59008EFB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FCD8D57261142E70025C1CD /* IngTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngTableView.swift; sourceTree = "<group>"; };
+		2FD103E025F3CDF600E1C738 /* odango UIKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "odango UIKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		2FD103E125F3CDF600E1C738 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = Pods/FSCalendar/FSCalendar/FSCalendarDelegationFactory.h; sourceTree = SOURCE_ROOT; };
+		2FD103E225F3CDF600E1C738 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = Pods/FSCalendar/FSCalendar/FSCalendarStickyHeader.h; sourceTree = SOURCE_ROOT; };
+		2FD103E325F3CDF600E1C738 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = Pods/FSCalendar/FSCalendar/FSCalendarAppearance.m; sourceTree = SOURCE_ROOT; };
+		2FD103E425F3CDF600E1C738 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = Pods/FSCalendar/FSCalendar/FSCalendarCalculator.m; sourceTree = SOURCE_ROOT; };
+		2FD103E525F3CDF600E1C738 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = Pods/FSCalendar/FSCalendar/FSCalendarWeekdayView.m; sourceTree = SOURCE_ROOT; };
+		2FD103E625F3CDF600E1C738 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = Pods/FSCalendar/FSCalendar/FSCalendarCell.h; sourceTree = SOURCE_ROOT; };
+		2FD103E725F3CDF600E1C738 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = Pods/FSCalendar/FSCalendar/FSCalendarDelegationProxy.m; sourceTree = SOURCE_ROOT; };
+		2FD103E825F3CDF600E1C738 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = Pods/FSCalendar/FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = SOURCE_ROOT; };
+		2FD103E925F3CDF600E1C738 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = Pods/FSCalendar/FSCalendar/FSCalendarCell.m; sourceTree = SOURCE_ROOT; };
+		2FD103EA25F3CDF600E1C738 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = Pods/FSCalendar/FSCalendar/FSCalendarDelegationProxy.h; sourceTree = SOURCE_ROOT; };
+		2FD103EB25F3CDF600E1C738 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = Pods/FSCalendar/FSCalendar/FSCalendarDynamicHeader.h; sourceTree = SOURCE_ROOT; };
+		2FD103EC25F3CDF600E1C738 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = Pods/FSCalendar/FSCalendar/FSCalendarHeaderView.m; sourceTree = SOURCE_ROOT; };
+		2FD103ED25F3CDF600E1C738 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = Pods/FSCalendar/FSCalendar/FSCalendarDelegationFactory.m; sourceTree = SOURCE_ROOT; };
+		2FD103EE25F3CDF600E1C738 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = Pods/FSCalendar/FSCalendar/FSCalendarStickyHeader.m; sourceTree = SOURCE_ROOT; };
+		2FD103EF25F3CDF600E1C738 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = Pods/FSCalendar/FSCalendar/FSCalendarWeekdayView.h; sourceTree = SOURCE_ROOT; };
+		2FD103F025F3CDF600E1C738 /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = Pods/FSCalendar/FSCalendar/FSCalendarConstants.h; sourceTree = SOURCE_ROOT; };
+		2FD103F125F3CDF600E1C738 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = Pods/FSCalendar/FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = SOURCE_ROOT; };
+		2FD103F225F3CDF600E1C738 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = Pods/FSCalendar/FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = SOURCE_ROOT; };
+		2FD103F325F3CDF600E1C738 /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = Pods/FSCalendar/FSCalendar/FSCalendarConstants.m; sourceTree = SOURCE_ROOT; };
+		2FD103F425F3CDF600E1C738 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = Pods/FSCalendar/FSCalendar/FSCalendarExtensions.m; sourceTree = SOURCE_ROOT; };
+		2FD103F525F3CDF600E1C738 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = Pods/FSCalendar/FSCalendar/FSCalendar.h; sourceTree = SOURCE_ROOT; };
+		2FD103F625F3CDF700E1C738 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = Pods/FSCalendar/FSCalendar/FSCalendar.m; sourceTree = SOURCE_ROOT; };
+		2FD103F725F3CDF700E1C738 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = Pods/FSCalendar/FSCalendar/FSCalendarAppearance.h; sourceTree = SOURCE_ROOT; };
+		2FD103F825F3CDF700E1C738 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = Pods/FSCalendar/FSCalendar/FSCalendarCollectionView.m; sourceTree = SOURCE_ROOT; };
+		2FD103F925F3CDF700E1C738 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = Pods/FSCalendar/FSCalendar/FSCalendarHeaderView.h; sourceTree = SOURCE_ROOT; };
+		2FD103FA25F3CDF700E1C738 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = Pods/FSCalendar/FSCalendar/FSCalendarExtensions.h; sourceTree = SOURCE_ROOT; };
+		2FD103FB25F3CDF700E1C738 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = Pods/FSCalendar/FSCalendar/FSCalendarCalculator.h; sourceTree = SOURCE_ROOT; };
+		2FD103FC25F3CDF700E1C738 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = Pods/FSCalendar/FSCalendar/FSCalendarCollectionView.h; sourceTree = SOURCE_ROOT; };
+		2FD103FD25F3CDF700E1C738 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = Pods/FSCalendar/FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = SOURCE_ROOT; };
+		2FD103FE25F3CDF700E1C738 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = Pods/FSCalendar/FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = SOURCE_ROOT; };
+		2FD103FF25F3CDF700E1C738 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = Pods/FSCalendar/FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = SOURCE_ROOT; };
+		2FD1041125F3CE5E00E1C738 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Pods/FSCalendar/README.md; sourceTree = SOURCE_ROOT; };
+		2FD1041225F3CE5E00E1C738 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = Pods/FSCalendar/LICENSE; sourceTree = SOURCE_ROOT; };
+		2FD1041725F3CEF000E1C738 /* FSCalendar.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FSCalendar.podspec.json; path = "Pods/Local Podspecs/FSCalendar.podspec.json"; sourceTree = SOURCE_ROOT; };
+		2FD1041A25F3CF0F00E1C738 /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		2FD1041D25F3CF1A00E1C738 /* odango UIKit.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = "odango UIKit.xcworkspace"; sourceTree = "<group>"; };
+		2FD1042125F3CF4300E1C738 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		2FD1042425F3CF4A00E1C738 /* FSCalendar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FSCalendar-Info.plist"; sourceTree = "<group>"; };
+		2FD1042725F3CF4E00E1C738 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		2FD1043325F3CFE600E1C738 /* Pods-odango UIKit-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Pods-odango UIKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2FD1043625F3CFEB00E1C738 /* Pods-odango UIKit-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-odango UIKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FD1043925F3CFEF00E1C738 /* Pods-odango UIKit-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-odango UIKit-dummy.m"; sourceTree = "<group>"; };
+		2FD1043C25F3CFF300E1C738 /* Pods-odango UIKit-frameworks-Debug-input-files.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = "Pods-odango UIKit-frameworks-Debug-input-files.xcfilelist"; sourceTree = "<group>"; };
+		2FD1043F25F3CFF700E1C738 /* Pods-odango UIKit-frameworks-Debug-output-files.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = "Pods-odango UIKit-frameworks-Debug-output-files.xcfilelist"; sourceTree = "<group>"; };
+		2FD1044225F3CFFB00E1C738 /* Pods-odango UIKit-frameworks-Release-input-files.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = "Pods-odango UIKit-frameworks-Release-input-files.xcfilelist"; sourceTree = "<group>"; };
+		2FD1044525F3CFFF00E1C738 /* Pods-odango UIKit-frameworks-Release-output-files.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = "Pods-odango UIKit-frameworks-Release-output-files.xcfilelist"; sourceTree = "<group>"; };
+		2FD1044825F3D00200E1C738 /* Pods-odango UIKit-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Pods-odango UIKit-frameworks.sh"; sourceTree = "<group>"; };
+		2FD1044B25F3D00600E1C738 /* Pods-odango UIKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-odango UIKit-Info.plist"; sourceTree = "<group>"; };
+		2FD1044E25F3D00A00E1C738 /* Pods-odango UIKit-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-odango UIKit-umbrella.h"; sourceTree = "<group>"; };
+		2FD1044F25F3D00E00E1C738 /* Pods-odango UIKit.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-odango UIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		2FD1045225F3D01300E1C738 /* Pods-odango UIKit.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-odango UIKit.modulemap"; sourceTree = "<group>"; };
+		2FD1045325F3D01600E1C738 /* Pods-odango UIKit.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-odango UIKit.release.xcconfig"; sourceTree = "<group>"; };
+		2FD1045F25F4847100E1C738 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = SOURCE_ROOT; };
+		2FD1047125F485E700E1C738 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FSCalendar-umbrella.h"; path = "Pods/Target Support Files/FSCalendar/FSCalendar-umbrella.h"; sourceTree = SOURCE_ROOT; };
+		2FD1047225F485F200E1C738 /* FSCalendar.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = FSCalendar.debug.xcconfig; path = "Pods/Target Support Files/FSCalendar/FSCalendar.debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		2FD1047525F485F800E1C738 /* FSCalendar.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = FSCalendar.modulemap; path = "Pods/Target Support Files/FSCalendar/FSCalendar.modulemap"; sourceTree = SOURCE_ROOT; };
+		2FD1047625F4860500E1C738 /* FSCalendar.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = FSCalendar.release.xcconfig; path = "Pods/Target Support Files/FSCalendar/FSCalendar.release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		2FD1048925F4885B00E1C738 /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		2FEA5CB726216CF000547704 /* IMG_0761.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0761.mov; sourceTree = "<group>"; };
+		2FEA5D1A2621BAB000547704 /* mypageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mypageViewController.swift; sourceTree = "<group>"; };
+		2FEA5D1D2621BB1C00547704 /* 2OsIqUVw2LhISAd1617714975_1617715018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2OsIqUVw2LhISAd1617714975_1617715018.png; sourceTree = "<group>"; };
+		2FEA5D212621BB3A00547704 /* unnamed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unnamed.jpg; sourceTree = "<group>"; };
+		2FEA5D252621BB5200547704 /* 4462576_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4462576_s.jpg; sourceTree = "<group>"; };
+		2FFB37E42615E86E00FEB3CC /* IMG_2237.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2237.JPG; sourceTree = "<group>"; };
+		2FFB37F12615E86E00FEB3CC /* IMG_2238.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2238.PNG; sourceTree = "<group>"; };
+		2FFB37F52615ED9E00FEB3CC /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		2FFB37F82615F13600FEB3CC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2FFB38CC2616AB6500FEB3CC /* RecipeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		2FFB38E62616AC3A00FEB3CC /* 1566136304_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1566136304_1.jpeg; sourceTree = "<group>"; };
+		2FFB38E72616AC3A00FEB3CC /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg; sourceTree = "<group>"; };
+		2FFB38E82616AC3A00FEB3CC /* sp_detail_main_COP08_AA_461.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sp_detail_main_COP08_AA_461.jpg; sourceTree = "<group>"; };
+		2FFB38E92616AC3A00FEB3CC /* e6f4b23c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e6f4b23c.jpg; sourceTree = "<group>"; };
+		2FFB38EA2616AC3A00FEB3CC /* QP10004840_1L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QP10004840_1L.jpg; sourceTree = "<group>"; };
+		2FFB38FE2616FAF200FEB3CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2FFB390D261730E200FEB3CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2FFB39112617370200FEB3CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FFB39152617591B00FEB3CC /* UserList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserList.storyboard; sourceTree = "<group>"; };
+		2FFB391826175A7E00FEB3CC /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		3C831CFED890362EDFDB9A82 /* Pods_odango_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_odango_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB001AC9DA33EC6E2BF7FBB5 /* Pods-odango UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-odango UIKit.debug.xcconfig"; path = "Target Support Files/Pods-odango UIKit/Pods-odango UIKit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FAC1C5025E0CE56008EFB1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E96D8AD38E967AD33848E5 /* Pods_odango_UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F0670BC25FDDB8800E3CD2E /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				2FEA5D252621BB5200547704 /* 4462576_s.jpg */,
+				2FEA5D212621BB3A00547704 /* unnamed.jpg */,
+				2FEA5D1D2621BB1C00547704 /* 2OsIqUVw2LhISAd1617714975_1617715018.png */,
+				2FEA5CB726216CF000547704 /* IMG_0761.mov */,
+				2F86A84E261F0DA200643213 /* 2021-04-08 (3).png */,
+				2F86A850261F0DA300643213 /* 2021-04-08 (4).png */,
+				2F86A84F261F0DA300643213 /* 2021-04-08 (5).png */,
+				2F86A851261F0DA300643213 /* 2021-04-08 (6).png */,
+				2F86A84B261F008D00643213 /* スクリーンショット 2021-04-08 18.10.39.png */,
+				2F86A846261EFCBA00643213 /* 2dEyqo40YD1VhiQ1617831281_1617831364.png */,
+				2F86A842261EFC2C00643213 /* Qlr572rGmtXTc2j1617831052_1617831087.png */,
+				2F86A83F261EFA4900643213 /* eO9Cbr8auNC0lAj1617830837_1617830947.png */,
+				2F86A83C261EF80400643213 /* Jh6zrTBm1vDmEVI1617869322_1617869982.png */,
+				2F86A839261EF23D00643213 /* IMG_2256.JPG */,
+				2F86A836261EEF7B00643213 /* IMG_AA0FA68BD3B7-1.jpeg */,
+				2F86A81C261EEB3800643213 /* R6YPnAG4NeWjkh21617800491_1617800628.png */,
+				2F3FE6C0261DD63500046FBE /* IMG_0830.jpg */,
+				2F3FE6BD261DD1AE00046FBE /* 20191004115411.jpg */,
+				2F3FE6B3261B40ED00046FBE /* IMG_2224.jpg */,
+				2FFB38E52616AC3A00FEB3CC /* images */,
+				2FFB37E42615E86E00FEB3CC /* IMG_2237.JPG */,
+				2FFB37F12615E86E00FEB3CC /* IMG_2238.PNG */,
+				2F206F752615A22500AB7466 /* IMG_21642D891D85-1.jpeg */,
+				2F206F7226158AD100AB7466 /* 26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp */,
+				2F206F682615813A00AB7466 /* recipe.jpg */,
+				2F206F652615802600AB7466 /* i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg */,
+				2F206F6226157EC300AB7466 /* 48ce791cb0730c93f32136a00f9baccec902737a.jpg */,
+				2F206F5F26157DED00AB7466 /* sp_detail_main_PS_K10_1965M.jpg */,
+				2F206F5C26157DD200AB7466 /* 4384100_s.jpg */,
+				2F206F5926157DA900AB7466 /* 4172025_m.jpg */,
+				2F206EC72613E21700AB7466 /* 16303ea280c958d0ef4d6c3420809cc0.jpg */,
+				2F188900260B14070048A74E /* droid-sans */,
+				2F206EAE2611E7D300AB7466 /* Icons */,
+				2F206EAB2611E7B300AB7466 /* フロー図 */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		2F188900260B14070048A74E /* droid-sans */ = {
+			isa = PBXGroup;
+			children = (
+				2F188901260B14070048A74E /* DroidSans.ttf */,
+				2F188902260B14070048A74E /* DroidSans-Bold.ttf */,
+				2F188903260B14070048A74E /* Apache License.txt */,
+			);
+			path = "droid-sans";
+			sourceTree = "<group>";
+		};
+		2F206EAB2611E7B300AB7466 /* フロー図 */ = {
+			isa = PBXGroup;
+			children = (
+				2F206EBD261372FD00AB7466 /* 2021-03-28 (6).png */,
+				2F206EBB261372FC00AB7466 /* 2021-03-29 (1).png */,
+				2F206EBC261372FC00AB7466 /* 2021-03-29 (2).png */,
+				2F206EBE261372FD00AB7466 /* 2021-03-30 (1).png */,
+				2F206EBF261372FD00AB7466 /* 2021-03-30.png */,
+				2F02C281260FEA5500CC1729 /* フロー図.pptx-8.jpg */,
+				2F00A4B1260F54FE005298AA /* フロー図.pptx.jpg */,
+				2F00A4B7260F5519005298AA /* フロー図.pptx-2.jpg */,
+				2F00A4B8260F5519005298AA /* フロー図.pptx-3.jpg */,
+				2F00A4B5260F5518005298AA /* フロー図.pptx-4.jpg */,
+				2F00A4B9260F5519005298AA /* フロー図.pptx-5.jpg */,
+				2F00A4B4260F5518005298AA /* フロー図.pptx-6.jpg */,
+				2F00A4B6260F5518005298AA /* フロー図.pptx-7.jpg */,
+			);
+			path = "フロー図";
+			sourceTree = "<group>";
+		};
+		2F206EAE2611E7D300AB7466 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2F206F782615D7CF00AB7466 /* send-icon */,
+				2F1888F1260B01E40048A74E /* _i_icon_00484_icon_004840_256 2.jpg */,
+				2F1888EB260AFF5E0048A74E /* A05873F7-2336-47A7-9C9B-7B4DD97FBA10_1_105_c.jpeg */,
+				2F00A4A8260EFE08005298AA /* _i_icon_12314_icon_123140_256.PNG */,
+				2F00A4AD260F06A0005298AA /* IMG_2224.PNG */,
+				2F0670D125FDDBB000E3CD2E /* watch.png */,
+				2F1888E4260AFC980048A74E /* 764.png */,
+				2F0670C225FDDB9C00E3CD2E /* 3622-300x300.jpg */,
+				2F1888EE260B01530048A74E /* _i_icon_00484_icon_004840_256.jpg */,
+				2F938269260D9DAF00C73267 /* checked-checkbox--v1.png */,
+				2F938264260D9D7000C73267 /* unchecked-checkbox.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		2F206F002614A2D100AB7466 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB390C261730AC00FEB3CC /* Models */,
+				2F206F012614A2D100AB7466 /* Xibs */,
+				2F206F042614A2D100AB7466 /* Storyboards */,
+				2F206F092614A2D100AB7466 /* Controllers */,
+				2F206F0C2614A2D100AB7466 /* Views */,
+			);
+			path = message;
+			sourceTree = SOURCE_ROOT;
+		};
+		2F206F012614A2D100AB7466 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				2F206F022614A2D100AB7466 /* ChatInputAccessoryView.xib */,
+				2F206F032614A2D100AB7466 /* ChatRoomTableViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		2F206F042614A2D100AB7466 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2F206F2C2614AA5F00AB7466 /* ChatList.storyboard */,
+				2F206F052614A2D100AB7466 /* ChatRoom.storyboard */,
+				2FFB37F52615ED9E00FEB3CC /* SignUp.storyboard */,
+				2FFB39152617591B00FEB3CC /* UserList.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2F206F092614A2D100AB7466 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F206F0A2614A2D100AB7466 /* ChatListViewController.swift */,
+				2F206F0B2614A2D100AB7466 /* ChatRoomViewController.swift */,
+				2FFB37F82615F13600FEB3CC /* SignUpViewController.swift */,
+				2FFB391826175A7E00FEB3CC /* UserListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F206F0C2614A2D100AB7466 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F206F0D2614A2D100AB7466 /* ChatRoomTableViewCell.swift */,
+				2F206F0E2614A2D100AB7466 /* ChatInputAccessoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F336F8925F3139600680064 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2F336F9725F3177F00680064 /* recipes.json */,
+				2F336F9B25F319AA00680064 /* Recipe.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		2F3C88F825ED98BC008D08DA /* マイレシピ */ = {
+			isa = PBXGroup;
+			children = (
+				2F3C889725EC73EA008D08DA /* MainViewController.swift */,
+				2F3C889825EC73EA008D08DA /* MainViewController.xib */,
+				2F3C88B125ECD0A3008D08DA /* TableViewController.xib */,
+				2F3C88B625ECD672008D08DA /* CollectionViewController.swift */,
+				2F3C88B725ECD672008D08DA /* CollectionViewController.xib */,
+			);
+			name = "マイレシピ";
+			path = "マイレシピ";
+			sourceTree = "<group>";
+		};
+		2F3C88FD25ED9C53008D08DA /* CheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				2F3C890625EDBDCC008D08DA /* AssetsCheckmark */,
+				2F3C88F925ED99BC008D08DA /* CJCheckBox.swift */,
+			);
+			path = CheckBox;
+			sourceTree = "<group>";
+		};
+		2FAC1C4A25E0CE56008EFB1E = {
+			isa = PBXGroup;
+			children = (
+				2FFB38FE2616FAF200FEB3CC /* GoogleService-Info.plist */,
+				2FD1047B25F486FE00E1C738 /* Basics */,
+				2FD1045D25F4826A00E1C738 /* New Group */,
+				2F336F8925F3139600680064 /* JSON */,
+				2F3C88FD25ED9C53008D08DA /* CheckBox */,
+				2FAC1C5525E0CE56008EFB1E /* odango */,
+				2FAC1C5425E0CE56008EFB1E /* Products */,
+				53D61A2AEA66F9C4C184F61D /* Pods */,
+				F8CFC98CE22F0346413E337F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FAC1C5425E0CE56008EFB1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FAC1C5325E0CE56008EFB1E /* odango UIKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FAC1C5525E0CE56008EFB1E /* odango */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB39112617370200FEB3CC /* Info.plist */,
+				2FFB38CC2616AB6500FEB3CC /* RecipeModel.swift */,
+				2F206F002614A2D100AB7466 /* message */,
+				2F0670BC25FDDB8800E3CD2E /* Photos */,
+				2FD1048025F4874F00E1C738 /* マイページ */,
+				2FD1047F25F4874200E1C738 /* 投稿 */,
+				2FD1047E25F4873600E1C738 /* 献立 */,
+				2FD1047D25F4872B00E1C738 /* ホーム */,
+				2F336F7425F2412400680064 /* UIColor-Extension.swift */,
+				2F1E9A8E261928B000678E26 /* PreparingViewController.swift */,
+			);
+			path = odango;
+			sourceTree = "<group>";
+		};
+		2FD103DF25F3CDBE00E1C738 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				2FD103F525F3CDF600E1C738 /* FSCalendar.h */,
+				2FD103F625F3CDF700E1C738 /* FSCalendar.m */,
+				2FD103F725F3CDF700E1C738 /* FSCalendarAppearance.h */,
+				2FD103E325F3CDF600E1C738 /* FSCalendarAppearance.m */,
+				2FD103FB25F3CDF700E1C738 /* FSCalendarCalculator.h */,
+				2FD103E425F3CDF600E1C738 /* FSCalendarCalculator.m */,
+				2FD103E625F3CDF600E1C738 /* FSCalendarCell.h */,
+				2FD103E925F3CDF600E1C738 /* FSCalendarCell.m */,
+				2FD103FC25F3CDF700E1C738 /* FSCalendarCollectionView.h */,
+				2FD103F825F3CDF700E1C738 /* FSCalendarCollectionView.m */,
+				2FD103F125F3CDF600E1C738 /* FSCalendarCollectionViewLayout.h */,
+				2FD103FF25F3CDF700E1C738 /* FSCalendarCollectionViewLayout.m */,
+				2FD103F025F3CDF600E1C738 /* FSCalendarConstants.h */,
+				2FD103F325F3CDF600E1C738 /* FSCalendarConstants.m */,
+				2FD103E125F3CDF600E1C738 /* FSCalendarDelegationFactory.h */,
+				2FD103ED25F3CDF600E1C738 /* FSCalendarDelegationFactory.m */,
+				2FD103EA25F3CDF600E1C738 /* FSCalendarDelegationProxy.h */,
+				2FD103E725F3CDF600E1C738 /* FSCalendarDelegationProxy.m */,
+				2FD103EB25F3CDF600E1C738 /* FSCalendarDynamicHeader.h */,
+				2FD103FA25F3CDF700E1C738 /* FSCalendarExtensions.h */,
+				2FD103F425F3CDF600E1C738 /* FSCalendarExtensions.m */,
+				2FD103F925F3CDF700E1C738 /* FSCalendarHeaderView.h */,
+				2FD103EC25F3CDF600E1C738 /* FSCalendarHeaderView.m */,
+				2FD103F225F3CDF600E1C738 /* FSCalendarSeparatorDecorationView.h */,
+				2FD103FE25F3CDF700E1C738 /* FSCalendarSeparatorDecorationView.m */,
+				2FD103E225F3CDF600E1C738 /* FSCalendarStickyHeader.h */,
+				2FD103EE25F3CDF600E1C738 /* FSCalendarStickyHeader.m */,
+				2FD103E825F3CDF600E1C738 /* FSCalendarTransitionCoordinator.h */,
+				2FD103FD25F3CDF700E1C738 /* FSCalendarTransitionCoordinator.m */,
+				2FD103EF25F3CDF600E1C738 /* FSCalendarWeekdayView.h */,
+				2FD103E525F3CDF600E1C738 /* FSCalendarWeekdayView.m */,
+				2FD103E025F3CDF600E1C738 /* odango UIKit-Bridging-Header.h */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		2FD1041025F3CDFE00E1C738 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				2FD103DF25F3CDBE00E1C738 /* FSCalendar */,
+				2FD1041225F3CE5E00E1C738 /* LICENSE */,
+				2FD1041125F3CE5E00E1C738 /* README.md */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		2FD1041625F3CEBD00E1C738 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1041725F3CEF000E1C738 /* FSCalendar.podspec.json */,
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		2FD1042025F3CF2600E1C738 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1043025F3CF7500E1C738 /* FSCalendar */,
+				2FD1043225F3CFCC00E1C738 /* Pods-odango UIKit */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		2FD1043025F3CF7500E1C738 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1042125F3CF4300E1C738 /* FSCalendar-dummy.m */,
+				2FD1042425F3CF4A00E1C738 /* FSCalendar-Info.plist */,
+				2FD1042725F3CF4E00E1C738 /* FSCalendar-prefix.pch */,
+				2FD1047125F485E700E1C738 /* FSCalendar-umbrella.h */,
+				2FD1047225F485F200E1C738 /* FSCalendar.debug.xcconfig */,
+				2FD1047525F485F800E1C738 /* FSCalendar.modulemap */,
+				2FD1047625F4860500E1C738 /* FSCalendar.release.xcconfig */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		2FD1043225F3CFCC00E1C738 /* Pods-odango UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1043325F3CFE600E1C738 /* Pods-odango UIKit-acknowledgements.markdown */,
+				2FD1043625F3CFEB00E1C738 /* Pods-odango UIKit-acknowledgements.plist */,
+				2FD1043925F3CFEF00E1C738 /* Pods-odango UIKit-dummy.m */,
+				2FD1043C25F3CFF300E1C738 /* Pods-odango UIKit-frameworks-Debug-input-files.xcfilelist */,
+				2FD1043F25F3CFF700E1C738 /* Pods-odango UIKit-frameworks-Debug-output-files.xcfilelist */,
+				2FD1044225F3CFFB00E1C738 /* Pods-odango UIKit-frameworks-Release-input-files.xcfilelist */,
+				2FD1044525F3CFFF00E1C738 /* Pods-odango UIKit-frameworks-Release-output-files.xcfilelist */,
+				2FD1044825F3D00200E1C738 /* Pods-odango UIKit-frameworks.sh */,
+				2FD1044B25F3D00600E1C738 /* Pods-odango UIKit-Info.plist */,
+				2FD1044E25F3D00A00E1C738 /* Pods-odango UIKit-umbrella.h */,
+				2FD1044F25F3D00E00E1C738 /* Pods-odango UIKit.debug.xcconfig */,
+				2FD1045225F3D01300E1C738 /* Pods-odango UIKit.modulemap */,
+				2FD1045325F3D01600E1C738 /* Pods-odango UIKit.release.xcconfig */,
+			);
+			path = "Pods-odango UIKit";
+			sourceTree = "<group>";
+		};
+		2FD1045625F3D04800E1C738 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		2FD1045D25F4826A00E1C738 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1041025F3CDFE00E1C738 /* FSCalendar */,
+				2FD1045625F3D04800E1C738 /* Headers */,
+				2FD1041625F3CEBD00E1C738 /* Local Podspecs */,
+				2FD1041A25F3CF0F00E1C738 /* Manifest.lock */,
+				2FD1041D25F3CF1A00E1C738 /* odango UIKit.xcworkspace */,
+				2FD1045F25F4847100E1C738 /* Pods.xcodeproj */,
+				2FD1042025F3CF2600E1C738 /* Target Support Files */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2FD1046025F4847100E1C738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB38A02616AA2700FEB3CC /* absl.framework */,
+				2FFB38A22616AA2700FEB3CC /* openssl_grpc.framework */,
+				2FFB38A42616AA2700FEB3CC /* FirebaseAuth.framework */,
+				2F206F3B2614AA6000AB7466 /* FirebaseCore.framework */,
+				2F206F3D2614AA6000AB7466 /* FirebaseCoreDiagnostics.framework */,
+				2FFB38A62616AA2700FEB3CC /* FirebaseFirestore.framework */,
+				2F206F3F2614AA6000AB7466 /* FirebaseInstallations.framework */,
+				2FFB38A82616AA2700FEB3CC /* FirebaseStorage.framework */,
+				2FD1046825F4847100E1C738 /* FSCalendar.framework */,
+				2F206F412614AA6000AB7466 /* GoogleDataTransport.framework */,
+				2F206F432614AA6000AB7466 /* GoogleUtilities.framework */,
+				2FFB38AA2616AA2700FEB3CC /* grpcpp.framework */,
+				2FFB38AC2616AA2700FEB3CC /* gRPCCertificates-Cpp.bundle */,
+				2FFB38AE2616AA2700FEB3CC /* grpc.framework */,
+				2FFB38B02616AA2700FEB3CC /* GTMSessionFetcher.framework */,
+				2FFB38B22616AA2700FEB3CC /* leveldb.framework */,
+				2F206F452614AA6000AB7466 /* nanopb.framework */,
+				2F1E9AA8261928B400678E26 /* Nuke.framework */,
+				2FD1046A25F4847100E1C738 /* Pods_odango_UIKit.framework */,
+				2F206F472614AA6000AB7466 /* FBLPromises.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FD1047B25F486FE00E1C738 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				2FAC1C5C25E0CE56008EFB1E /* Main.storyboard */,
+				2F3C886A25EA5E6E008D08DA /* ViewController.swift */,
+				2FAC1C5625E0CE56008EFB1E /* AppDelegate.swift */,
+				2FAC1C5825E0CE56008EFB1E /* SceneDelegate.swift */,
+				2FAC1C5F25E0CE59008EFB1E /* Assets.xcassets */,
+				2FAC1C6125E0CE59008EFB1E /* LaunchScreen.storyboard */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		2FD1047D25F4872B00E1C738 /* ホーム */ = {
+			isa = PBXGroup;
+			children = (
+				2F06717A26017F7900E3CD2E /* HomePageViewController.swift */,
+				2F336FA025F3619E00680064 /* messageSetting.swift */,
+				2F336F7E25F25B8500680064 /* FriendAddPopupViewController.swift */,
+				2F06D27226071E0A00F3BCDC /* GridLayoutView.swift */,
+				2FD1048925F4885B00E1C738 /* SortViewController.swift */,
+				2F02C286260FFD5900CC1729 /* SortTableViewCell.swift */,
+			);
+			path = "ホーム";
+			sourceTree = "<group>";
+		};
+		2FD1047E25F4873600E1C738 /* 献立 */ = {
+			isa = PBXGroup;
+			children = (
+				2F97B90925F180B0002567A2 /* MenuPageViewController.swift */,
+				2F0671812601BF1900E3CD2E /* EachDayRecipeViewController.swift */,
+				2F3FE6C3261E5DA400046FBE /* EachDayCollectionCell.swift */,
+				2F3C890325EDA139008D08DA /* ShoppingTableViewController.swift */,
+				2F067145260097A500E3CD2E /* MenuTableViewController.swift */,
+				2F1888DB260AAC2C0048A74E /* RecipeDetailViewController.swift */,
+				2FCD8D57261142E70025C1CD /* IngTableView.swift */,
+				2F206EB12612939400AB7466 /* IngTableViewCell.swift */,
+				2F206EB8261354D800AB7466 /* HowtoTableViewCell.swift */,
+				2F67FB76260380F5008DEEFA /* MainChooseViewController.swift */,
+				2F206F5626153D9F00AB7466 /* CollectionViewCell.swift */,
+				2F86A85A262069F800643213 /* SideCollectionViewCell.swift */,
+			);
+			path = "献立";
+			sourceTree = "<group>";
+		};
+		2FD1047F25F4874200E1C738 /* 投稿 */ = {
+			isa = PBXGroup;
+			children = (
+				2F06712A25FF41E400E3CD2E /* PostPageViewController.swift */,
+				2F3C88B025ECD0A3008D08DA /* MyRecipeTableViewController.swift */,
+				2F3C88F825ED98BC008D08DA /* マイレシピ */,
+				2F06709F25FD621700E3CD2E /* AccessToPhotoViewController.swift */,
+				2F206EB42612DE1E00AB7466 /* PostEnterViewController.swift */,
+			);
+			path = "投稿";
+			sourceTree = "<group>";
+		};
+		2FD1048025F4874F00E1C738 /* マイページ */ = {
+			isa = PBXGroup;
+			children = (
+				2FEA5D1A2621BAB000547704 /* mypageViewController.swift */,
+			);
+			name = "マイページ";
+			path = "マイページ";
+			sourceTree = "<group>";
+		};
+		2FFB38E52616AC3A00FEB3CC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB38E62616AC3A00FEB3CC /* 1566136304_1.jpeg */,
+				2FFB38E72616AC3A00FEB3CC /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg */,
+				2FFB38E82616AC3A00FEB3CC /* sp_detail_main_COP08_AA_461.jpg */,
+				2FFB38E92616AC3A00FEB3CC /* e6f4b23c.jpg */,
+				2FFB38EA2616AC3A00FEB3CC /* QP10004840_1L.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		2FFB390C261730AC00FEB3CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB390D261730E200FEB3CC /* User.swift */,
+				2F1E9AC32619E5F800678E26 /* ChatRoom.swift */,
+				2F3FE693261AEE5E00046FBE /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53D61A2AEA66F9C4C184F61D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB001AC9DA33EC6E2BF7FBB5 /* Pods-odango UIKit.debug.xcconfig */,
+				084EBFD846FB76727BD68E66 /* Pods-odango UIKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8CFC98CE22F0346413E337F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C831CFED890362EDFDB9A82 /* Pods_odango_UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FAC1C5225E0CE56008EFB1E /* odango UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FAC1C6725E0CE59008EFB1E /* Build configuration list for PBXNativeTarget "odango UIKit" */;
+			buildPhases = (
+				A00D7FBD7CEA007E083612F7 /* [CP] Check Pods Manifest.lock */,
+				2FAC1C4F25E0CE56008EFB1E /* Sources */,
+				2FAC1C5025E0CE56008EFB1E /* Frameworks */,
+				2FAC1C5125E0CE56008EFB1E /* Resources */,
+				BC2BA2E2ED791EB530937ED9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "odango UIKit";
+			productName = odango;
+			productReference = 2FAC1C5325E0CE56008EFB1E /* odango UIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FAC1C4B25E0CE56008EFB1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2FAC1C5225E0CE56008EFB1E = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 2FAC1C4E25E0CE56008EFB1E /* Build configuration list for PBXProject "odango UIKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FAC1C4A25E0CE56008EFB1E;
+			productRefGroup = 2FAC1C5425E0CE56008EFB1E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2FD1046025F4847100E1C738 /* Products */;
+					ProjectRef = 2FD1045F25F4847100E1C738 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2FAC1C5225E0CE56008EFB1E /* odango UIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2F1E9AA8261928B400678E26 /* Nuke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nuke.framework;
+			remoteRef = 2F1E9AA7261928B400678E26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F206F3B2614AA6000AB7466 /* FirebaseCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCore.framework;
+			remoteRef = 2F206F3A2614AA6000AB7466 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F206F3D2614AA6000AB7466 /* FirebaseCoreDiagnostics.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCoreDiagnostics.framework;
+			remoteRef = 2F206F3C2614AA6000AB7466 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F206F3F2614AA6000AB7466 /* FirebaseInstallations.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseInstallations.framework;
+			remoteRef = 2F206F3E2614AA6000AB7466 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F206F412614AA6000AB7466 /* GoogleDataTransport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleDataTransport.framework;
+			remoteRef = 2F206F402614AA6000AB7466 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F206F432614AA6000AB7466 /* GoogleUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleUtilities.framework;
+			remoteRef = 2F206F422614AA6000AB7466 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F206F452614AA6000AB7466 /* nanopb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nanopb.framework;
+			remoteRef = 2F206F442614AA6000AB7466 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F206F472614AA6000AB7466 /* FBLPromises.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FBLPromises.framework;
+			remoteRef = 2F206F462614AA6000AB7466 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FD1046825F4847100E1C738 /* FSCalendar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FSCalendar.framework;
+			remoteRef = 2FD1046725F4847100E1C738 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FD1046A25F4847100E1C738 /* Pods_odango_UIKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_odango_UIKit.framework;
+			remoteRef = 2FD1046925F4847100E1C738 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38A02616AA2700FEB3CC /* absl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = absl.framework;
+			remoteRef = 2FFB389F2616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38A22616AA2700FEB3CC /* openssl_grpc.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = openssl_grpc.framework;
+			remoteRef = 2FFB38A12616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38A42616AA2700FEB3CC /* FirebaseAuth.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseAuth.framework;
+			remoteRef = 2FFB38A32616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38A62616AA2700FEB3CC /* FirebaseFirestore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseFirestore.framework;
+			remoteRef = 2FFB38A52616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38A82616AA2700FEB3CC /* FirebaseStorage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseStorage.framework;
+			remoteRef = 2FFB38A72616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38AA2616AA2700FEB3CC /* grpcpp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = grpcpp.framework;
+			remoteRef = 2FFB38A92616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38AC2616AA2700FEB3CC /* gRPCCertificates-Cpp.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "gRPCCertificates-Cpp.bundle";
+			remoteRef = 2FFB38AB2616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38AE2616AA2700FEB3CC /* grpc.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = grpc.framework;
+			remoteRef = 2FFB38AD2616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38B02616AA2700FEB3CC /* GTMSessionFetcher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTMSessionFetcher.framework;
+			remoteRef = 2FFB38AF2616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FFB38B22616AA2700FEB3CC /* leveldb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = leveldb.framework;
+			remoteRef = 2FFB38B12616AA2700FEB3CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FAC1C5125E0CE56008EFB1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD1043D25F3CFF300E1C738 /* Pods-odango UIKit-frameworks-Debug-input-files.xcfilelist in Resources */,
+				2F206EC1261372FD00AB7466 /* 2021-03-29 (2).png in Resources */,
+				2F00A4BE260F5519005298AA /* フロー図.pptx-3.jpg in Resources */,
+				2FD1045025F3D00E00E1C738 /* Pods-odango UIKit.debug.xcconfig in Resources */,
+				2F206F792615D7D000AB7466 /* send-icon in Resources */,
+				2F0670C325FDDB9C00E3CD2E /* 3622-300x300.jpg in Resources */,
+				2F00A4AB260EFE08005298AA /* _i_icon_12314_icon_123140_256.PNG in Resources */,
+				2F3C88B925ECD672008D08DA /* CollectionViewController.xib in Resources */,
+				2FD1044625F3CFFF00E1C738 /* Pods-odango UIKit-frameworks-Release-output-files.xcfilelist in Resources */,
+				2FD1043425F3CFE600E1C738 /* Pods-odango UIKit-acknowledgements.markdown in Resources */,
+				2FAC1C6325E0CE59008EFB1E /* LaunchScreen.storyboard in Resources */,
+				2F206F132614A2D100AB7466 /* ChatRoom.storyboard in Resources */,
+				2F00A4BD260F5519005298AA /* フロー図.pptx-2.jpg in Resources */,
+				2FD1044025F3CFF700E1C738 /* Pods-odango UIKit-frameworks-Debug-output-files.xcfilelist in Resources */,
+				2F188906260B14070048A74E /* Apache License.txt in Resources */,
+				2FD1047725F4860500E1C738 /* FSCalendar.release.xcconfig in Resources */,
+				2FD1045425F3D01600E1C738 /* Pods-odango UIKit.release.xcconfig in Resources */,
+				2FFB38EE2616AC3A00FEB3CC /* e6f4b23c.jpg in Resources */,
+				2FFB37F62615ED9E00FEB3CC /* SignUp.storyboard in Resources */,
+				2F86A848261EFCBB00643213 /* 2dEyqo40YD1VhiQ1617831281_1617831364.png in Resources */,
+				2F86A83A261EF23D00643213 /* IMG_2256.JPG in Resources */,
+				2F3C88B325ECD0A3008D08DA /* TableViewController.xib in Resources */,
+				2FAC1C6025E0CE59008EFB1E /* Assets.xcassets in Resources */,
+				2F1888EF260B01530048A74E /* _i_icon_00484_icon_004840_256.jpg in Resources */,
+				2F00A4BC260F5519005298AA /* フロー図.pptx-7.jpg in Resources */,
+				2FFB38ED2616AC3A00FEB3CC /* sp_detail_main_COP08_AA_461.jpg in Resources */,
+				2F00A4BA260F5519005298AA /* フロー図.pptx-6.jpg in Resources */,
+				2FD1047325F485F200E1C738 /* FSCalendar.debug.xcconfig in Resources */,
+				2F00A4B2260F54FF005298AA /* フロー図.pptx.jpg in Resources */,
+				2F86A840261EFA4900643213 /* eO9Cbr8auNC0lAj1617830837_1617830947.png in Resources */,
+				2F86A853261F0DA400643213 /* 2021-04-08 (5).png in Resources */,
+				2F1888F2260B01E40048A74E /* _i_icon_00484_icon_004840_256 2.jpg in Resources */,
+				2FFB37F22615E86E00FEB3CC /* IMG_2237.JPG in Resources */,
+				2F3FE6C1261DD63500046FBE /* IMG_0830.jpg in Resources */,
+				2F00A4AE260F06A1005298AA /* IMG_2224.PNG in Resources */,
+				2FFB39162617591C00FEB3CC /* UserList.storyboard in Resources */,
+				2FEA5D262621BB5200547704 /* 4462576_s.jpg in Resources */,
+				2F86A83D261EF80400643213 /* Jh6zrTBm1vDmEVI1617869322_1617869982.png in Resources */,
+				2F206EC0261372FD00AB7466 /* 2021-03-29 (1).png in Resources */,
+				2F86A84C261F008D00643213 /* スクリーンショット 2021-04-08 18.10.39.png in Resources */,
+				2FD1043725F3CFEB00E1C738 /* Pods-odango UIKit-acknowledgements.plist in Resources */,
+				2F1888E5260AFC980048A74E /* 764.png in Resources */,
+				2F188905260B14070048A74E /* DroidSans-Bold.ttf in Resources */,
+				2FAC1C5E25E0CE56008EFB1E /* Main.storyboard in Resources */,
+				2F206F112614A2D100AB7466 /* ChatInputAccessoryView.xib in Resources */,
+				2F0670D225FDDBB000E3CD2E /* watch.png in Resources */,
+				2FD1041425F3CE5E00E1C738 /* LICENSE in Resources */,
+				2F206EC3261372FD00AB7466 /* 2021-03-30 (1).png in Resources */,
+				2F3C890725EDBDCC008D08DA /* AssetsCheckmark in Resources */,
+				2F86A854261F0DA400643213 /* 2021-04-08 (4).png in Resources */,
+				2F206F5A26157DAA00AB7466 /* 4172025_m.jpg in Resources */,
+				2F86A837261EEF7B00643213 /* IMG_AA0FA68BD3B7-1.jpeg in Resources */,
+				2FEA5CCF26216CF000547704 /* IMG_0761.mov in Resources */,
+				2F3C889A25EC73EA008D08DA /* MainViewController.xib in Resources */,
+				2F86A834261EEB3800643213 /* R6YPnAG4NeWjkh21617800491_1617800628.png in Resources */,
+				2FD1044325F3CFFB00E1C738 /* Pods-odango UIKit-frameworks-Release-input-files.xcfilelist in Resources */,
+				2FD1041325F3CE5E00E1C738 /* README.md in Resources */,
+				2FFB38EF2616AC3A00FEB3CC /* QP10004840_1L.jpg in Resources */,
+				2FD1042525F3CF4A00E1C738 /* FSCalendar-Info.plist in Resources */,
+				2FFB37F32615E86E00FEB3CC /* IMG_2238.PNG in Resources */,
+				2F206F762615A22500AB7466 /* IMG_21642D891D85-1.jpeg in Resources */,
+				2F206F692615813B00AB7466 /* recipe.jpg in Resources */,
+				2F00A4BF260F5519005298AA /* フロー図.pptx-5.jpg in Resources */,
+				2F86A843261EFC2C00643213 /* Qlr572rGmtXTc2j1617831052_1617831087.png in Resources */,
+				2F86A852261F0DA400643213 /* 2021-04-08 (3).png in Resources */,
+				2FD1041B25F3CF1000E1C738 /* Manifest.lock in Resources */,
+				2F206F2D2614AA5F00AB7466 /* ChatList.storyboard in Resources */,
+				2FFB38FF2616FAF200FEB3CC /* GoogleService-Info.plist in Resources */,
+				2F336F9825F3177F00680064 /* recipes.json in Resources */,
+				2F206F6026157DED00AB7466 /* sp_detail_main_PS_K10_1965M.jpg in Resources */,
+				2FEA5D222621BB3A00547704 /* unnamed.jpg in Resources */,
+				2FD1044925F3D00200E1C738 /* Pods-odango UIKit-frameworks.sh in Resources */,
+				2F3FE6BE261DD1AE00046FBE /* 20191004115411.jpg in Resources */,
+				2F93826A260D9DAF00C73267 /* checked-checkbox--v1.png in Resources */,
+				2F188904260B14070048A74E /* DroidSans.ttf in Resources */,
+				2F206F7326158AD100AB7466 /* 26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp in Resources */,
+				2F206F122614A2D100AB7466 /* ChatRoomTableViewCell.xib in Resources */,
+				2F3FE6B4261B40ED00046FBE /* IMG_2224.jpg in Resources */,
+				2F206ECA2613E21700AB7466 /* 16303ea280c958d0ef4d6c3420809cc0.jpg in Resources */,
+				2FEA5D1E2621BB1C00547704 /* 2OsIqUVw2LhISAd1617714975_1617715018.png in Resources */,
+				2F00A4BB260F5519005298AA /* フロー図.pptx-4.jpg in Resources */,
+				2F206F662615802600AB7466 /* i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg in Resources */,
+				2FFB38EC2616AC3A00FEB3CC /* 3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg in Resources */,
+				2F1888EC260AFF5E0048A74E /* A05873F7-2336-47A7-9C9B-7B4DD97FBA10_1_105_c.jpeg in Resources */,
+				2F86A855261F0DA400643213 /* 2021-04-08 (6).png in Resources */,
+				2F206EC4261372FD00AB7466 /* 2021-03-30.png in Resources */,
+				2FFB38EB2616AC3A00FEB3CC /* 1566136304_1.jpeg in Resources */,
+				2F206F6326157EC300AB7466 /* 48ce791cb0730c93f32136a00f9baccec902737a.jpg in Resources */,
+				2FD1041E25F3CF1A00E1C738 /* odango UIKit.xcworkspace in Resources */,
+				2FD1041825F3CEF000E1C738 /* FSCalendar.podspec.json in Resources */,
+				2F02C284260FEA5600CC1729 /* フロー図.pptx-8.jpg in Resources */,
+				2F938267260D9D7000C73267 /* unchecked-checkbox.png in Resources */,
+				2F206F5D26157DD200AB7466 /* 4384100_s.jpg in Resources */,
+				2F206EC2261372FD00AB7466 /* 2021-03-28 (6).png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A00D7FBD7CEA007E083612F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-odango UIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC2BA2E2ED791EB530937ED9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-odango UIKit/Pods-odango UIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-odango UIKit/Pods-odango UIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-odango UIKit/Pods-odango UIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FAC1C4F25E0CE56008EFB1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3C88FA25ED99BC008D08DA /* CJCheckBox.swift in Sources */,
+				2FD1040525F3CDF700E1C738 /* FSCalendarHeaderView.m in Sources */,
+				2F3C88B825ECD672008D08DA /* CollectionViewController.swift in Sources */,
+				2FD1040225F3CDF700E1C738 /* FSCalendarWeekdayView.m in Sources */,
+				2FD1043A25F3CFEF00E1C738 /* Pods-odango UIKit-dummy.m in Sources */,
+				2F206F182614A2D100AB7466 /* ChatRoomTableViewCell.swift in Sources */,
+				2F06D27326071E0A00F3BCDC /* GridLayoutView.swift in Sources */,
+				2F206EB22612939400AB7466 /* IngTableViewCell.swift in Sources */,
+				2F206F5726153D9F00AB7466 /* CollectionViewCell.swift in Sources */,
+				2F3C88B225ECD0A3008D08DA /* MyRecipeTableViewController.swift in Sources */,
+				2FD1040E25F3CDF700E1C738 /* FSCalendarCollectionViewLayout.m in Sources */,
+				2F3C889925EC73EA008D08DA /* MainViewController.swift in Sources */,
+				2F206F162614A2D100AB7466 /* ChatListViewController.swift in Sources */,
+				2F206EB52612DE1E00AB7466 /* PostEnterViewController.swift in Sources */,
+				2F3FE6C4261E5DA500046FBE /* EachDayCollectionCell.swift in Sources */,
+				2FD1040625F3CDF700E1C738 /* FSCalendarDelegationFactory.m in Sources */,
+				2F336FA125F3619E00680064 /* messageSetting.swift in Sources */,
+				2FCD8D58261142E70025C1CD /* IngTableView.swift in Sources */,
+				2F336F9C25F319AA00680064 /* Recipe.swift in Sources */,
+				2F067146260097A500E3CD2E /* MenuTableViewController.swift in Sources */,
+				2FD1040D25F3CDF700E1C738 /* FSCalendarSeparatorDecorationView.m in Sources */,
+				2F206EB9261354D800AB7466 /* HowtoTableViewCell.swift in Sources */,
+				2FD1040425F3CDF700E1C738 /* FSCalendarCell.m in Sources */,
+				2F336F7F25F25B8500680064 /* FriendAddPopupViewController.swift in Sources */,
+				2FD1042225F3CF4300E1C738 /* FSCalendar-dummy.m in Sources */,
+				2F3C886B25EA5E6E008D08DA /* ViewController.swift in Sources */,
+				2FAC1C5725E0CE56008EFB1E /* AppDelegate.swift in Sources */,
+				2F0671822601BF1900E3CD2E /* EachDayRecipeViewController.swift in Sources */,
+				2FD1048A25F4885B00E1C738 /* SortViewController.swift in Sources */,
+				2F1888DC260AAC2C0048A74E /* RecipeDetailViewController.swift in Sources */,
+				2F206F172614A2D100AB7466 /* ChatRoomViewController.swift in Sources */,
+				2FD1040C25F3CDF700E1C738 /* FSCalendarTransitionCoordinator.m in Sources */,
+				2FD1040025F3CDF700E1C738 /* FSCalendarAppearance.m in Sources */,
+				2FD1040125F3CDF700E1C738 /* FSCalendarCalculator.m in Sources */,
+				2F1E9A8F261928B000678E26 /* PreparingViewController.swift in Sources */,
+				2FD1040925F3CDF700E1C738 /* FSCalendarExtensions.m in Sources */,
+				2FD1040825F3CDF700E1C738 /* FSCalendarConstants.m in Sources */,
+				2FD1040325F3CDF700E1C738 /* FSCalendarDelegationProxy.m in Sources */,
+				2F206F192614A2D100AB7466 /* ChatInputAccessoryView.swift in Sources */,
+				2FD1040B25F3CDF700E1C738 /* FSCalendarCollectionView.m in Sources */,
+				2FFB37F92615F13600FEB3CC /* SignUpViewController.swift in Sources */,
+				2FD1040A25F3CDF700E1C738 /* FSCalendar.m in Sources */,
+				2FFB390E261730E200FEB3CC /* User.swift in Sources */,
+				2F67FB77260380F5008DEEFA /* MainChooseViewController.swift in Sources */,
+				2F3C890425EDA139008D08DA /* ShoppingTableViewController.swift in Sources */,
+				2F0670A025FD621700E3CD2E /* AccessToPhotoViewController.swift in Sources */,
+				2FEA5D1B2621BAB000547704 /* mypageViewController.swift in Sources */,
+				2FD1040725F3CDF700E1C738 /* FSCalendarStickyHeader.m in Sources */,
+				2F97B90A25F180B0002567A2 /* MenuPageViewController.swift in Sources */,
+				2FFB391926175A7E00FEB3CC /* UserListViewController.swift in Sources */,
+				2F336F7525F2412400680064 /* UIColor-Extension.swift in Sources */,
+				2F06717B26017F7900E3CD2E /* HomePageViewController.swift in Sources */,
+				2F02C287260FFD5900CC1729 /* SortTableViewCell.swift in Sources */,
+				2FAC1C5925E0CE56008EFB1E /* SceneDelegate.swift in Sources */,
+				2F06712C25FF41E400E3CD2E /* PostPageViewController.swift in Sources */,
+				2F86A85B262069F800643213 /* SideCollectionViewCell.swift in Sources */,
+				2F3FE694261AEE5E00046FBE /* Message.swift in Sources */,
+				2F1E9AC42619E5F800678E26 /* ChatRoom.swift in Sources */,
+				2FFB38E32616AB6500FEB3CC /* RecipeModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FAC1C5C25E0CE56008EFB1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FAC1C5D25E0CE56008EFB1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FAC1C6125E0CE59008EFB1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FAC1C6225E0CE59008EFB1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FAC1C6525E0CE59008EFB1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FAC1C6625E0CE59008EFB1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FAC1C6825E0CE59008EFB1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB001AC9DA33EC6E2BF7FBB5 /* Pods-odango UIKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ793669T3;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = odango/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-305.odango";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		2FAC1C6925E0CE59008EFB1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084EBFD846FB76727BD68E66 /* Pods-odango UIKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ793669T3;
+				INFOPLIST_FILE = odango/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "-305.odango";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FAC1C4E25E0CE56008EFB1E /* Build configuration list for PBXProject "odango UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FAC1C6525E0CE59008EFB1E /* Debug */,
+				2FAC1C6625E0CE59008EFB1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FAC1C6725E0CE59008EFB1E /* Build configuration list for PBXNativeTarget "odango UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FAC1C6825E0CE59008EFB1E /* Debug */,
+				2FAC1C6925E0CE59008EFB1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FAC1C4B25E0CE56008EFB1E /* Project object */;
+}

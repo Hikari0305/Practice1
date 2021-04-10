@@ -1,0 +1,6 @@
+framework module Pods_odango_UIKit {
+  umbrella header "Pods-odango UIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
