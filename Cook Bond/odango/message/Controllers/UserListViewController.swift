@@ -99,6 +99,7 @@ class UserListTableViewCell: UITableViewCell {
     var user: User? {
         didSet {
             usernameLabel.text = user?.username
+            emailLabel.text = user?.email
             if let url = URL(string: user?.profileImageImageUrl ?? "") {
                 Nuke.loadImage(with: url, into: userImageView)
             }
@@ -107,6 +108,7 @@ class UserListTableViewCell: UITableViewCell {
     }
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

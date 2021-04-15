@@ -31,7 +31,7 @@ class PreparingViewController: UIViewController {
         detailLabel.numberOfLines = 0
         detailLabel.sizeToFit()
         
-        playVideoButton.setBackgroundImage(UIImage(named: "スクリーンショット 2021-04-08 18.10.39.png"), for: .normal)
+        playVideoButton.setBackgroundImage(UIImage(named: "IMG_0921.JPG"), for: .normal)
     }
     
     private func playMovie(fileName: String, fileExtension: String) {

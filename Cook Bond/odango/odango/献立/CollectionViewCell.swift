@@ -13,7 +13,8 @@ class CollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.frame = CGRect(x: 0, y: (screenSize.width-50) / 2, width: (screenSize.width-50) / 2, height: 50)
 //        label.textColor = UIColor.gray
-        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.lineBreakMode = .byCharWrapping
         return label
     }()
     
@@ -56,14 +57,17 @@ class CollectionViewCell: UICollectionViewCell {
             chooseImage.clipsToBounds = true
             contentView.addSubview(chooseLabel)
             contentView.addSubview(chooseImage)
+            chooseLabel.isUserInteractionEnabled = false
+            chooseImage.isUserInteractionEnabled = false
+//            contentView.isUserInteractionEnabled = false
 //            contentView.addSubview(chooseButton)
 //            chooseImage.addSubview(chooseButton)
         }
 
     func setupContents(textName: String, imagepath: String) {
-        chooseLabel.text = textName
+        self.chooseLabel.text = textName
         self.imagePath = imagepath
-        chooseImage.image = UIImage(named: imagePath)
+        self.chooseImage.image = UIImage(named: imagePath)
     }
     
     func setFilter() {

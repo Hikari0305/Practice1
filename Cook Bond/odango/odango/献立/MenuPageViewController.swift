@@ -40,6 +40,12 @@ class MenuPageViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         
     }
     
+    @IBAction func showShopList(_ sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewController(withIdentifier: "ShoppingTableViewController") as! ShoppingTableViewController
+        self.navigationController?.pushViewController(nextView, animated: true)
+        nextView.updateData("2021/03/23(Tue)")
+    }
     //    let dictionary = ["2021/03/23(Tue)": ["name": "soba", "imagePath": "unnamed.jpg", "time": "20 minutes", "calorie": "200 calorie", "ingredients": ["water", "rice"]]]
     //    let value = dictionary["2021/03/23(Tue)"]
     
@@ -74,20 +80,13 @@ class MenuPageViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
             let nextView = storyborad.instantiateViewController(withIdentifier: "createmenupage")as! MainChooseViewController
             //③画面遷移
             self.navigationController?.pushViewController(nextView, animated: true)
-            
-            
+            nextView.setDate(selectedDate)
         } else {
             //②遷移先ViewControllerのインスタンス取得
             let nextView = storyborad.instantiateViewController(withIdentifier: "view2")as! EachDayRecipeViewController
             //③画面遷移
-            self.navigationController?.pushViewController(nextView, animated: true)
-            
-            let value2 = commonDictionary[selectedDate]
-            
-            let recipename = value2![keyName] as! String
-            
+            self.navigationController?.pushViewController(nextView, animated: true)                                    
             nextView.updateString(selectedDate)
-            
         }
         
         //getData()

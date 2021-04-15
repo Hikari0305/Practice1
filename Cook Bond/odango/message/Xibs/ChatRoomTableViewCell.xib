@@ -16,55 +16,88 @@
                 <rect key="frame" x="0.0" y="0.0" width="484" height="113"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2238.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="fzv-Qy-pST">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fzv-Qy-pST">
                         <rect key="frame" x="15" y="26.5" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="fzv-Qy-pST" secondAttribute="height" multiplier="1:1" id="Lr4-DY-cc6"/>
                             <constraint firstAttribute="width" constant="60" id="Uyv-db-HqE"/>
                         </constraints>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="メッセージがここに入ります。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2B-5e-ihe">
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2B-5e-ihe">
                         <rect key="frame" x="85" y="25" width="250" height="63"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="250" id="cuz-0o-NKL"/>
                         </constraints>
-                        <color key="textColor" systemColor="labelColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <attributedString key="attributedText">
+                            <fragment content="メッセージがここに入りますあ">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="17" name="HiraginoSans-W4"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVb-WS-FeG">
-                        <rect key="frame" x="340" y="57" width="48" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVb-WS-FeG">
+                        <rect key="frame" x="340" y="61" width="36" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9B-v8-8wm">
+                        <rect key="frame" x="224" y="25" width="240" height="63"/>
+                        <color key="backgroundColor" red="0.91648835260511019" green="1" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="qip-g2-Sl4"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="メッセージがここに入ります">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="17" name="HiraginoSans-W3"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB0-9e-KyE">
+                        <rect key="frame" x="183" y="61" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" red="0.82102072240000001" green="0.88415628670000002" blue="0.97648471589999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstItem="m2B-5e-ihe" firstAttribute="top" secondItem="reW-zW-4zU" secondAttribute="top" constant="25" id="0oq-Te-JOf"/>
-                    <constraint firstItem="GVb-WS-FeG" firstAttribute="leading" secondItem="m2B-5e-ihe" secondAttribute="trailing" constant="5" id="9ed-QD-fKR"/>
+                    <constraint firstAttribute="bottom" secondItem="c9B-v8-8wm" secondAttribute="bottom" constant="25" id="Aw4-6v-5aP"/>
+                    <constraint firstItem="c9B-v8-8wm" firstAttribute="bottom" secondItem="GVb-WS-FeG" secondAttribute="bottom" constant="10" id="Q6I-bl-r4F"/>
                     <constraint firstAttribute="bottom" secondItem="m2B-5e-ihe" secondAttribute="bottom" constant="25" id="Qhs-to-ciK"/>
-                    <constraint firstItem="m2B-5e-ihe" firstAttribute="bottom" secondItem="GVb-WS-FeG" secondAttribute="bottom" constant="10" id="Tt6-sV-X0U"/>
                     <constraint firstItem="fzv-Qy-pST" firstAttribute="centerY" secondItem="reW-zW-4zU" secondAttribute="centerY" id="b0P-JU-16g"/>
+                    <constraint firstItem="c9B-v8-8wm" firstAttribute="bottom" secondItem="BB0-9e-KyE" secondAttribute="bottom" constant="10" id="bQc-6h-4cb"/>
+                    <constraint firstAttribute="trailing" secondItem="c9B-v8-8wm" secondAttribute="trailing" constant="20" id="dEu-5K-Hqt"/>
+                    <constraint firstItem="c9B-v8-8wm" firstAttribute="top" secondItem="reW-zW-4zU" secondAttribute="top" constant="25" id="dZg-hP-XwK"/>
                     <constraint firstItem="m2B-5e-ihe" firstAttribute="leading" secondItem="fzv-Qy-pST" secondAttribute="trailing" constant="10" id="eN0-pR-EHE"/>
+                    <constraint firstItem="c9B-v8-8wm" firstAttribute="leading" secondItem="BB0-9e-KyE" secondAttribute="trailing" constant="5" id="fgh-VE-Ioz"/>
+                    <constraint firstItem="GVb-WS-FeG" firstAttribute="leading" secondItem="m2B-5e-ihe" secondAttribute="trailing" constant="5" id="k16-iA-vGE"/>
                     <constraint firstItem="fzv-Qy-pST" firstAttribute="leading" secondItem="reW-zW-4zU" secondAttribute="leading" constant="15" id="xxo-UZ-vTP"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="datelabel" destination="GVb-WS-FeG" id="qJg-fR-HLq"/>
-                <outlet property="messageTextView" destination="m2B-5e-ihe" id="3jl-1f-iGY"/>
                 <outlet property="messageTextViewWidthConstraint" destination="cuz-0o-NKL" id="hSf-lG-vrs"/>
+                <outlet property="myDateLabel" destination="BB0-9e-KyE" id="Rjs-wX-bAG"/>
+                <outlet property="myMessageTextView" destination="c9B-v8-8wm" id="E1Q-Rf-pAW"/>
+                <outlet property="myMessageTextViewWidthConstraint" destination="qip-g2-Sl4" id="IYM-b2-jIj"/>
+                <outlet property="partnerDatelabel" destination="GVb-WS-FeG" id="oMY-SM-riU"/>
+                <outlet property="partnerMessageTextView" destination="m2B-5e-ihe" id="FRH-24-v95"/>
                 <outlet property="userImageview" destination="fzv-Qy-pST" id="UK9-Co-WPw"/>
             </connections>
             <point key="canvasLocation" x="153.62318840579712" y="45.870535714285715"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="IMG_2238.PNG" width="1552" height="1552"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

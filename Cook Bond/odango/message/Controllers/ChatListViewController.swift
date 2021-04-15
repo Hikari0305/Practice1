@@ -7,6 +7,8 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 import Nuke
 
 class ChatListViewController: UIViewController {
@@ -31,7 +33,7 @@ class ChatListViewController: UIViewController {
         fetchChatroomsInfoFromFirestore()
     }
     
-    private func fetchChatroomsInfoFromFirestore() {
+    func fetchChatroomsInfoFromFirestore() {
         Firestore.firestore().collection("ChatRooms")
             .addSnapshotListener { (snapshots, err) in
                 
@@ -56,30 +58,34 @@ class ChatListViewController: UIViewController {
     
     private func handleAddedDocumentChange(documentChange: DocumentChange) {
         let dic = documentChange.document.data()
-            let chatroom = ChatRoom(dic: dic)
+        let chatroom = ChatRoom(dic: dic)
         chatroom.documentId = documentChange.document.documentID
-            
-            guard let uid = Auth.auth().currentUser?.uid else { return }
-            chatroom.members?.forEach { (memberUid) in
-                if memberUid != uid {
-                    Firestore.firestore().collection("users").document(memberUid).getDocument {
-                        (snapshot,err)in
-                        if err != nil {
-                            print("ユーザー情報の取得に失敗しました")
-                            return
-                        }
-                        guard let dic = snapshot?.data() else { return }
-                        let user = User(dic: dic)
-                        user.uid = documentChange.document.documentID
-                        
-                        chatroom.partnerUser = user
-                        self.chatrooms.append(chatroom)
-                        print(": ", self.chatrooms.count)
-                        self.chatListTableView.reloadData()
-                        
+                
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let isContain = (chatroom.members?.contains(uid))!
+
+        if !isContain { return }
+        
+        chatroom.members?.forEach { (memberUid) in
+            if memberUid != uid {
+                Firestore.firestore().collection("users").document(memberUid).getDocument {
+                    (snapshot,err)in
+                    if err != nil {
+                        print("ユーザー情報の取得に失敗しました")
+                        return
                     }
+                    guard let dic = snapshot?.data() else { return }
+                    let user = User(dic: dic)
+                    user.uid = documentChange.document.documentID
+                    
+                    chatroom.partnerUser = user
+                    self.chatrooms.append(chatroom)
+                    print(": ", self.chatrooms.count)
+                    self.chatListTableView.reloadData()
+                    
                 }
             }
+        }
     }
     private func setUpViews() {
         chatListTableView.tableFooterView = UIView()
@@ -96,10 +102,7 @@ class ChatListViewController: UIViewController {
     
     private func confirmLoggedInUser() {
         if Auth.auth().currentUser?.uid == nil {
-            let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
-            let signUpViewController = storyboard.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
-            signUpViewController.modalPresentationStyle = .fullScreen
-//            fetchUserInfoFromFireStore()
+            //            fetchUserInfoFromFireStore()
         }
     }
     
@@ -158,20 +161,10 @@ extension ChatListViewController: UITableViewDelegate, UITableViewDataSource {
 
 class ChatListTableViewCell: UITableViewCell {
     
-//    var user: User? {
-//        didSet {
-//            if let user = user {
-//                partnerLabel.text = user.username
-//                dateLabel.text = dateFormatterForDateLabel(date: user.createdAt.dateValue())
-//                latestMessageLabal.text = user.email
-//            }
-//        }
-//    }
-    
     var chatroom: ChatRoom? {
         didSet {
             if let chatroom = chatroom {
-                partnerLabel.text = chatroom.partnerUser?.username
+                latestMessageLabal.text = chatroom.partnerUser?.username
                 
                 guard let url = URL(string: chatroom.partnerUser?.profileImageImageUrl ?? "") else { return }
                 Nuke.loadImage(with: url, into: userImageView)

@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import Nuke
 
 class mypageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
@@ -14,6 +17,20 @@ class mypageViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var accountphoto: UIImageView!
     @IBOutlet weak var changeAccountPhotoButton: UIButton!
     @IBOutlet weak var changeAccountNameButton: UIButton!
+    
+    private var users = [User]()
+
+    @IBAction func tappedLogoutButton(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+            let signUpViewController = storyboard.instantiateViewController(withIdentifier: "SignUpViewController")
+            let nav = UINavigationController(rootViewController: signUpViewController)
+            self.present(nav, animated: true, completion: nil)
+        } catch {
+            print("ログアウトに失敗しました")
+        }
+    }
     
     @IBAction func tappedChangePhoto(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
@@ -39,6 +56,7 @@ class mypageViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.mypageTableView.tableFooterView = UIView()
         self.changeAccountNameButton.isHidden = true
         self.accountTextField.delegate = self
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -73,6 +91,28 @@ class mypageViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.navigationController?.pushViewController(browsedView, animated: true)
             
         } else {
+        }
+    }
+    private func fetchUserInfoFromFireStore() {
+        Firestore.firestore().collection("users").getDocuments {(snapshots, err) in
+            if let err = err {
+                print("user情報の取得に失敗しました。\(err)")
+                return
+            }
+            
+            snapshots?.documents.forEach({ (snapshot) in
+                let dic = snapshot.data()
+                let user = User.init(dic: dic)
+                user.uid = snapshot.documentID
+                
+                guard let uid = Auth.auth().currentUser?.uid else { return }
+                
+                if uid == snapshot.documentID {
+                    return
+                }
+                self.users.append(user)
+                
+            })
         }
     }
 }

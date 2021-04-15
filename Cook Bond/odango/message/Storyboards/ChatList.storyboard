@@ -55,16 +55,10 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sv-95-mjs">
-                                                    <rect key="frame" x="80" y="21" width="89.5" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sv-95-mjs">
+                                                    <rect key="frame" x="80" y="21" width="137" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LI-89-akI">
-                                                    <rect key="frame" x="80" y="46" width="28" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dq-hL-1BG">
@@ -78,9 +72,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="3Dq-hL-1BG" secondAttribute="trailing" constant="10" id="3Mo-s8-fc1"/>
                                                 <constraint firstItem="qbY-gT-Pst" firstAttribute="centerY" secondItem="fxm-n7-uIj" secondAttribute="centerY" id="83z-1C-uv2"/>
                                                 <constraint firstItem="7sv-95-mjs" firstAttribute="top" secondItem="fxm-n7-uIj" secondAttribute="topMargin" constant="10" id="GL4-pz-ADu"/>
-                                                <constraint firstItem="8LI-89-akI" firstAttribute="leading" secondItem="qbY-gT-Pst" secondAttribute="trailing" constant="10" id="N8W-jp-AiE"/>
                                                 <constraint firstItem="3Dq-hL-1BG" firstAttribute="top" secondItem="fxm-n7-uIj" secondAttribute="top" constant="20" id="ND4-jz-7eO"/>
-                                                <constraint firstItem="8LI-89-akI" firstAttribute="top" secondItem="7sv-95-mjs" secondAttribute="bottom" constant="8" id="Zch-L4-9vu"/>
                                                 <constraint firstItem="7sv-95-mjs" firstAttribute="leading" secondItem="qbY-gT-Pst" secondAttribute="trailing" constant="10" id="kAU-w0-0qh"/>
                                                 <constraint firstItem="qbY-gT-Pst" firstAttribute="leading" secondItem="fxm-n7-uIj" secondAttribute="leading" constant="10" id="qAG-AJ-rPu"/>
                                             </constraints>
@@ -88,7 +80,6 @@
                                         <connections>
                                             <outlet property="dateLabel" destination="3Dq-hL-1BG" id="2N4-9L-dks"/>
                                             <outlet property="latestMessageLabal" destination="7sv-95-mjs" id="QeQ-5L-VMB"/>
-                                            <outlet property="partnerLabel" destination="8LI-89-akI" id="f4H-gd-Qz5"/>
                                             <outlet property="userImageView" destination="qbY-gT-Pst" id="kd6-MR-W3n"/>
                                         </connections>
                                     </tableViewCell>
@@ -107,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="The-cW-5JQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="73"/>
+            <point key="canvasLocation" x="124.6376811594203" y="72.991071428571431"/>
         </scene>
         <!--UserList-->
         <scene sceneID="jh9-HB-KMQ">

@@ -22,9 +22,19 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpViews()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    @objc func setUpViews() {
         self.profileImageButton.addTarget(self, action: #selector(tappedProfileImageButton), for: .touchUpInside)
         self.registerButton.addTarget(self, action: #selector(tappedRegisterButton), for: .touchUpInside)
+        
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
         self.usernameTextField.delegate = self

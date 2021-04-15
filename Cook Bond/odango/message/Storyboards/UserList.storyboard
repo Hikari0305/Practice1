@@ -61,15 +61,24 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42c-yU-c9X">
+                                                    <rect key="frame" x="356.5" y="31" width="37.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="42c-yU-c9X" secondAttribute="trailing" id="286-ie-F6d"/>
                                                 <constraint firstItem="fFL-jC-Rbs" firstAttribute="leading" secondItem="NHb-aQ-aUD" secondAttribute="trailing" constant="15" id="Ghn-fv-9K8"/>
                                                 <constraint firstItem="fFL-jC-Rbs" firstAttribute="centerY" secondItem="6Hi-jn-hYb" secondAttribute="centerY" id="Kmh-MC-pAD"/>
                                                 <constraint firstItem="NHb-aQ-aUD" firstAttribute="leading" secondItem="6Hi-jn-hYb" secondAttribute="leading" constant="10" id="Ps0-hH-BEA"/>
                                                 <constraint firstItem="NHb-aQ-aUD" firstAttribute="centerY" secondItem="6Hi-jn-hYb" secondAttribute="centerY" id="gKT-Pe-F2W"/>
+                                                <constraint firstItem="42c-yU-c9X" firstAttribute="centerY" secondItem="6Hi-jn-hYb" secondAttribute="centerY" id="ycd-pn-83H"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="emailLabel" destination="42c-yU-c9X" id="J0Y-5I-9iw"/>
                                             <outlet property="userImageView" destination="NHb-aQ-aUD" id="eHG-yw-iX3"/>
                                             <outlet property="usernameLabel" destination="fFL-jC-Rbs" id="upi-5x-IC1"/>
                                         </connections>

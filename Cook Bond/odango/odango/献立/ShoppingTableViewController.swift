@@ -7,21 +7,15 @@
 
 import UIKit
 
-//var val = commonDictionary[key2021323]
-//struct ingData {
-//    var name: [[String:String]]
-//    var selected: Bool
-//}
-
 class ShoppingTableViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var shoppingTableView: UITableView!
-    var val = commonDictionary[key2021323]
+    var idList = [String:[String]]()
 //    lazy var shopList: [ingData] = [
 //        ingData(name: self.val![keyIngList] as! [[String : String]], selected: false)
 //    ]
-    lazy var shopList: [[String:String]] =  val![keyIngList] as! [[String:String]]
-    lazy var selectedList = [Bool](repeating: false, count: self.shopList.count)
+    var shopList: [[String:String]] =  [[String:String]]()
+    var selectedList = [Bool]()
     
     var localDate = "hoge"
     
@@ -32,10 +26,18 @@ class ShoppingTableViewController: UIViewController,UITableViewDelegate, UITable
     
     func updateData (_ selectedDate:String) {
         self.localDate = selectedDate
-        self.val = commonDictionary[selectedDate]
-        if self.val != nil {
+        let value = commonDictionary[selectedDate]
+        if value != nil {
 //            self.shopList = self.val![keyIngList] as! [ingData]
-            self.shopList = self.val![keyIngList] as! [[String:String]]
+            let ids = value![keyID] as! [String]
+            for id in ids {
+                let recipeData = commonRecipeList[id]
+                if recipeData != nil {
+                    self.shopList = recipeData!["common_ingredients"] as! [[String : String]]
+                    print(shopList)
+                }
+            }
+            self.selectedList = [Bool](repeating: false, count: shopList.count)
         }
     }
     
@@ -58,7 +60,7 @@ class ShoppingTableViewController: UIViewController,UITableViewDelegate, UITable
                     cell.textLabel!.text = labelString
                     cell.textLabel!.font = UIFont(name: cell.textLabel!.font.fontName, size:15) // Change the font size as per your requirement
                     cell.textLabel!.font = UIFont(name: "Avenir-Roman", size: 21)
-                    if (self.val![labelString] != nil) {
+                    if (self.selectedList[indexPath.row]) {
                         cell.imageView?.image = checked
                         cell.backgroundColor = .lightGray
                     } else {
@@ -74,11 +76,11 @@ class ShoppingTableViewController: UIViewController,UITableViewDelegate, UITable
             let cellText = cell.textLabel?.text
             
             if cell.imageView?.image == self.checked {
-                self.val?.updateValue(false, forKey: cellText!)
+//                self.val?.updateValue(false, forKey: cellText!)
                 cell.imageView?.image = self.unchecked
                 cell.backgroundColor = .white
             } else {
-                self.val?.updateValue(true, forKey: cellText!)
+//                self.val?.updateValue(true, forKey: cellText!)
                 cell.imageView?.image = self.checked
                 cell.backgroundColor = .lightGray
             }

@@ -32,6 +32,7 @@ class MainChooseViewController: UIViewController {
     @IBOutlet weak var setMenuButton: UIButton!
     
     var viewWidth: CGFloat = 0
+    var selectedDate: String = ""
     
     //これはnextボタンの時に呼ばれるイベント関数です
     @IBAction func onButtonTapped(_ sender: Any) {
@@ -44,6 +45,10 @@ class MainChooseViewController: UIViewController {
         let currentPage: Int = pageControl.currentPage
         let nextPage = currentPage - 1
         updateContents(nextPage)
+    }
+    
+    func setDate(_ selectedDate: String){
+        self.selectedDate = selectedDate
     }
     
     func updateContents(_ targetPageNum: Int) {
@@ -66,18 +71,22 @@ class MainChooseViewController: UIViewController {
         }
     }
     //これはmainの料理です
-    var recipeList = ["pasta", "omelette rice", "Yellowtail teriyaki", "scallop cooked rice", "subuta", "curry rice"]
-    var imageList = ["3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg", "26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp", "i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg", "recipe.jpg", "48ce791cb0730c93f32136a00f9baccec902737a.jpg", "IMG_21642D891D85-1.jpeg"]
+    var recipeList = ["Carbonara", "omelette rice", "Yellowtail teriyaki","cream stew with chicken", "scallop cooked rice", "curry rice"]
+    var imageList = ["3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg", "26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp", "i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg","IMG_0830.jpg","recipe.jpg",  "IMG_21642D891D85-1.jpeg"]
+    var recipeIDList = ["15", "15", "15", "15", "15", "15"]
     var tappedList = [false, false, false, false, false, false]
     
     //これはsideの料理です
-    var recipeList2 = ["soup", "ohitasi", "fukujinnzuke", "salad", "subuta", "curry rice"]
-    var imageList2 = ["3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg", "26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp", "i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg", "recipe.jpg", "48ce791cb0730c93f32136a00f9baccec902737a.jpg", "IMG_21642D891D85-1.jpeg"]
+    var recipeList2 = ["potato salad", "takenoko", "kinnpira gobo", "Mizuna and tsuna salad", "ohitasi of nanohana", "salad of abocado, cucumber and tomato"]
+    var imageList2 = ["IMG_0804.jpg", "IMG_0802.jpg", "IMG_0800.jpg", "IMG_2256.JPG", "IMG_0888.jpg", "IMG_0838.jpg"]
+    var recipeIDList2 = ["26", "26", "26", "26", "26", "26"]
     var tappedList2 = [false, false, false, false, false, false]
     
     //これはsoupの料理です
-    var recipeList3 = ["miso soup", "wakame soup", "egg soup", "corn soup", "subuta", "curry rice"]
-    var imageList3 = ["3ac4720cd39fcb7bc418a360734f4769f593c4e0.jpg", "26fb8d743b3e3e7645a4a947f4db74cb.jpg.webp", "i=https%3A%2F%2Fimage.excite.co.jp%2Fjp%2Ferecipe%2Frecipe%2F0%2F0%2F0075f14723f0ca3a9bcf5062871299b4%2F8e6ae4fb7223467b78bfd88ab8559dc0.jpeg&small=400&quality=100&type=jpeg.jpeg", "recipe.jpg", "48ce791cb0730c93f32136a00f9baccec902737a.jpg", "IMG_21642D891D85-1.jpeg"]
+    var recipeList3 = ["soup of eggplants, carrots and simeji", "wakame soup", "sweet potato soup", "cream soup", "minestrone", "chinese soup of bamboo shoots and cabbage"]
+    var imageList3 = ["IMG_0836.jpg", "IMG_0835.jpg", "IMG_0833.jpg", "IMG_0832.jpg", "IMG_0886.jpg", "IMG_0834.jpg"]
+    var recipeIDList3 = ["2", "2", "2", "2", "2",
+                         "2"]
     var tappedList3 = [false, false, false, false, false, false]
     
     struct recipeData {
@@ -116,7 +125,7 @@ class MainChooseViewController: UIViewController {
         layout.minimumLineSpacing = 10
         
         let collectionView = UICollectionView(frame: CGRect(x: 20, y: 100, width: screenSize.width - 40, height: screenSize.height/2 + 50 ), collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.blue
+        collectionView.backgroundColor = UIColor.white
         //セルの登録
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
         return collectionView
@@ -134,7 +143,7 @@ class MainChooseViewController: UIViewController {
         layout.minimumLineSpacing = 10
         
         let collectionView = UICollectionView(frame: CGRect(x: 20, y: 100, width: screenSize.width - 40, height: screenSize.height/2 + 50 ), collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.red
+        collectionView.backgroundColor = UIColor.white
         //セルの登録
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
         return collectionView
@@ -170,6 +179,11 @@ class MainChooseViewController: UIViewController {
         self.viewWidth = self.pageScrollView.frame.width
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        navigationItem.title = self.selectedDate
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -177,13 +191,17 @@ class MainChooseViewController: UIViewController {
         self.view.endEditing(true)
     }
     @IBAction func setMenu(_ sender: Any) {
+        print("今からsetMenuが始まるよ")
         var i = 0
+        var idList = [String]()
         
         for item in tappedList {
             if item == true {
                 let recipe = recipeList[i]
                 let path = imageList[i]
-                print(recipe + "," + path)
+                let id = recipeIDList[i]
+                idList.append(id)
+                print(recipe + "," + path + "," + id)
             }
             i += 1
         }
@@ -193,7 +211,9 @@ class MainChooseViewController: UIViewController {
             if item == true {
                 let recipe = recipeList2[i]
                 let path = imageList2[i]
-                print(recipe + "," + path)
+                let id = recipeIDList2[i]
+                idList.append(id)
+                print(recipe + "," + path + "," + id)
             }
             i += 1
         }
@@ -203,12 +223,16 @@ class MainChooseViewController: UIViewController {
             if item == true {
                 let recipe = recipeList3[i]
                 let path = imageList3[i]
-                print(recipe + "," + path)
+                let id = recipeIDList3[i]
+                idList.append(id)
+                print(recipe + "," + path + "," + id)
             }
             i += 1
         }
+        commonDictionary[selectedDate] = ["id": idList]
+        print(selectedDate)
+        print(commonDictionary)
     }
-    
 }
 //cellに与える情報の設定
 extension MainChooseViewController: UICollectionViewDataSource {

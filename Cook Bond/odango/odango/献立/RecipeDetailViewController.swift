@@ -16,25 +16,35 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var calorieLabel: UILabel!
     
+    @IBOutlet weak var shoppingStatusButton: UIButton!
+    @IBOutlet weak var prepareStatusButton: UIButton!
+    @IBOutlet weak var cookStatusButton: UIButton!
+    
     var ingList2 = ["1", "2"]
     
     @IBOutlet weak var ingredientsTable: UITableView!
     @IBOutlet weak var howtoTable: UITableView!
     
-    var val = commonDictionary[key2021323]
-    lazy var recipe = val![keyName] as! String
-    lazy var imagePath = val![keyPath] as! String
-    lazy var time = val![keyTime] as! String
-    lazy var calorie = val![keyCalorie] as! String
-    lazy var ingList: [[String:String]] = val![keyIngList] as! [[String:String]]
-    lazy var recipeList: [[String:Any]] = val![keyHowto] as! [[String:Any]]
-    lazy var lists: [[String:String]] = []
+    var val = [String:Any]()
+    lazy var recipe = ""
+    lazy var imagePath = ""
+    lazy var time = ""
+    lazy var calorie = ""
+    lazy var ingList = [[String:String]]()
+    lazy var recipeList = [[String:Any]]()
+//    lazy var lists: [[String:String]] = []
+    var recipeId: String = ""
     var localDate = "hoge"
     
     var checked :UIImage = UIImage(named: "checked-checkbox--v1.png")!
     var unchecked :UIImage = UIImage(named: "unchecked-checkbox.png")!
     var ud = UserDefaults.standard
     var status = String()
+    enum IconType {
+        case shoppingIcon
+        case preparingIcon
+        case cookingIcon
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +55,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
         //recipeName.frame = CGRect(x: 15, y: 110, width: 379, height: 40)
         
         self.recipeName.text = self.recipe
-        self.recipeImage.image = UIImage(named: self.imagePath )
+        self.recipeImage.image = UIImage(named: self.imagePath)
         print(self.imagePath)
         self.timeLabel.text = self.time
         self.calorieLabel.text = self.calorie
@@ -55,8 +65,24 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
         self.howtoTable.delegate = self
         self.howtoTable.dataSource = self
         
-        self.lists.append(contentsOf: self.ingList)
-        //        lists.append(contentsOf: recipeList)
+//        self.lists.append(contentsOf: self.ingList)
+        setUpButtons()
+    }
+    
+    func setUpButtons() {
+        self.shoppingStatusButton.setBackgroundImage(UIImage(named: "IMG_0929.jpg"), for: .normal)
+        aspectFill(shoppingStatusButton)
+        self.prepareStatusButton.setBackgroundImage(UIImage(named: "IMG_0930.jpg"), for: .normal)
+        aspectFill(prepareStatusButton)
+        self.cookStatusButton.setBackgroundImage(UIImage(named: "IMG_0931.jpg"), for: .normal)
+        aspectFill(cookStatusButton)
+    }
+    
+    func aspectFill(_ btn: UIButton) {
+        btn.setTitle("", for: .normal)
+        btn.imageView?.contentMode = .scaleAspectFit
+        btn.contentHorizontalAlignment = .fill
+        btn.contentVerticalAlignment = .fill
     }
     
     override func viewDidLayoutSubviews() {
@@ -69,6 +95,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
         super.didReceiveMemoryWarning()
     }
     
+   
 //    //初期値にStringを受け取る
 //        init(name: String) {
 //            //受け取ったデータをnameLabelのテキストにする
@@ -80,66 +107,63 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
 //        fatalError("init(coder:) has not been implemented")
 //    }
     
-    func updateData (_ selectedDate:String) {
-        localDate = selectedDate
-        self.val = commonDictionary[selectedDate]
-        if (val != nil) {
-            print("valisnotnil")
-            if (self.val![keyName] != nil) {
-                self.recipe = self.val![keyName] as! String
-            }
-            if (self.val![keyPath] != nil) {
-                self.imagePath = self.val![keyPath] as! String
-            }
-            if (self.val![keyTime] != nil) {
-                self.time = self.val![keyTime] as! String
-            }
-            if (self.val![keyCalorie] != nil) {
-                self.calorie = self.val![keyCalorie] as! String
-            }
-            if (self.val![keyIngList] != nil) {
-                self.ingList = self.val![keyIngList] as! [[String:String]]
-            }
-            if (self.val![keyHowto] != nil) {
-                var temp = self.val![keyHowto] as! [[String:Any]]
-                print(temp)
-            }
-            
-        }
-        
-        print("calledupdateData")
-    }
+//    func updateData (_ selectedDate:String) {
+//        localDate = selectedDate
+//        self.val = commonDictionary[selectedDate]
+//        if (val != nil) {
+//            print("valisnotnil")
+//            if (self.val![keyName] != nil) {
+//                self.recipe = self.val![keyName] as! String
+//            }
+//            if (self.val![keyPath] != nil) {
+//                self.imagePath = self.val![keyPath] as! String
+//            }
+//            if (self.val![keyTime] != nil) {
+//                self.time = self.val![keyTime] as! String
+//            }
+//            if (self.val![keyCalorie] != nil) {
+//                self.calorie = self.val![keyCalorie] as! String
+//            }
+//            if (self.val![keyIngList] != nil) {
+//                self.ingList = self.val![keyIngList] as! [[String:String]]
+//            }
+//            if (self.val![keyHowto] != nil) {
+//                var temp = self.val![keyHowto] as! [[String:Any]]
+//                print(temp)
+//            }
+//
+//        }
+//
+//        print("calledupdateData")
+//    }
     func updateDataWithID (_ selectedID:String) {
-        for(key,value) in commonDictionary {
+        for(key,value) in commonRecipeList {
             print("dictionary key is \(key), value is\(value)")
-            let tempID = value[keyID] as! String
-            if tempID == selectedID {
+            //            let tempID = value[keyID] as! String
+            if key == selectedID {
                 self.val = value
-                if (self.val != nil) {
-                    print("valisnotnil")
-                    if (self.val![keyName] != nil) {
-                        self.recipe = self.val![keyName] as! String
-                    }
-                    if (self.val![keyPath] != nil) {
-                        self.imagePath = self.val![keyPath] as! String
-                    }
-                    if (self.val![keyTime] != nil) {
-                        self.time = self.val![keyTime] as! String
-                    }
-                    if (self.val![keyCalorie] != nil) {
-                        self.calorie = self.val![keyCalorie] as! String
-                    }
-                    if (self.val![keyIngList] != nil) {
-                        self.ingList = self.val![keyIngList] as! [[String:String]]
-                    }
-                    if (self.val![keyHowto] != nil) {
-                        var temp = self.val![keyHowto] as! [[String:Any]]
-                        print(temp)
-                    }
-                    
+                print("valisnotnil")
+                if (self.val[keyName] != nil) {
+                    self.recipe = self.val[keyName] as! String
+                }
+                if (self.val[keyPath] != nil) {
+                    self.imagePath = self.val[keyPath] as! String
+                }
+                if (self.val[keyTime] != nil) {
+                    self.time = self.val[keyTime] as! String
+                }
+                if (self.val[keyCalorie] != nil) {
+                    self.calorie = self.val[keyCalorie] as! String
+                }
+                if (self.val[keyIngList] != nil) {
+                    self.ingList = self.val[keyIngList] as! [[String:String]]
+                }
+                if (self.val[keyHowto] != nil) {
+                    self.recipeList = self.val[keyHowto] as! [[String:Any]]
                 }
             }
         }
+        recipeId = selectedID
     }
     // 処理分岐用
     var tag:Int = 0
@@ -157,56 +181,99 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.checkTableView(tableView)
-        return self.lists.count
+        print("tableview tag: ", tableView.tag)
+        print("self.tag: ", self.tag)
+        if (tableView.tag == 0) {
+            print("inglist count: ", ingList.count)
+            return ingList.count
+        } else if (tableView.tag == 1){
+            print("recipelist count: ", recipeList.count)
+            return recipeList.count
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         self.checkTableView(tableView)
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath as IndexPath) as? IngTableViewCell
         let cell2 = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath as IndexPath) as? HowtoTableViewCell
+        //表示したいテキスト
         var textData = ""
-        if (self.tag == 0) {
-            //材料取得
-            let ing = self.ingList[indexPath.row]
-            let ingname = ing[keyIngName]
-            let ingq = ing[keyIngQ]
-            if ingq != nil, ingname != nil {
-                textData = ingname! + " : " + ingq!
+        if (tableView.tag == 0) {
+            if ingList.count > indexPath.row {
+                //材料取得
+                let ing = self.ingList[indexPath.row]
+                let ingname = ing[keyIngName]
+                let ingq = ing[keyIngQ]
+                if ingq != nil, ingname != nil {
+                    textData = ingname! + " : " + ingq!
+                }
+                if (recipeStatusList[recipeId]?.shoppingList.count)! > indexPath.row {
+                    let current = recipeStatusList[recipeId]?.shoppingList[indexPath.row]
+                    if current == true {
+                        cell?.self.checkBoxImage.image = self.checked
+                    } else {
+                        cell?.self.checkBoxImage.image = self.unchecked
+                    }
+                }
             }
         }
         
-        else if (self.tag == 1) {
+        else if (tableView.tag == 1) {
             //手順取得
-            let temp2 = self.recipeList[indexPath.row]
-            let recipeOrder = temp2[keyOrder] as! Int
-            let recipeDetail = temp2[keyDetail] as! String
-            
-            textData = String(recipeOrder) + ". " + recipeDetail
-        }
-        else {
+            if recipeList.count > indexPath.row {
+                let temp2 = self.recipeList[indexPath.row]
+                let recipeOrder = temp2[keyOrder] as! Int
+                let recipeDetail = temp2[keyDetail] as! String
+                
+                textData = String(recipeOrder) + ". " + recipeDetail
+                
+                print(indexPath.row)
+                print(recipeStatusList[recipeId]?.preparingList.count)
+                print(recipeStatusList[recipeId]?.cookingList.count)
+                if (recipeStatusList[recipeId]?.preparingList.count)! > indexPath.row {
+                    let current = recipeStatusList[recipeId]?.preparingList[indexPath.row]
+                    if current == true {
+                        cell?.self.checkBoxImage.image = self.checked
+                    } else {
+                        cell?.self.checkBoxImage.image = self.unchecked
+                    }
+                } else if (recipeStatusList[recipeId]?.cookingList.count)! > indexPath.row-(recipeStatusList[recipeId]?.preparingList.count)! {
+                    let current = recipeStatusList[recipeId]?.cookingList[indexPath.row-(recipeStatusList[recipeId]?.preparingList.count)!]
+                    if current == true {
+                        cell?.self.checkBoxImage.image = self.checked
+                    } else {
+                        cell?.self.checkBoxImage.image = self.unchecked
+                    }
+                } else {
+                    print("初期化されませんでした")
+                    print(indexPath.row)
+                    print(recipeStatusList[recipeId]?.preparingList.count)
+                    print(recipeStatusList[recipeId]?.cookingList.count)
+                }
+            }
+        } else {
             // do nothing
         }
         //cellの内容をupdate
         cell?.self.recipeDetailLabel!.text = textData
         cell2?.self.recipeDetailLabel2!.text = textData
         //イメージをアップデートする
-        if (self.val![textData] != nil) {
-            cell?.self.checkBoxImage.image = self.checked
-        } else {
-            cell?.self.checkBoxImage.image = self.unchecked
-        }
+        
         if cell != nil {
             return cell!
         }
         
-        if (self.val![textData] != nil) {
-            cell2?.checkBoxImage2.image = self.checked
-        } else {
-            cell2?.checkBoxImage2.image = self.unchecked
-        }
+//        if (self.val[textData] != nil) {
+//            cell2?.checkBoxImage2.image = self.checked
+//        } else {
+//            cell2?.checkBoxImage2.image = self.unchecked
+//        }
         if cell2 != nil {
-            //            cell2?.showPrepreButton.addTarget(self, action: #selector(self.onTapped(_ :)), for: .touchUpInside)
+            if recipeList.count <= indexPath.row {
+                return cell2!
+            }
             cell2?.self.showPrepareButton.row = indexPath.row
             let howToCook = self.recipeList[indexPath.row]
             let ID = howToCook[keyPID]
@@ -259,20 +326,24 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //材料用のtableです
         if let cell = tableView.cellForRow(at: indexPath) as? IngTableViewCell {
-            //            let cellText = cell.textLabel?.text
-            
             if cell.self.checkBoxImage.image == self.checked {
-                //                self.val?.updateValue(false, forKey: cellText!)
                 cell.self.checkBoxImage.image = self.unchecked
-                cell.backgroundColor = .white
             } else {
-                //                self.val?.updateValue(true, forKey: cellText!)
                 cell.self.checkBoxImage.image = self.checked
-                cell.backgroundColor = .lightGray
             }
+
             cell.isSelected = false
+            
+            //レシピステータスを更新する
+            if (recipeStatusList[recipeId]?.shoppingList.count)! > indexPath.row {
+                let current = recipeStatusList[recipeId]?.shoppingList[indexPath.row]
+                recipeStatusList[recipeId]?.shoppingList[indexPath.row] = !(current!)
+                print("current: ", current!)
+            }
         }
+        //これは作り方用のtableです
         if let cell = tableView.cellForRow(at: indexPath) as? HowtoTableViewCell {
             if cell.self.checkBoxImage2.image == self.checked {
                 cell.self.checkBoxImage2.image = self.unchecked
@@ -280,12 +351,79 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
                 cell.self.checkBoxImage2.image = self.checked
             }
             cell.isSelected = false
+            
+            //レシピステータスを更新します
+            //
+            if (recipeStatusList[recipeId]?.preparingList.count)! > indexPath.row {
+                let current = recipeStatusList[recipeId]?.preparingList[indexPath.row]
+                recipeStatusList[recipeId]?.preparingList[indexPath.row] = !(current!)
+                print("preparing current: ", current!)
+                print("indexpath: ", indexPath.row)
+            } else if (recipeStatusList[recipeId]?.cookingList.count)! > indexPath.row-(recipeStatusList[recipeId]?.preparingList.count)! {
+                let current = recipeStatusList[recipeId]?.cookingList[indexPath.row-(recipeStatusList[recipeId]?.preparingList.count)!]
+                recipeStatusList[recipeId]?.cookingList[indexPath.row] = !(current!)
+                print("cooking current: ", current!)
+                print("indexpath: ", indexPath.row)
+            }
+
         }
+        //現在のstatusの状態を確認します
+        var flag = true
+        for item in recipeStatusList[recipeId]!.shoppingList {
+            if item == false {
+                flag = false
+                break
+            }
+        }
+        updateIconStatus(flag, .shoppingIcon)
+        flag = true
+        for item in recipeStatusList[recipeId]!.preparingList {
+            if item == false {
+                flag = false
+                break
+            }
+        }
+        updateIconStatus(flag, .preparingIcon)
+        flag = true
+        for item in recipeStatusList[recipeId]!.cookingList {
+            if item == false {
+                flag = false
+                break
+            }
+        }
+        updateIconStatus(flag, .cookingIcon)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         self.howtoTable.estimatedRowHeight = 100
         self.howtoTable.rowHeight = UITableView.automaticDimension
         return UITableView.automaticDimension
+    }
+    func updateIconStatus(_ done: Bool,_ targetIcon: IconType) {
+        switch targetIcon {
+        case .shoppingIcon:
+            if done == true {
+                shoppingStatusButton.setBackgroundImage(UIImage(named: "Qlr572rGmtXTc2j1617831052_1617831087.png"), for: .normal)
+            } else {
+                shoppingStatusButton.setBackgroundImage(UIImage(named: "IMG_0929.jpg"), for: .normal)
+            }
+            break
+        case .cookingIcon:
+            if done == true {
+                cookStatusButton.setBackgroundImage(UIImage(named: "2dEyqo40YD1VhiQ1617831281_1617831364.png"), for: .normal)
+            } else {
+                cookStatusButton.setBackgroundImage(UIImage(named: "IMG_0931.jpg"), for: .normal)
+            }
+            break
+        case .preparingIcon:
+            if done == true {
+                prepareStatusButton.setBackgroundImage(UIImage(named: "2OsIqUVw2LhISAd1617714975_1617715018.png"), for: .normal)
+            } else {
+                prepareStatusButton.setBackgroundImage(UIImage(named: "IMG_0930.jpg"), for: .normal)
+            }
+            break
+        default:
+            break
+        }
     }
     
     //    func configureSV() {

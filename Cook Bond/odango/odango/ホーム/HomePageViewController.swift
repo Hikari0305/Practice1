@@ -35,7 +35,9 @@ class HomePageViewController: UIViewController, UISearchBarDelegate {
         
         let storyborad = UIStoryboard(name: "SignUp", bundle: nil)
         let nextView = storyborad.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
-        self.present(nextView, animated: true, completion: nil)
+        let nav = UINavigationController(rootViewController: nextView)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
         
         let myTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HomePageViewController.close(_ :)))
         

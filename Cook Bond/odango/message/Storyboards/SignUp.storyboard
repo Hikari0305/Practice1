@@ -62,7 +62,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="noV-0a-Csm">
                                         <rect key="frame" x="0.0" y="91.5" width="300" height="67"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password (must be 6 characters long)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc7-6C-BY5">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password (6 character)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc7-6C-BY5">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -116,9 +116,12 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsR-ew-m8T">
-                                <rect key="frame" x="128" y="644" width="158" height="28"/>
+                                <rect key="frame" x="130" y="644" width="154" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="I have  an account already"/>
+                                <state key="normal" title="I have an account already"/>
+                                <connections>
+                                    <segue destination="kX1-ub-CLa" kind="show" id="BI2-lA-wHp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z07-gO-caM">
                                 <rect key="frame" x="207" y="614" width="0.0" height="21"/>
@@ -158,6 +161,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UkB-wv-YtK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="-23.4375"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="2LB-9r-BTi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="kX1-ub-CLa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hsA-Xt-chg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rkt-Pr-OTn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431" y="127"/>
         </scene>
     </scenes>
     <resources>
