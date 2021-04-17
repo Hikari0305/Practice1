@@ -33,7 +33,7 @@ class ShoppingTableViewController: UIViewController,UITableViewDelegate, UITable
             for id in ids {
                 let recipeData = commonRecipeList[id]
                 if recipeData != nil {
-                    self.shopList = recipeData!["common_ingredients"] as! [[String : String]]
+                    self.shopList = recipeData!["ingredients"] as! [[String : String]]
                     print(shopList)
                 }
             }

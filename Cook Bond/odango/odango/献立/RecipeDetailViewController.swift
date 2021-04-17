@@ -16,9 +16,12 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var calorieLabel: UILabel!
     
+    @IBOutlet weak var menuStatusImage: UIImageView!
     @IBOutlet weak var shoppingStatusButton: UIButton!
     @IBOutlet weak var prepareStatusButton: UIButton!
     @IBOutlet weak var cookStatusButton: UIButton!
+    
+    var statusStack = UIStackView()
     
     var ingList2 = ["1", "2"]
     
@@ -65,16 +68,37 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
         self.howtoTable.delegate = self
         self.howtoTable.dataSource = self
         
-//        self.lists.append(contentsOf: self.ingList)
+//        self.menuStatusImage.frame = CGRect(x: 119, y: 0, width: 75, height: 75)
+//        self.menuStatusImage.backgroundColor = .red
+//        self.statusStack.distribution = .fillEqually
+//        self.statusStack.addSubview(menuStatusImage)
+//        self.statusStack.addSubview(shoppingStatusButton)
+//        self.statusStack.addSubview(prepareStatusButton)
+//        self.statusStack.addSubview(shoppingStatusButton)
+//        view.addSubview(self.statusStack)
+        
         setUpButtons()
     }
     
     func setUpButtons() {
-        self.shoppingStatusButton.setBackgroundImage(UIImage(named: "IMG_0929.jpg"), for: .normal)
+        self.menuStatusImage.image = UIImage(named: "MenuYellow.png")
+        self.menuStatusImage.frame = CGRect(x: 16, y: 100, width: 75, height: 75)
+
+        self.shoppingStatusButton.frame = CGRect(x: 119, y: 100, width: 75, height: 75)
+        self.prepareStatusButton.frame = CGRect(x: 222, y: 100, width: 75, height: 75)
+        self.cookStatusButton.frame = CGRect(x: 325, y: 100, width: 75, height: 75)
+        
+        view.addSubview(menuStatusImage)
+        view.addSubview(shoppingStatusButton)
+        view.addSubview(prepareStatusButton)
+        view.addSubview(cookStatusButton)
+
+//        self.statusStack.frame = CGRect(x: 16, y: 0, width: 383, height: 75)
+        self.shoppingStatusButton.setBackgroundImage(UIImage(named: "スライド2.JPG"), for: .normal)
         aspectFill(shoppingStatusButton)
-        self.prepareStatusButton.setBackgroundImage(UIImage(named: "IMG_0930.jpg"), for: .normal)
+        self.prepareStatusButton.setBackgroundImage(UIImage(named: "スライド3.JPG"), for: .normal)
         aspectFill(prepareStatusButton)
-        self.cookStatusButton.setBackgroundImage(UIImage(named: "IMG_0931.jpg"), for: .normal)
+        self.cookStatusButton.setBackgroundImage(UIImage(named: "スライド4.JPG"), for: .normal)
         aspectFill(cookStatusButton)
     }
     
@@ -142,7 +166,6 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
             //            let tempID = value[keyID] as! String
             if key == selectedID {
                 self.val = value
-                print("valisnotnil")
                 if (self.val[keyName] != nil) {
                     self.recipe = self.val[keyName] as! String
                 }
@@ -209,6 +232,9 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
                 if ingq != nil, ingname != nil {
                     textData = ingname! + " : " + ingq!
                 }
+                if recipeStatusList[recipeId] == nil {
+                    return cell!
+                }
                 if (recipeStatusList[recipeId]?.shoppingList.count)! > indexPath.row {
                     let current = recipeStatusList[recipeId]?.shoppingList[indexPath.row]
                     if current == true {
@@ -218,9 +244,7 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
                     }
                 }
             }
-        }
-        
-        else if (tableView.tag == 1) {
+        } else if (tableView.tag == 1) {
             //手順取得
             if recipeList.count > indexPath.row {
                 let temp2 = self.recipeList[indexPath.row]
@@ -231,26 +255,27 @@ class RecipeDetailViewController: UIViewController, UITableViewDelegate,UITableV
                 
                 print(indexPath.row)
                 print(recipeStatusList[recipeId]?.preparingList.count)
-                print(recipeStatusList[recipeId]?.cookingList.count)
+
+                if recipeStatusList[recipeId] == nil {
+                    return cell2!
+                }
                 if (recipeStatusList[recipeId]?.preparingList.count)! > indexPath.row {
                     let current = recipeStatusList[recipeId]?.preparingList[indexPath.row]
                     if current == true {
-                        cell?.self.checkBoxImage.image = self.checked
+                        cell2?.self.checkBoxImage2.image = self.checked
                     } else {
-                        cell?.self.checkBoxImage.image = self.unchecked
+                        cell2?.self.checkBoxImage2.image = self.unchecked
                     }
                 } else if (recipeStatusList[recipeId]?.cookingList.count)! > indexPath.row-(recipeStatusList[recipeId]?.preparingList.count)! {
                     let current = recipeStatusList[recipeId]?.cookingList[indexPath.row-(recipeStatusList[recipeId]?.preparingList.count)!]
                     if current == true {
-                        cell?.self.checkBoxImage.image = self.checked
+                        cell2?.self.checkBoxImage2.image = self.checked
                     } else {
-                        cell?.self.checkBoxImage.image = self.unchecked
+                        cell2?.self.checkBoxImage2.image = self.unchecked
                     }
                 } else {
                     print("初期化されませんでした")
                     print(indexPath.row)
-                    print(recipeStatusList[recipeId]?.preparingList.count)
-                    print(recipeStatusList[recipeId]?.cookingList.count)
                 }
             }
         } else {

@@ -18,8 +18,8 @@ class PreparingViewController: UIViewController {
     @IBOutlet weak var playVideoButton: UIButton!
     var name: String? = ""
     var detail: String? = ""
-    private var fileName = "IMG_0761"
-    private var fileEx = "mov"
+    private var fileName = "プロジェクト (6)"
+    private var fileEx = "MP4"
     var playerController = AVPlayerViewController()
     var player = AVPlayer()
     

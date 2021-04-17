@@ -152,8 +152,6 @@ class MainChooseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.pageScrollView.delegate = self
-        //navigationbarの下からのy座標になる。bar系が全部グレーになってしまったのでやめました。
-        //        edgesForExtendedLayout = []
         
         self.collectionView.tag = 0
         self.sideCollectionView.tag = 1
@@ -270,6 +268,7 @@ extension MainChooseViewController: UICollectionViewDataSource {
         cell.self.setupContents(textName: cellText, imagepath: imagepath)
         if (tappedList[indexPath.item] == true) {
             cell.setFilter()
+            cell.updateCheckStatus(true)
         }
         return cell
     }
@@ -285,6 +284,7 @@ extension MainChooseViewController: UICollectionViewDelegate {
                 tappedList[indexPath.item] = false
             } else {
                 tappedList[indexPath.item] = true
+                
             }
             break
         case 1:

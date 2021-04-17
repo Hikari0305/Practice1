@@ -49,7 +49,7 @@ class EachDayRecipeViewController: UIViewController, UICollectionViewDataSource,
         let day_height = 40
         self.day.frame = CGRect(x: margin, y: 110, width: Int(day_width), height: day_height)
                                 
-//        self.statusSetRecipeButton.setBackgroundImage(UIImage(named: "eO9Cbr8auNC0lAj1617830837_1617830947.png"), for: .normal)
+//        self.statusSetRecipeButton.setBackgroundImage(UIImage(named: "MenuYellow.png"), for: .normal)
 //        self.buttonAspectFill(self.statusSetRecipeButton)
 //
 //        self.statusShoppingButton.setBackgroundImage(UIImage(named: "Qlr572rGmtXTc2j1617831052_1617831087.png"), for: .normal)

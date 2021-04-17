@@ -24,6 +24,11 @@ class CollectionViewCell: UICollectionViewCell {
         image.layer.cornerRadius = 15.0
         return image
     }()
+    private let checkImage: UIImageView = {
+        let image = UIImageView()
+        image.frame = CGRect(x: 0, y: 0, width: (screenSize.width-50) / 2, height: (screenSize.width-50) / 2)
+        return image
+    }()
     
     var ciFilter: CIFilter!
     var imagePath: String = "hoge"
@@ -41,6 +46,8 @@ class CollectionViewCell: UICollectionViewCell {
         guard let uiImage = UIImage(named: "unnamed.jpg"), let ciImg = uiImage.ciImage ?? CIImage(image: uiImage) else { return }
                 
         self.ciImage = ciImg
+        self.checkImage.image = UIImage(named: "checkImage.png")
+        self.checkImage.isHidden = true
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -55,6 +62,7 @@ class CollectionViewCell: UICollectionViewCell {
 
             chooseImage.contentMode = .scaleAspectFill
             chooseImage.clipsToBounds = true
+            chooseImage.addSubview(checkImage)
             contentView.addSubview(chooseLabel)
             contentView.addSubview(chooseImage)
             chooseLabel.isUserInteractionEnabled = false
@@ -76,8 +84,12 @@ class CollectionViewCell: UICollectionViewCell {
         
         self.ciImage = ciImg
         ciFilter.setValue(ciImage, forKey: kCIInputImageKey)
-//        ciFilter.setValue(0.1, forKey: kCIInputContrastKey)
+        //        ciFilter.setValue(0.1, forKey: kCIInputContrastKey)
         self.filteredImage = ciFilter.outputImage
-            chooseImage.image = UIImage(ciImage: filteredImage!)
+        chooseImage.image = UIImage(ciImage: filteredImage!)
+    }
+    
+    func updateCheckStatus(_ enable: Bool) {
+        self.checkImage.isHidden = !enable
     }
 }

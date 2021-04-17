@@ -7,6 +7,13 @@
 
 import UIKit
 
+enum RecipeType {
+    case Main
+    case Side
+    case Soup
+    case None
+}
+
 class sortViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var sortPageScroll: UIScrollView!
@@ -19,6 +26,9 @@ class sortViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var recipe2: UIButton!
     @IBOutlet weak var recipe2Time: UILabel!
     @IBOutlet weak var recipe2Calorie: UILabel!
+    
+    var recipeType: RecipeType = .None
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +48,9 @@ class sortViewController: UIViewController, UITableViewDelegate, UITableViewData
          recipe2Calorie.currentTitle = calorie*/
     }
     
+    func setRecipeType(_ type: RecipeType) {
+        self.recipeType = type
+    }
     //    override func viewDidAppear(_ animated:Bool) {
     //            super.viewDidAppear(animated)
     //
@@ -53,23 +66,62 @@ class sortViewController: UIViewController, UITableViewDelegate, UITableViewData
     //        }
     //セルの数を決めるメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return recipeTableInfo.count
+        switch recipeType {
+        case .Main:
+            return mainRecipeIdList.count
+        case .Side:
+            return sideRecipeIdList.count
+        case .Soup:
+            return soupRecipeIdList.count
+        default:
+            break
+        }
+        return 0
     }
     //セルの高さを決めるメソッド
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         return 520
     }
+    
+    func getRecipeId(_ recipeType: RecipeType, _ index: Int) -> String {
+        switch recipeType {
+        case .Main:
+            if mainRecipeIdList.count > index {
+                return mainRecipeIdList[index]
+            }
+            break
+        case .Side:
+            if sideRecipeIdList.count > index {
+                return sideRecipeIdList[index]
+            }
+            break
+        case .Soup:
+            if soupRecipeIdList.count > index {
+                return soupRecipeIdList[index]
+            }
+            break
+        default:
+            return ""
+        }
+        return ""
+    }
     //セルの中身を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //        cell.textLabel!.text = test[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "sortCell") as? SortTableViewCell {
-            let recipeInfo = recipeTableInfo[indexPath.row]
-            let recipename = recipeInfo[keyName]!
-            let recipetime = recipeInfo[keyTime]!
-            let recipecalorie = recipeInfo[keyCalorie]!
-            let recipeimage = recipeInfo[keyPath]!
-            cell.setCellData(recipename, recipetime, recipecalorie, recipeimage)
-            return cell
+            
+            let recipeId: String = getRecipeId(self.recipeType, indexPath.row)
+            
+            let targetRecipe = commonRecipeList[recipeId]
+            if targetRecipe != nil {
+                let recipename = targetRecipe![keyName]! as! String
+                let recipetime = targetRecipe![keyTime]! as! String
+                let recipecalorie = targetRecipe![keyCalorie]! as! String
+                let recipeimage = targetRecipe![keyPath]! as! String
+                cell.setCellData(recipename, recipetime, recipecalorie, recipeimage)
+                return cell
+            }
+            
         }
         return SortTableViewCell()
     }
@@ -77,8 +129,11 @@ class sortViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //セルの選択を解除
         sortTable.deselectRow(at: indexPath, animated: true)
-        let recipeInfo = recipeTableInfo[indexPath.row]
-        let recipeID = recipeInfo[keyID]!
+        
+        let recipeID = getRecipeId(self.recipeType, indexPath.row)
+        if recipeID.isEmpty == true {
+            return
+        }
         //①storyboardのインスタンス取得
         let storyborad: UIStoryboard = self.storyboard!
         //②遷移先ViewControllerのインスタンス取得
